@@ -1,0 +1,1690 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{bigints}
+\usepackage{enumitem}
+
+\setlist[enumerate,1]{label=\arabic*.,ref=\arabic*}
+\setlist[enumerate,2]{label=\arabic*.,ref=\arabic*}
+\setlist[enumerate,3]{label=\Alph*.,ref=\Alph*}
+\setlist[enumerate,4]{label=\textbullet,ref=\textbullet}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\numeric on
+7.1
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המשפט היסודי והנוסחה היסודית של החשבון האינטגרלי
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+הערך הממוצע 
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+המספר הממשי 
+\begin_inset Formula $\mathbb{R}\ni\mu:=\frac{1}{b-a}\stackrel[a]{b}{\int}f\left(t\right)dt$
+\end_inset
+
+ נקרא 
+\series bold
+הערך הממוצע של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+פונקציה צוברת:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ אזי 
+\series bold
+הפונקציה הצוברת
+\series default
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ היא 
+\begin_inset Formula $\tilde{F}\left(x\right)=\stackrel[a]{x}{\int}f\left(t\right)dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+פונקציה קדומה:
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+יהיו 
+\begin_inset Formula $I\subseteq D\subseteq\mathbb{R}$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $f:D\rightarrow\mathbb{R}$
+\end_inset
+
+, ותהי 
+\begin_inset Formula $F:I\rightarrow\mathbb{R}$
+\end_inset
+
+ פונקציה גזירה במקטע 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נאמר ש-
+\begin_inset Formula $F$
+\end_inset
+
+ 
+\series bold
+פונקציה קדומה של 
+\begin_inset Formula $f$
+\end_inset
+
+ במקטע 
+\begin_inset Formula $I$
+\end_inset
+
+
+\series default
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם מתקיים 
+\begin_inset Formula $\forall x\in I\,F'\left(x\right)=f\left(x\right)$
+\end_inset
+
+, עם גזירות חד צדדית בקצוות.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $F$
+\end_inset
+
+ פונקציה קדומה של 
+\begin_inset Formula $f$
+\end_inset
+
+, נסמן 
+\series bold
+
+\begin_inset Formula $\bigintsss f\left(x\right)dx\overset{def}{=}\left\{ F\left(x\right)+C\mid C\in\mathbb{R}\right\} $
+\end_inset
+
+ אוסף הפונקציות הקדומות של 
+\begin_inset Formula $f$
+\end_inset
+
+ במקטע 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+
+\series bold
+הערות 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אין זכר למקטע שבו 
+\begin_inset Formula $\bigintsss f\left(x\right)dx$
+\end_inset
+
+ מוגדרת.
+\end_layout
+
+\begin_layout Enumerate
+פונקציה קדומה היא קבועה עד כדי 
+\begin_inset Formula $C$
+\end_inset
+
+ ולכן הפסוק
+\series bold
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $F$
+\end_inset
+
+ 
+\series default
+היא 
+\series bold
+\bar under
+ה
+\series default
+\bar default
+פונקציה 
+\series bold
+\bar under
+ה
+\series default
+\bar default
+קדומה של 
+\begin_inset Formula $f$
+\end_inset
+
+ בקטע 
+\begin_inset Formula $I$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ אינו מוגדר כהלכה.
+\end_layout
+
+\begin_layout Enumerate
+ישנן פונקציות שתחום ההגדרה המקסימלי שלהן או של הפונקציה הקדומה שלהן הוא
+ איחוד זר של קטעים 
+\begin_inset Formula 
+\[
+\left(f\left(x\right)=-\frac{1}{x^{2}},F\left(x\right)=\frac{1}{x},\quad f,F:\left(-\infty,0\right)\cup\left(0,\infty\right)\rightarrow\mathbb{R}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ רציפה אזי 
+\begin_inset Formula $\tilde{F}\left(x\right)=\stackrel[a]{x}{\int}f\left(t\right)dt$
+\end_inset
+
+ פונקציה קדומה שלה.
+ נקבע 
+\begin_inset Formula $x_{0}\in\left[a,b\right]$
+\end_inset
+
+, ונגדיר 
+\begin_inset Formula $\tilde{H}\left(x\right)=\stackrel[x_{0}]{x}{\int}f\left(t\right)dt$
+\end_inset
+
+, ואז נקבל
+\begin_inset Formula 
+\[
+\forall x\in\left[a,b\right]\,\tilde{H}\left(x\right)=\stackrel[x_{0}]{x}{\int}f\left(t\right)=\stackrel[a]{x}{\int}f\left(t\right)dt-\stackrel[a]{x_{0}}{\int}f\left(t\right)dt=\tilde{F}\left(x\right)-\stackrel[a]{x_{0}}{\int}f\left(t\right)dt\Rightarrow\tilde{H}\in\bigintsss f\left(x\right)dx
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+משפטים
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+המשפט היסודי של החשבון האינטגרלי:
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\tilde{F}\left(x\right)=\stackrel[a]{x}{\int}f\left(t\right)dt$
+\end_inset
+
+ מקיימת:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\tilde{F}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $x_{0}\in\left[a,b\right]$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\tilde{F}$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $\tilde{F}'\left(x_{0}\right)=f\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה סעיף ב יכול להיות גם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה חד צדדית ב-
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\tilde{F}$
+\end_inset
+
+ גזירה חד צדדית ב-
+\begin_inset Formula $x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הוכחה:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+יהיו 
+\begin_inset Formula $x_{1}\ne x_{2}\in\left[a,b\right]$
+\end_inset
+
+.
+ נניח בה
+\begin_inset Quotes erd
+\end_inset
+
+כ 
+\begin_inset Formula $x_{2}<x_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+צ
+\begin_inset Quotes erd
+\end_inset
+
+ל שמתקיים 
+\begin_inset Formula $\forall x_{0}\in\left[a,b\right]\,\forall\varepsilon>0\,\exists\delta>0\,\forall x_{1}\in\left[a,b\right]\quad\left|x_{1}-x_{0}\right|<\delta\Rightarrow\left|\tilde{F}\left(x_{1}\right)-\tilde{F}\left(x_{0}\right)\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית ועל כן, ממשפט שהוכח בכיתה, חסומה.
+ כלומר קיים 
+\begin_inset Formula $M>0$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $\left(\clubsuit\right)\quad\forall x\in\left[a,b\right]\,\left|f\left(x\right)\right|\leq M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+מתקיים 
+\begin_inset Formula 
+\begin{align*}
+\left|\tilde{F}\left(x_{1}\right)-\tilde{F}\left(x_{2}\right)\right| & =\left|\stackrel[a]{x_{1}}{\int}f\left(t\right)dt-\stackrel[a]{x_{2}}{\int}f\left(t\right)dt\right|=\left|\stackrel[x_{2}]{x_{1}}{\int}f\left(t\right)dt\right|\overset{\left(*\right)}{=}\stackrel[x_{2}]{x_{1}}{\int}\left|f\left(t\right)\right|dt\overset{\left(\clubsuit\right)}{\leq}\stackrel[x_{2}]{x_{1}}{\int}Mdt=M\left(x_{1}-x_{2}\right)=M\left|x_{1}-x_{2}\right|\iff\\
+\iff & \left|\tilde{F}\left(x_{1}\right)-\tilde{F}\left(x_{0}\right)\right|\leq M\left|x_{1}-x_{0}\right|\quad\left(\spadesuit\right)
+\end{align*}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ היא אי שוויון המשולש האינטגרלי 
+\end_layout
+
+\begin_layout Itemize
+אזי 
+\begin_inset Formula $\tilde{F}$
+\end_inset
+
+ היא 
+\begin_inset Formula $M$
+\end_inset
+
+-ליפשיצית ועל כן רבמ
+\begin_inset Quotes erd
+\end_inset
+
+ש )ממשפט שהוכח בתרגול( ועל כן בפרט רציפה )ממשפט שהוכח בהרצאה(, כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+יהיו 
+\begin_inset Formula $x_{0}\in\left[a,b\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ נתון.
+ 
+\end_layout
+
+\begin_layout Itemize
+צ
+\begin_inset Quotes erd
+\end_inset
+
+ל שמתקיים 
+\begin_inset Formula $\underset{x\rightarrow x_{0}}{\lim}\frac{\tilde{F}\left(x\right)-\tilde{F}\left(x_{0}\right)}{x-x_{0}}=f\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נתון בנוסף ש-
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ אזי קיימת 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ שעבורה מתקיים 
+\begin_inset Formula $\left(\diamondsuit\right)\left|x-x_{0}\right|<\delta\Rightarrow\left|f\left(x\right)-f\left(x_{0}\right)\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכן מתקיים לכל 
+\begin_inset Formula $x\in\left(x_{0}-\delta,x_{0}+\delta\right)$
+\end_inset
+
+:\SpecialChar endofsentence
+
+\begin_inset Formula 
+\begin{align*}
+\left|\frac{\tilde{F}\left(x\right)-\tilde{F}\left(x_{0}\right)}{x-x_{0}}-f\left(x_{0}\right)\right| & =\left|\frac{\tilde{F}\left(x\right)-\tilde{F}\left(x_{0}\right)}{x-x_{0}}-f\left(x_{0}\right)\frac{x-x_{0}}{x-x_{0}}\right|=\frac{1}{\left|x-x_{0}\right|}\left|\tilde{F}\left(x\right)-\tilde{F}\left(x_{0}\right)-f\left(x_{0}\right)\left(x-x_{0}\right)\right|=\\
+= & \frac{1}{\left|x-x_{0}\right|}\left|\stackrel[x_{0}]{x}{\int}f\left(t\right)dt-f\left(x_{0}\right)\left(x-x_{0}\right)\right|\overset{\left(*\right)}{=}\frac{1}{\left|x-x_{0}\right|}\left|\stackrel[x_{0}]{x}{\int}f\left(t\right)dt-\stackrel[x_{0}]{x}{\int}f\left(x_{0}\right)dt\right|\overset{\left(**\right)}{=}\\
+\overset{\left(**\right)}{=} & \frac{1}{\left|x-x_{0}\right|}\left|\stackrel[x_{0}]{x}{\int}f\left(t\right)-f\left(x_{0}\right)dt\right|\overset{\left(\diamondsuit\right)}{<}\\
+\overset{\left(\diamondsuit\right)}{<} & \frac{1}{\left|x-x_{0}\right|}\left|\stackrel[x_{0}]{x}{\int}\varepsilon dt\right|=\frac{\varepsilon}{\left|x-x_{0}\right|}\left|x-x_{0}\right|=\varepsilon_{\blacksquare}
+\end{align*}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+נובע מהגדרת האינטגרל לפונקציות קבועות, ו
+\begin_inset Formula $\left(**\right)$
+\end_inset
+
+ מליניאריות האינטגרל
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+גזירות פונקציה צוברת של פונקציה רציפה 
+\series default
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\tilde{F}\left(x\right)=\stackrel[a]{x}{\int}f\left(t\right)dt$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $\forall x\in\left[a,b\right]\,\tilde{F}'\left(x\right)=f\left(x\right)$
+\end_inset
+
+ עם גזירה חד צדדית בקצוות
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הוכחה: משום ש
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה, נפעיל את המשפט היסודי ומסעיף ב נקבל את הנדרש.
+\end_layout
+
+\begin_layout Description
+מסקנה 
+\begin_inset Formula $\forall x\in\left[a,b\right]\,\tilde{F}'\left(x\right)=f\left(x\right)$
+\end_inset
+
+, עם גזירות חד צדדית בקצוות
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+נבדלות פונקציות צוברות בקבוע במקטע 
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+יהי 
+\begin_inset Formula $I$
+\end_inset
+
+ מקטע לא טריוויאלי )כלומר יש בו לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות(, ויהיו 
+\begin_inset Formula $F_{1},F_{2}$
+\end_inset
+
+ פונקציות גזירות ב
+\begin_inset Formula $I$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+אזי 
+\begin_inset Formula $F_{1}\left(x\right)=F_{2}\left(x\right)+C\iff\forall x\in I\,F_{1}'\left(x\right)=F_{2}'\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+קיום פונקציה קדומה לכל פונקציה רציפה במקטע
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+יהי 
+\begin_inset Formula $I$
+\end_inset
+
+ מקטע לא טריוויאלי )כלומר יש בו לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות(.
+\begin_inset Newline newline
+\end_inset
+
+אזי יש ל
+\begin_inset Formula $F$
+\end_inset
+
+ פונקציה קדומה ב
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+רציפות אינה תנאי הכרחי לקיום פונקציה קדומה
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+דוגמא
+\begin_inset space ~
+\end_inset
+
+נגדית: 
+\begin_inset Formula $F\left(x\right)=\begin{cases}
+x^{2}\sin\left(\frac{1}{x}\right) & x\ne0\\
+0 & x=0
+\end{cases}\Leftarrow f\left(x\right)=\begin{cases}
+2x\sin\left(\frac{1}{x}\right)-\cos\left(\frac{1}{x}\right) & x\ne0\\
+0 & x=0
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+הנוסחה היסודית של החשבון האינטגרלי - משפט ניוטון-לייבניץ - גרסה קלה
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ 
+\series bold
+רציפה
+\series default
+ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $F$
+\end_inset
+
+ פונקציה קדומה כלשהי של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב-
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+אזי מתקיים 
+\begin_inset Formula $\stackrel[a]{b}{\int}f\left(t\right)dt=F\left(b\right)-F\left(a\right)=\left.F(x)\right|_{a}^{b}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הוכחה 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נגדיר את הפונקציה הצוברת 
+\begin_inset Formula $\tilde{F}:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ המוגדרת 
+\begin_inset Formula $\forall x\in\left[a,b\right]\,\tilde{F}\left(x\right)=\stackrel[a]{x}{\int}f\left(t\right)dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ נובע ש
+\begin_inset Formula $\tilde{F}$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $\forall x\in\left[a,b\right]\,\tilde{F}'\left(x\right)=f\left(x\right)$
+\end_inset
+
+ עם גזירות חד צדדית בקצוות 
+\end_layout
+
+\begin_layout Itemize
+הפונקציות מוגדרות ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, לכן ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקבל שקיים 
+\begin_inset Formula $C\in\mathbb{R}$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $\forall x\in\left[a,b\right]\,\tilde{F}\left(x\right)=F\left(x\right)+C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אזי מתקיים 
+\begin_inset Formula 
+\[
+\stackrel[a]{b}{\int}f\left(t\right)dt=\tilde{F}\left(b\right)=\tilde{F}\left(b\right)-0=\tilde{F}\left(b\right)-\tilde{F}\left(a\right)=F\left(b\right)+C-\left(F\left(a\right)+C\right)=F\left(b\right)-F\left(a\right)_{\blacksquare}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+הנוסחה היסודית של החשבון האינטגרלי - משפט ניוטון-לייבניץ - גרסה כללית
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ 
+\series bold
+אינטגרבילית
+\series default
+ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ותהי 
+\begin_inset Formula $F$
+\end_inset
+
+ פונקציה קדומה כלשהי של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב-
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+אזי מתקיים 
+\begin_inset Formula $\stackrel[a]{b}{\int}f\left(t\right)dt=F\left(b\right)-F\left(a\right)=\left.F(x)\right|_{a}^{b}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הוכחה 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+תהא 
+\begin_inset Formula $P=\left\{ x_{0},\dots,x_{n}\right\} $
+\end_inset
+
+ חלוקה של 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F$
+\end_inset
+
+ גזירה ב-
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ועל כן בפרט רציפה, ולכן מקיימת את תנאי משפט לגראנז' לכל 
+\begin_inset Formula $i\in\left[n\right]$
+\end_inset
+
+ ב-
+\begin_inset Formula $\left[x_{i-1},x_{i}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כלומר קיים 
+\begin_inset Formula $c_{i}\in\left(x_{i-1},x_{i}\right)$
+\end_inset
+
+ המקיים 
+\begin_inset Formula 
+\[
+f\left(c_{i}\right)=F'\left(c_{i}\right)=\frac{F\left(x_{i}\right)-F\left(x_{i-1}\right)}{x_{i}-x_{i-1}}\iff F\left(x_{i}\right)-F\left(x_{i-1}\right)=f\left(c_{i}\right)\left(x_{i}-x_{i-1}\right)\quad\left(*\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+נגדיר 
+\begin_inset Formula $P^{*}=\left\{ c_{i}\mid i\in\left[n\right]\right\} $
+\end_inset
+
+ בחירת נקודות ביחס ל
+\begin_inset Formula $P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+נשים לב שמתקיים 
+\begin_inset Formula 
+\[
+S\left(f,P,P^{*}\right)=\stackrel[i=1]{n}{\sum}f\left(x_{i}\right)\left(x_{i}-x_{i-1}\right)\overset{\left(*\right)}{=}\stackrel[i=1]{n}{\sum}F\left(x_{i}\right)-F\left(x_{i-1}\right)\stackrel[sun]{telescopic}{=}F\left(b\right)-F\left(a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ממשפט על סכומי רימן, מתקיים 
+\begin_inset Formula $\left(\spadesuit\right)L\left(f,p\right)\leq F\left(b\right)-F\left(a\right)\leq U\left(f,P\right)\iff\,L\left(f,p\right)\leq S\left(f,P,P^{*}\right)\leq U\left(f,P\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+משום ש-
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, ממשפט על אינטגרביליות, המסםר היחיד שמקיים את 
+\begin_inset Formula $\left(\spadesuit\right)$
+\end_inset
+
+ הוא האינטגרל בקטע.
+\end_layout
+
+\begin_layout Itemize
+כלומר קיבלנו 
+\begin_inset Formula $F\left(b\right)-F\left(a\right)=\stackrel[a]{b}{\int}f\left(t\right)dt$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+משפט הערך הממוצע האינטגרלי
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+אזי קיימת 
+\begin_inset Formula $c\in\left[a,b\right]$
+\end_inset
+
+ שמקיימת 
+\begin_inset Formula $f\left(c\right)=\mu=\frac{1}{b-a}\stackrel[a]{b}{\int}f\left(t\right)dt$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הוכחה 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בקטע 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, ולכן מהמשפט השני של וויירשטראס קיימים 
+\begin_inset Formula $M,m\in\mathbb{R}$
+\end_inset
+
+ המקיימים 
+\begin_inset Formula $Im\left(f\right)=\left[m,M\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+בנוסף מאינטגרביליות 
+\begin_inset Formula $f$
+\end_inset
+
+, כל חלוקה היא עידון של החלוקה הטריוויאלית, ולכן מתקיים 
+\begin_inset Formula 
+\[
+m\left(b-a\right)\leq\stackrel[a]{b}{\int}f\left(t\right)dt\leq M\left(b-a\right)\iff m\leq\mu\overset{def}{=}\frac{\stackrel[a]{b}{\int}f\left(t\right)dt}{b-a}\leq M\iff\mu\in Im\left(f\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכן קיימת 
+\begin_inset Formula $c\in\left[a,b\right]$
+\end_inset
+
+ שעבורה 
+\begin_inset Formula $f\left(c\right)=\mu=\frac{1}{b-a}\stackrel[a]{b}{\int}f\left(t\right)dt$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+חיזוק
+\begin_inset space ~
+\end_inset
+
+למשפט: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+אזי קיימת 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+ שמקיימת 
+\begin_inset Formula $f\left(c\right)=\mu=\frac{1}{b-a}\stackrel[a]{b}{\int}f\left(t\right)dt$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הוכחה 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ולכן ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ נקבל ש
+\begin_inset Formula $\tilde{F}$
+\end_inset
+
+ הפונקציה הצוברת של 
+\begin_inset Formula $f$
+\end_inset
+
+ היא גם פונקצייה קדומה שלה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tilde{F}$
+\end_inset
+
+ גזירה ב-
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ועל כן בפרט רציפה, ולכן מקיימת את תנאי משפט לגראנז' בכל 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+מלגראנז' נקבל שקיים 
+\begin_inset Formula $c\in\left(a,b\right)$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $f\left(c\right)=\tilde{F}'\left(c\right)=\frac{\tilde{F}\left(b\right)-\tilde{F}\left(a\right)}{b-a}=\frac{\stackrel[a]{b}{\int}f\left(t\right)dt-0}{b-a}=\mu=\frac{1}{b-a}\stackrel[a]{b}{\int}f\left(t\right)dt$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+נגזרת של אינטגרל עם גבולות משתנים
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, ויהיו 
+\begin_inset Formula $\alpha<\beta\in\mathbb{R}$
+\end_inset
+
+, כך ש הפונקציות 
+\begin_inset Formula $\varphi,\psi:\left[\alpha,\beta\right]\rightarrow\left[a,b\right]$
+\end_inset
+
+ גזירות ב
+\begin_inset Formula $\left[\alpha,\beta\right]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נגדיר 
+\begin_inset Formula $G:\left[\alpha,\beta\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\forall x\in\left[\alpha,\beta\right]\,G\left(x\right)=\int\limits _{\varphi\left(x\right)}^{\psi\left(x\right)}f\left(t\right)dt$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+אזי 
+\begin_inset Formula $G$
+\end_inset
+
+ גזירה בכל 
+\begin_inset Formula $x\in\left[\alpha,\beta\right]$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in\left[\alpha,\beta\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $G'\left(x\right)=f\left(\psi\left(x\right)\right)\cdot\psi'\left(x\right)-f\left(\varphi\left(x\right)\right)\cdot\varphi'\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הוכחה 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נגדיר את הפונקציה הצוברת )קיימת מהמשפט היסודי(: 
+\begin_inset Formula $\tilde{F}$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula $\forall x\in\left[a,b\right]\,\tilde{F}\left(x\right)=\int\limits _{a}^{x}f\left(t\right)dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אזי מתקיים
+\begin_inset Formula 
+\[
+G\left(x\right)=\int\limits _{\varphi\left(x\right)}^{\psi\left(x\right)}f\left(t\right)dt=\int\limits _{\varphi\left(x\right)}^{a}f\left(t\right)dt+\int\limits _{a}^{\psi\left(x\right)}f\left(t\right)dt=\int\limits _{a}^{\psi\left(x\right)}f\left(t\right)dt-\int\limits _{a}^{\varphi\left(x\right)}f\left(t\right)dt=\tilde{F}\left(\psi\left(x\right)\right)-\tilde{F}\left(\varphi\left(x\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בתחומה ועל כן מהמשפט היסודי 
+\begin_inset Formula $\tilde{F}$
+\end_inset
+
+ גזירה בתחומה גם כן.
+ אזי מתקיים לכל 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ בתחום
+\begin_inset Formula 
+\[
+G'\left(x_{0}\right)=\left(\tilde{F}\left(\psi\left(x_{0}\right)\right)\right)'-\left(\tilde{F}\left(\varphi\left(x_{0}\right)\right)\right)'\overset{chain'}{=}\tilde{F}'\left(\psi\left(x\right)\right)\psi'\left(x\right)-\tilde{F}'\left(\varphi\left(x\right)\right)\varphi'\left(x\right)=f\left(\psi\left(x\right)\right)\cdot\psi'\left(x\right)-f\left(\varphi\left(x\right)\right)\cdot\varphi'\left(x\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document

@@ -1,0 +1,319 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+פעולות על פולינומי טיילור
+\end_layout
+
+\begin_layout Description
+הגדרה בהינתן 
+\begin_inset Formula $Q\in\mathbb{R}\left[x\right]$
+\end_inset
+
+, שהצגתו סביב 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+ היא 
+\begin_inset Formula $Q\left(x\right)=\overset{n}{\underset{i=0}{\sum}}q_{i}\left(x-a\right)^{i}$
+\end_inset
+
+, 
+\series bold
+הקטימה
+\series default
+ של 
+\begin_inset Formula $Q$
+\end_inset
+
+ 
+\series bold
+מסדר 
+\begin_inset Formula $m\in\mathbb{N}\cup\left\{ 0\right\} $
+\end_inset
+
+ סביב
+\series default
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ היא 
+\begin_inset Formula $\left[Q\right]_{m,a}\left(x\right):=\overset{m}{\underset{i=0}{\sum}}q_{i}\left(x-a\right)^{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט קטימה שומרת על יחידות הפולינום: תהא 
+\begin_inset Formula $f$
+\end_inset
+
+ הגזירה 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ פעמים, ויהא 
+\begin_inset Formula $m\in\left[n\right]$
+\end_inset
+
+.
+ אזי מהגדרת פולינומי טיילור מתקיים 
+\begin_inset Formula $P_{m,f,a}\left(x\right)=\left[P_{n,f,a}\left(x\right)\right]_{m,a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט הפרש של פולינום והקטימה: יהא 
+\begin_inset Formula $Q\in\mathbb{R}\left[x\right]$
+\end_inset
+
+ , ויהא 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+.
+ אזי
+\begin_inset Formula $\underset{x\rightarrow a}{\lim}\frac{Q\left(x\right)-\left[Q\right]_{n,a}}{\left(x-a\right)^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+פולינום
+\begin_inset space ~
+\end_inset
+
+של
+\begin_inset space ~
+\end_inset
+
+מכפלת
+\begin_inset space ~
+\end_inset
+
+פונקציות יהיו 
+\begin_inset Formula $f,g$
+\end_inset
+
+ פונקציות הגזירות 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים בנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $p_{n},q_{n}$
+\end_inset
+
+ פולינומי טיילור של 
+\begin_inset Formula $f,g$
+\end_inset
+
+ בהתאמה סביב 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ אזי הפונקציה 
+\begin_inset Formula $h:=f\cdot g$
+\end_inset
+
+ גזירה 
+\begin_inset Formula $n$
+\end_inset
+
+פעמים בנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+ והפולינום טיילור שלה הוא 
+\begin_inset Formula $t_{n}\left(x\right)=\left[p_{n}\left(x\right)\cdot q_{n}\left(x\right)\right]_{n,a}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הוכחה: נראה שמתקיים 
+\begin_inset Formula $\underset{x\rightarrow a}{\lim}\frac{h\left(x\right)-t_{n}\left(x\right)}{\left(x-a\right)^{n}}=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+\underset{x\rightarrow a}{\lim}\frac{h\left(x\right)-t_{n}\left(x\right)}{\left(x-a\right)^{n}} & =\underset{x\rightarrow a}{\lim}\frac{f\left(x\right)g\left(x\right)-t_{n}\left(x\right)}{\left(x-a\right)^{n}}=\underset{x\rightarrow a}{\lim}\frac{f\left(x\right)g\left(x\right)+\left[f\left(x\right)q_{n}\left(x\right)+p_{n}\left(x\right)q_{n}\left(x\right)\right]-\left[f\left(x\right)q_{n}\left(x\right)+p_{n}\left(x\right)q_{n}\left(x\right)\right]-t_{n}\left(x\right)}{\left(x-a\right)^{n}}=\\
+= & \frac{f\left(x\right)g\left(x\right)-f\left(x\right)q_{n}\left(x\right)}{\left(x-a\right)^{n}}+\frac{f\left(x\right)q_{n}\left(x\right)-p_{n}\left(x\right)q_{n}\left(x\right)}{\left(x-a\right)^{n}}+\frac{p_{n}\left(x\right)q_{n}\left(x\right)-t_{n}\left(x\right)}{\left(x-a\right)^{n}}
+\end{align*}
+
+\end_inset
+
+נחשב את המחוברים בנפרד:
+\begin_inset Formula 
+\[
+\underset{x\rightarrow a}{\lim}\frac{f\left(x\right)g\left(x\right)-f\left(x\right)q_{n}\left(x\right)}{\left(x-a\right)^{n}}=\underset{x\rightarrow a}{\lim}f\left(x\right)\frac{g\left(x\right)-q_{n}\left(x\right)}{\left(x-a\right)^{n}}=\underset{x\rightarrow a}{\lim}f\left(x\right)\frac{R_{n,g,a}\left(x\right)}{\left(x-a\right)^{n}}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underset{x\rightarrow a}{\lim}\frac{f\left(x\right)q_{n}\left(x\right)-p_{n}\left(x\right)q_{n}\left(x\right)}{\left(x-a\right)^{n}}=\underset{x\rightarrow a}{\lim}q_{n}\left(x\right)\frac{f\left(x\right)-p_{n}\left(x\right)}{\left(x-a\right)^{n}}=\underset{x\rightarrow a}{\lim}q_{n}\left(x\right)\frac{R_{n,f,a}\left(x\right)}{\left(x-a\right)^{n}}=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underset{x\rightarrow a}{\lim}\frac{p_{n}\left(x\right)\cdot q_{n}\left(x\right)-t_{n}\left(x\right)}{\left(x-a\right)^{n}}=\underset{x\rightarrow a}{\lim}\frac{p_{n}\left(x\right)\cdot q_{n}\left(x\right)-\left[p_{n}\left(x\right)\cdot q_{n}\left(x\right)\right]_{n,a}}{\left(x-a\right)^{n}}=0
+\]
+
+\end_inset
+
+אזי מאש
+\begin_inset Quotes erd
+\end_inset
+
+ג 
+\begin_inset Formula $\underset{x\rightarrow a}{\lim}\frac{h\left(x\right)-t_{n}\left(x\right)}{\left(x-a\right)^{n}}=0$
+\end_inset
+
+ ולכן מהמשפט על יחידות פולינום טיילור קיבלנו את הדרוש.
+\end_layout
+
+\begin_layout Description
+פולינום
+\begin_inset space ~
+\end_inset
+
+של
+\begin_inset space ~
+\end_inset
+
+הרכבה יהיו: 
+\begin_inset Formula $f$
+\end_inset
+
+פונקציה הגזירה 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים בנקודה 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+ הגזירה 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים בנקודה 
+\begin_inset Formula $f\left(a\right)\in\mathbb{R}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $P_{n,g\circ f,a}\left(x\right)=\left[P_{n,g,a}\left(P_{n,f,a}\left(x\right)\right)\right]_{n,a}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

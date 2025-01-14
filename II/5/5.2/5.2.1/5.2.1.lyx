@@ -1,0 +1,805 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+פולינומי טיילור
+\end_layout
+
+\begin_layout Standard
+בהתחשב ב
+\numeric on
+
+\begin_inset Formula $5.1$
+\end_inset
+
+
+\numeric off
+, נחפש להמשך ולדייק את הקירוב לפונקציה בנקודה..
+ מכאן נסתכל על 
+\begin_inset Formula $a=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הנחות
+\begin_inset space ~
+\end_inset
+
+לחלק: יהיו 
+\begin_inset Formula $n\in\mathbb{N}\cup\left\{ 0\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה גזירה 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים ב
+\begin_inset Formula $a=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+טענה יהי 
+\begin_inset Formula $p\in\mathbb{R}\left[x\right]$
+\end_inset
+
+ שמקיים 
+\begin_inset Formula $\deg p\leq n$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $p\left(x\right)=\overset{n}{\underset{k=0}{\sum}}\frac{p^{\left(k\right)}\left(0\right)}{k!}x^{k}$
+\end_inset
+
+ )הוכחה-נגזור את 
+\begin_inset Formula $p$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים.(
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\series bold
+פולינום טיילור מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ סביב 
+\series default
+
+\begin_inset Formula $a$
+\end_inset
+
+ הוא 
+\begin_inset Formula 
+\[
+P_{n}\left(x\right)=P_{n,f,a}\left(x\right)=f\left(a\right)+\frac{f'\left(a\right)}{1!}x+\frac{f''\left(a\right)}{2!}x^{2},\dots,\frac{f^{\left(n\right)}\left(a\right)}{n!}x^{n}=\overset{n}{\underset{k=0}{\sum}}\frac{f^{\left(k\right)}\left(a\right)}{k!}x^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+טענה נגדיר 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ פולינום טיילור מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ סביב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ אזי 
+\begin_inset Formula $\forall k\in\left[n\right]\cup\left\{ 0\right\} \quad P_{n}^{\left(k\right)}\left(0\right)=f^{\left(k\right)}\left(0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הגדרה 
+\series bold
+השארית של פיתוח טיילור מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ סביב 
+\numeric on
+
+\begin_inset Formula $a$
+\end_inset
+
+
+\family roman
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא: 
+\begin_inset Formula 
+\[
+R_{n}\left(x\right)=R_{n,f,a}\left(x\right)=f\left(x\right)-P_{n}\left(x\right)=f\left(x\right)-\left(f\left(a\right)+\frac{f'\left(a\right)}{1!}x+\frac{f''\left(a\right)}{2!}x^{2},\dots,\frac{f^{\left(n\right)}\left(a\right)}{n!}x^{n}\right)=f\left(x\right)-\overset{n}{\underset{k=0}{\sum}}\frac{f^{\left(k\right)}\left(a\right)}{k!}x^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט)קיום
+\begin_inset space ~
+\end_inset
+
+השארית( בהינתן התנאים, מתקיים לנ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $\underset{x\rightarrow a}{\lim}\frac{f\left(x\right)-P_{n,f,a}\left(x\right)}{\left(x-a\right)^{n}}=\underset{x\rightarrow a}{\lim}\frac{R_{n,f,a}\left(x\right)}{\left(x-a\right)^{n}}=0$
+\end_inset
+
+ הוכחה באינדוציה על 
+\begin_inset Formula $n$
+\end_inset
+
+, כאשר הג'וקר זה לופיטל.
+\end_layout
+
+\begin_layout Description
+משפט)יחידות
+\begin_inset space ~
+\end_inset
+
+השארית( בהינתן התנאים, אם קיים 
+\begin_inset Formula $Q\in\mathbb{R}\left[x\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\deg Q\leq n$
+\end_inset
+
+, המקיים 
+\begin_inset Formula $\underset{x\rightarrow a}{\lim}\frac{f\left(x\right)-Q\left(x\right)}{\left(x-a\right)^{n}}=0$
+\end_inset
+
+, אזי 
+\begin_inset Formula $Q=P_{n,f,a}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+קווים
+\begin_inset space ~
+\end_inset
+
+להוכחה נניח בשלילה שקיימים 
+\begin_inset Formula $Q_{1},Q_{2}\in\mathbb{R}\left[x\right]$
+\end_inset
+
+ שעבורם מתקיים הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל, אזי מאש
+\begin_inset Quotes erd
+\end_inset
+
+ג נקבל שקיים הגבול ומתקיים 
+\begin_inset Formula 
+\[
+\underset{x\rightarrow a}{\lim}\frac{Q_{1}\left(x\right)-Q_{2}\left(x\right)}{\left(x-a\right)^{n}}=0
+\]
+
+\end_inset
+
+אזי קיים 
+\begin_inset Formula $S\in\mathbb{R}\left[x\right]$
+\end_inset
+
+ המוגדר ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $Q_{1}\left(x\right)-Q_{2}\left(x\right)=S\left(x\right)=s_{0}+s_{1}\left(x-a\right)+s_{2}\left(x-a\right)^{2}+\cdots+s_{n}\left(x-a\right)^{n}$
+\end_inset
+
+ ולכן מקיים 
+\begin_inset Formula $\deg S\leq n$
+\end_inset
+
+, ושוב מאש
+\begin_inset Quotes erd
+\end_inset
+
+ג נקבל 
+\begin_inset Formula 
+\[
+\underset{x\rightarrow a}{\lim}\frac{Q_{1}\left(x\right)-Q_{2}\left(x\right)}{\left(x-a\right)^{n}}=\underset{x\rightarrow a}{\lim}\frac{S\left(x\right)}{\left(x-a\right)^{n}}=\underset{x\rightarrow a}{\lim}\frac{S\left(x\right)}{\left(x-a\right)^{n}}\cdot\left(x-a\right)^{n}\overset{\left(x-a\right)\rightarrow0}{=}0\Leftrightarrow\underset{x\rightarrow a}{\lim}S\left(x\right)=0
+\]
+
+\end_inset
+
+ומכאן מתקיים 
+\begin_inset Formula 
+\[
+c_{0}=\underset{x\rightarrow a}{\lim}S\left(x\right)=\underset{x\rightarrow a}{\lim}\left(c_{0}+c_{1}\left(x-a\right)+\cdots+c_{n}\left(x-a\right)^{n}\right)=0
+\]
+
+\end_inset
+
+אזי אם נמשיך באינדוקציה )בדומה להוכחת יחידות על צ
+\begin_inset Quotes erd
+\end_inset
+
+ל של אופטרטור נילפוטנטי(, נראה שלכל 
+\begin_inset Formula $k\in\left[n\right]\cup\left\{ 0\right\} $
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $c_{k}=0$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $Q_{1}-Q_{2}=S=0\Leftrightarrow Q_{1}=Q_{2}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+הגדרה 
+\series bold
+פולינום מקלורן של 
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\series default
+הוא מקרה פרטי של פולינום טיילור של 
+\begin_inset Formula $f$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+משפט
+\begin_inset space ~
+\end_inset
+
+טיילור)!( יהיו 
+\begin_inset Formula $a<x\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה הגזירה לפחות 
+\begin_inset Formula $n+1$
+\end_inset
+
+ פעמים, כך ש
+\begin_inset Formula $f^{\left(n\right)}$
+\end_inset
+
+ רציפה בקטע 
+\begin_inset Formula $\left[a,x\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $f^{\left(n+1\right)}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left(a,x\right)$
+\end_inset
+
+.
+ אזי:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+קיימת נקודה 
+\begin_inset Formula $c\in\left(a,x\right)$
+\end_inset
+
+, אחת לפחות, שעבורה מתקיים )
+\series bold
+השארית בצורת לגראנז'
+\series default
+(
+\begin_inset Formula 
+\[
+R_{n,f,a}\left(x\right)=f\left(x\right)-P_{n,f,a}\left(x\right)=\frac{f^{\left(n+1\right)}\left(c\right)}{\left(n+1\right)!}\left(x-a\right)^{n+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+קיימת נקודה 
+\begin_inset Formula $\hat{c}\in\left(a,x\right)$
+\end_inset
+
+, אחת לפחות, שעבורה מתקיים )
+\series bold
+השארית בצורת קושי
+\series default
+(
+\begin_inset Formula 
+\[
+R_{n,f,a}\left(x\right)=f\left(x\right)-P_{n,f,a}\left(x\right)=\frac{f^{\left(n+1\right)}\left(\hat{c}\right)}{n!}\left(x-\hat{c}\right)^{n}\left(x-a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+הוכחה:
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+נגדיר פונקציית עזר 
+\begin_inset Formula $g:\left[a,x\right]\rightarrow\mathbb{R}$
+\end_inset
+
+, המוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\forall t\in\left[a,x\right]\,g\left(t\right)=f\left(x\right)-f\left(t\right)-\overset{n}{\underset{k=1}{\sum}}\frac{f^{\left(k\right)}\left(t\right)}{k!}\left(x-t\right)^{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(*\right)$
+\end_inset
+
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula 
+\begin{align*}
+g\left(a\right)= & f\left(x\right)-\left(f\left(a\right)+\overset{n}{\underset{k=1}{\sum}}\frac{f^{\left(k\right)}\left(a\right)}{k!}\left(x-a\right)^{k}\right)=f\left(x\right)-P_{n,f,a}\left(x\right)=R_{n,f,a}\left(x\right)\\
+g\left(x\right)= & f\left(x\right)-f\left(x\right)-\overset{n}{\underset{k=1}{\sum}}\frac{f^{\left(k\right)}\left(b\right)}{k!}\overset{=0}{\left(x-x\right)^{k}}=0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בנוסף מאריתמטיקה של רציפות נקבל ש
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,x\right]$
+\end_inset
+
+, ומאריתמטיקה של גזירות נקבל ש
+\begin_inset Formula $g$
+\end_inset
+
+ גזירה ב-
+\begin_inset Formula $\left(a,x\right)$
+\end_inset
+
+.
+ נגזור את 
+\begin_inset Formula $g$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+g'\left(t\right) & =\left(f\left(x\right)-f\left(t\right)-\overset{n}{\underset{k=1}{\sum}}\frac{f^{\left(k\right)}\left(t\right)}{k!}\left(x-t\right)^{k}\right)'=0-f'\left(t\right)-\overset{n}{\underset{k=1}{\sum}}\left(\overset{\text{functions Product}}{\frac{f^{\left(k\right)}\left(t\right)}{k!}\cdot\left(x-t\right)^{k}}\right)'=\\
+= & -f'\left(t\right)-\overset{n}{\underset{k=1}{\sum}}\left(\frac{f^{\left(k+1\right)}\left(t\right)}{k!}\left(x-t\right)^{k}-k\cdot\frac{f^{\left(k\right)}\left(t\right)}{k!}\cdot\left(x-t\right)^{k-1}\right)=\\
+\overset{telescopic}{\underset{sum}{=}} & -f'\left(t\right)-\left(\frac{f^{\left(n+1\right)}\left(t\right)}{n!}\left(x-t\right)^{n}-1\cdot\frac{f^{\left(1\right)}\left(t\right)}{1!}\cdot\left(x-t\right)^{1-1}\right)=\\
+= & -f'\left(t\right)-\frac{f^{\left(n+1\right)}\left(t\right)}{n!}\left(x-t\right)^{n}+f'\left(t\right)=-\frac{f^{\left(n+1\right)}\left(t\right)}{n!}\left(x-t\right)^{n}+f'\left(t\right)-f'\left(t\right)\\
+= & -\frac{f^{\left(n+1\right)}\left(t\right)}{n!}\left(x-t\right)^{n}
+\end{align*}
+
+\end_inset
+
+יהא 
+\begin_inset Formula $0<p\in\mathbb{R}$
+\end_inset
+
+, ונגדיר כעת 
+\begin_inset Formula $h:\left[a,x\right]\rightarrow\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\forall t\in\left[a,x\right]\,h\left(t\right)=\left(x-t\right)^{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,x\right]$
+\end_inset
+
+וגזירה ב
+\begin_inset Formula $\left(a,x\right)$
+\end_inset
+
+ מאריתמטיקות, ובנוסף נגזרתה אינה מתאפסת לאורך תחום הגזירות שלה.
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $h,g$
+\end_inset
+
+ עומדות בתנאי משפט קושי, ולכן קיים 
+\begin_inset Formula $c\in\left(a,x\right)$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $\left(\spadesuit\right)\frac{g\left(x\right)-g\left(a\right)}{h\left(x\right)-h\left(a\right)}=\frac{g'\left(c\right)}{h'\left(c\right)}$
+\end_inset
+
+, כלומר מתקיים עבור 
+\begin_inset Formula $c$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+ & \frac{R_{n,f,a}\left(x\right)}{\left(x-a\right)^{p}}=\frac{0-R_{n,f,a}\left(x\right)}{\left(x-x\right)^{p}-\left(a-x\right)^{p}}\overset{\left(*\right)}{=}\frac{g\left(x\right)-g\left(a\right)}{h\left(x\right)-h\left(a\right)}=\\
+= & \frac{g\left(x\right)-g\left(a\right)}{h\left(x\right)-h\left(a\right)}\overset{\left(\spadesuit\right)}{=}\frac{g'\left(c\right)}{h'\left(c\right)}=\frac{\text{-\frac{f^{\left(n+1\right)}\left(c\right)}{n!}\left(x-c\right)^{n}}}{-p\left(x-c\right)^{p-1}}\Leftrightarrow\\
+\Leftrightarrow & R_{n,f,a}\left(x\right)=\frac{\text{\frac{f^{\left(n+1\right)}\left(c\right)}{n!}\left(x-c\right)^{n}}}{p\left(x-c\right)^{p-1}}\cdot\left(x-a\right)^{p}=\frac{f^{\left(n+1\right)}\left(c\right)}{n!\cdot p}\left(x-c\right)^{n-p+1}\left(x-a\right)^{p}\left(\clubsuit\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכאן, נציב ב
+\begin_inset Formula $\left(\clubsuit\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Description
+לגראנז' 
+\begin_inset Formula $p=n+1$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $c\in\left(a,x\right)$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $R_{n,f,a}\left(x\right)=\frac{f^{\left(n+1\right)}\left(c\right)}{\left(n+1\right)!}\left(x-a\right)^{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+קושי נציב 
+\begin_inset Formula $p=1$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $\hat{c}\in\left(a,x\right)$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $R_{n,f,a}\left(x\right)=\frac{f^{\left(n+1\right)}\left(\hat{c}\right)}{n!}\left(x-\hat{c}\right)^{n}\left(x-a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה: נשים לב ב
+\begin_inset Formula $c,\hat{c}$
+\end_inset
+
+ תלויים ב-
+\begin_inset Formula $x$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכאן נובעת הטענה הבאה:
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה הגזירה לפחות 
+\begin_inset Formula $n+1$
+\end_inset
+
+ פעמים, כך ש
+\begin_inset Formula $f^{\left(n\right)}$
+\end_inset
+
+ רציפה בקטע 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $f^{\left(n+1\right)}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ אזי קיימת 
+\begin_inset Formula $\theta\in\left(0,1\right)$
+\end_inset
+
+ אחת לפחות שעבורה 
+\begin_inset Formula $R_{n,f,a}\left(b\right)=f\left(b\right)-P_{n,f,a}\left(b\right)=\frac{f^{\left(n+1\right)}\left(a+\theta\left(b-a\right)\right)}{n!}\left(1-\theta\right)^{n}\left(b-a\right)^{n+1}$
+\end_inset
+
+.
+ הוכחה: ממשפט טיילור, לפי שארית קושי, קיים 
+\begin_inset Formula $\hat{c}\in\left(a,b\right)$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $R_{n,f,a}\left(b\right)=\frac{f^{\left(n+1\right)}\left(\hat{c}\right)}{n!}\left(b-\hat{c}\right)^{n}\left(b-a\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $a<\hat{c}<b\Leftrightarrow\frac{\hat{c}-a}{b-a}\in\left(0,1\right)$
+\end_inset
+
+ ולכן עבור 
+\begin_inset Formula $\theta=\frac{\hat{c}-a}{b-a}\in\left(0,1\right)$
+\end_inset
+
+ מתקיים
+\begin_inset Formula 
+\[
+b-\hat{c}=b=a-\theta\left(b-a\right)=\left(1-\theta\right)\left(b-a\right)\,,\hat{c}=a+\theta\left(b-a\right)
+\]
+
+\end_inset
+
+מכאן נציב בשארית הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל ונקבל 
+\begin_inset Formula $R_{n,f,a}\left(b\right)=\frac{f^{\left(n+1\right)}\left(\hat{c}\right)}{n!}\left(b-\hat{c}\right)^{n}\left(b-a\right)=\frac{f^{\left(n+1\right)}\left(a+\theta\left(b-a\right)\right)}{n!}\left(1-\theta\right)^{n}\left(b-a\right)^{n+1}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_body
+\end_document

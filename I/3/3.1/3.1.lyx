@@ -1,0 +1,1446 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+רציפות במידה שווה וליפשיציות
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Enumerate
+תהיינה 
+\begin_inset Formula $D\subseteq\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f:D\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ נאמר ש-
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\series bold
+רציפה במידה שווה )רבמ
+\begin_inset Quotes erd
+\end_inset
+
+ש( ב-
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\series default
+אם
+\begin_inset Quotes erd
+\end_inset
+
+ם מתקיים
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\,\exists\delta>0\,\mathbf{\forall x,\hat{x}\in D}\quad\left|\hat{x}-x\right|<\delta\Rightarrow\left|f\left(\hat{x}\right)-f\left(x\right)\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ההבדל בין רבמ״ש לרציפות: 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב-
+\begin_inset Formula $D$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם היא רציפה בכל 
+\begin_inset Formula $x\in D$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\mathbf{\forall x\in D}\,\forall\varepsilon>0\,\exists\delta>0\,\mathbf{\forall\hat{x}\in D}\quad\left|\hat{x}-x\right|<\delta\Rightarrow\left|f\left(\hat{x}\right)-f\left(x\right)\right|<\varepsilon$
+\end_inset
+
+, כלומר לכל 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $\delta$
+\end_inset
+
+ התלויה גם ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ וגם ב
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+, ואם 
+\begin_inset Formula $f$
+\end_inset
+
+ רבמ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $D$
+\end_inset
+
+, 
+\begin_inset Formula $\delta$
+\end_inset
+
+ תלויה רק ב
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+ליפשיציות
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה במקטע 
+\begin_inset Formula $I$
+\end_inset
+
+ וגזירה בכל נקודה פנימים של 
+\begin_inset Formula $I$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+אם קיים 
+\begin_inset Formula $0\leq M\in\mathbb{R}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\forall x_{1},x_{2}\in I\,\left|f\left(x_{1}\right)-f\left(x_{2}\right)\right|\leq M\left|x_{1}-x_{2}\right|$
+\end_inset
+
+,
+\begin_inset Newline newline
+\end_inset
+
+נאמר ש-
+\begin_inset Formula $f$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mathbf{M}$
+\end_inset
+
+
+\series bold
+-ליפשיצית
+\series default
+ 
+\end_layout
+
+\begin_layout Section*
+משפטים
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+רבמ
+\begin_inset Quotes erd
+\end_inset
+
+ש
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+רציפות:
+\series default
+ 
+\begin_inset Newline newline
+\end_inset
+
+יהי 
+\begin_inset Formula $I\subseteq\mathbb{R}$
+\end_inset
+
+, ותהי 
+\begin_inset Formula $f:I\rightarrow\mathbb{R}$
+\end_inset
+
+ רבמ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב-
+\begin_inset Formula $I$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $I$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+[הוכחה מיידית מההגדרות]
+\end_layout
+
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $D\subseteq\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f:D\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ איננה רבמ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב-
+\begin_inset Formula $D$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיים 
+\begin_inset Formula $\varepsilon_{0}>0$
+\end_inset
+
+ וקיימות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סדרות 
+\begin_inset Formula $\left(x_{n}\right)_{n=1}^{\infty},\left(\hat{x}_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ המקיימות את שלושת התנאים הבאים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall n\in\mathbb{N}\,x_{n},\hat{x}_{n}\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}\left(x_{n}-\hat{x}_{n}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall n\in\mathbb{N}\,\left|f\left(x_{n}\right)-f\left(\hat{x}_{n}\right)\right|\geq\varepsilon_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הוכחה 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ אינה רבמ
+\begin_inset Quotes erd
+\end_inset
+
+ש, היא מקיימת את השלילה של ההגדרה, קרי 
+\begin_inset Formula $\exists\varepsilon>0\,\forall\delta>0\,\exists x,\hat{x}\in D\quad\left|\hat{x}-x\right|<\delta\bigwedge\left|f\left(\hat{x}\right)-f\left(x\right)\right|\geq\varepsilon$
+\end_inset
+
+.
+ אזי בפרט לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\delta=\frac{1}{n}$
+\end_inset
+
+, קיימים 
+\begin_inset Formula $x_{n},\hat{x}_{n}$
+\end_inset
+
+ המקיימים 
+\begin_inset Formula $\left|\hat{x}_{n}-x_{n}\right|<\delta=\frac{1}{n}\bigwedge\left|f\left(\hat{x}\right)-f\left(x\right)\right|\geq\varepsilon$
+\end_inset
+
+.
+ ולכן מתקיים 
+\begin_inset Formula 
+\[
+\forall n\in\mathbb{N}\,\left|\hat{x}_{n}-x_{n}\right|<\delta=\frac{1}{n}\iff-\frac{1}{n}\leq\hat{x}_{n}-x_{n}\leq\frac{1}{n}
+\]
+
+\end_inset
+
+ וממשפט הכריך נקבל 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}\left(\hat{x}_{n}-x_{n}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ ניישם היינה על הכיוון
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+משפט קנטור 
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+, ותהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ פונקציה רציפה בכל 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ רמב
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הוכחה 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נניח בשלילה שהיא איננה רבמש
+\end_layout
+
+\begin_layout Itemize
+ממשפט )
+\numeric on
+2
+\numeric off
+( קיים 
+\begin_inset Formula $\varepsilon_{0}>0$
+\end_inset
+
+ וקיימות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סדרות 
+\begin_inset Formula $\left(x_{n}\right)_{n=1}^{\infty},\left(\hat{x}_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ המקיימות את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+א,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ב,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ג.
+ 
+\end_layout
+
+\begin_layout Itemize
+מ
+\numeric on
+2
+\numeric off
+א נסיק ש 
+\begin_inset Formula $\left(x_{n}\right)_{n=1}^{\infty},\left(\hat{x}_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ חסומות ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $a,b$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $\forall n\in\mathbb{N}\,a\leq x_{n},\hat{x}\leq b$
+\end_inset
+
+.
+ ולכן ממשפט בולצאנו וויירשטראס קיימות תת סדרות מתכנסת 
+\begin_inset Formula $\left(x_{n_{k}}\right)_{k=1}^{\infty},\left(\hat{x}_{n_{k}}\right)_{k=1}^{\infty}$
+\end_inset
+
+, ונסמן 
+\begin_inset Formula $\underset{k\rightarrow\infty}{\lim}x_{n_{k}}=x_{0}\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נשים לב שמתקיים 
+\begin_inset Formula $\forall k\in\mathbb{N}\,x_{n_{K}}=\hat{x}_{n_{k}}+\left(x_{n_{k}}-\hat{x}_{n_{k}}\right)$
+\end_inset
+
+ ומאש
+\begin_inset Quotes erd
+\end_inset
+
+ג נקבל 
+\begin_inset Formula $\underset{k\rightarrow\infty}{\lim}\hat{x}_{n_{k}}=\underset{k\rightarrow\infty}{\lim}x_{n_{k}}=x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מרציפות 
+\begin_inset Formula $f$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $\underset{k\rightarrow\infty}{\lim}\left(\hat{x}_{n_{k}}\right)=\underset{k\rightarrow\infty}{\lim}f\left(x_{n_{k}}\right)=x_{0}$
+\end_inset
+
+ ולכן בפרט קיים 
+\begin_inset Formula $K\in\mathbb{N}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $k>K$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|x_{n_{k}}-\hat{x}_{n_{k}}\right|<\varepsilon_{0}$
+\end_inset
+
+ בסתירה
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+אפיון היינה לקיום גבול של פונקציה בנקודה 
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+תהי 
+\begin_inset Formula $f:D\rightarrow\mathbb{R}$
+\end_inset
+
+ המוגדרת בסביבה מנוקבת של 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+.
+ אז יש ל
+\begin_inset Formula $f$
+\end_inset
+
+ גבול ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם לכל 
+\begin_inset Formula $\left(x_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרת היינה עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ ב-
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, הסדרה 
+\begin_inset Formula $\left(f\left(x_{n}\right)\right)_{n=1}^{\infty}$
+\end_inset
+
+ מתכנסת.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הוכחה נראה שקילות לאפיון היינה:
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ אם קיים הגבול 
+\begin_inset Formula $\underset{x\rightarrow x_{0}}{\lim}f\left(x\right)=L\in\mathbb{R}$
+\end_inset
+
+, לכל 
+\begin_inset Formula $\left(x_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרת היינה יתקיים 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}f\left(x_{n}\right)=L$
+\end_inset
+
+ בפרט, כלומר קיים הגבול הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל כנדרש.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ נגדיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ סדרות היינה 
+\begin_inset Formula $\tilde{x}_{n},\hat{x}_{n}$
+\end_inset
+
+, נסמן 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}\tilde{x}_{n}=L_{1},\,\underset{n\rightarrow\infty}{\lim}\hat{x}_{n}=L_{2}$
+\end_inset
+
+.
+ אזי מאינפי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הסדרה השזורה 
+\begin_inset Formula $\left(\tilde{x}_{1},\hat{x}_{1},\tilde{x}_{2},\hat{x}_{2},\dots,\tilde{x}_{n},\hat{x}_{n},\dots\right)$
+\end_inset
+
+ היא גם סדרת היינה, ולפי ההנחה הסדרה הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל מתכנסת )נסמן
+\begin_inset Formula $L$
+\end_inset
+
+( ולכן קבוצת הגבולות החלקיים שלה היא בדיוק 
+\begin_inset Formula $\left\{ L\right\} $
+\end_inset
+
+, כלומר 
+\begin_inset Formula $L_{1}=L=L_{2}$
+\end_inset
+
+ ולכן מאפיון היינה 
+\begin_inset Formula $\underset{x\rightarrow x_{0}}{\lim}f\left(x\right)=L$
+\end_inset
+
+ כנדרש
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+קריטריון קושי לקיום גבול של פונקציה בנקודה 
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+תהי 
+\begin_inset Formula $f:D\rightarrow\mathbb{R}$
+\end_inset
+
+ המוגדרת בסביבה מנוקבת של 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+אז יש ל
+\begin_inset Formula $f$
+\end_inset
+
+ גבול ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם מתקיים תנאי קושי לקיום גבול של פונקציה בנקודה:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\,\exists\delta>0\,\forall\tilde{x},\hat{x}\in D\quad\tilde{x},\hat{x}\in\left(x_{0}-\delta,x_{0}+\delta\right)\backslash\left\{ x_{0}\right\} \Rightarrow\left|f\left(\tilde{x}\right)-f\left(\hat{x}\right)\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הוכחה יהא 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ נתון.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נניח שקיים 
+\begin_inset Formula $\underset{x\rightarrow x_{0}}{\lim}f\left(x\right)\overset{def}{=}L\in\mathbb{R}$
+\end_inset
+
+.
+ אזי קיימת 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ שעבורה 
+\begin_inset Formula $\hat{x}\in\left(x_{0}-\delta,x_{0}+\delta\right)\backslash\left\{ x_{0}\right\} \,\left|f\left(x\right)-L\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+.
+ אזי בפרט עבור 
+\begin_inset Formula $\tilde{x},\hat{x}\in\left(x_{0}-\delta,x_{0}+\delta\right)$
+\end_inset
+
+ מתקיים כנדרש: 
+\begin_inset Formula 
+\[
+\left|f\left(\tilde{x}\right)-f\left(\hat{x}\right)\right|=\left|f\left(\tilde{x}\right)-L+L-f\left(\hat{x}\right)\right|\overset{\triangle}{\leq}\left|f\left(\tilde{x}\right)-L\right|+\left|L-f\left(\hat{x}\right)\right|=\left|f\left(\tilde{x}\right)-L\right|+\left|f\left(\hat{x}\right)-L\right|<2\frac{\varepsilon}{2}=\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+בערה ההבדל מרבמש הוא הסביבה המנוקבת!
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ נגדיר סדרת היינה 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ ל
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f$
+\end_inset
+
+, אזי עבור 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ המתאימה ל
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ הנתון לפי תנאי קושי, ונקבל שקיים 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ שמקיים לכל 
+\begin_inset Formula $n>N$
+\end_inset
+
+ 
+\begin_inset Formula $0<\left|x_{n}-x_{0}\right|<\delta$
+\end_inset
+
+, ולכן בפרט לכל 
+\begin_inset Formula $N<m,n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $0<\left|x_{n}-x_{m}\right|<\delta$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|f\left(x_{n}\right)-f\left(x_{m}\right)\right|<\delta$
+\end_inset
+
+, אזי 
+\begin_inset Formula $f\left(x_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ היא סדרת קושי ועל כן מתקיים 
+\begin_inset Formula $\underset{x\rightarrow x_{0}}{\lim}f\left(x\right)=f\left(x_{0}\right)$
+\end_inset
+
+כנדרש.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+רציפות בקטע פתוח + גבולות בקצוות 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ רבמש בקטע
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+, ותהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ פונקציה רציפה בכל 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ רמב
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיימים במובן הצר הגבולות החד צדדיים 
+\begin_inset Formula $\underset{x\rightarrow a^{+}}{\lim}f\left(x\right),\underset{x\rightarrow b^{-}}{\lim}f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הוכחה ראשית נשים לב שזוהי גרסה למשפט קנטור על קטע פתוח.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ נניח שהגבולות קיימים.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נגדיר 
+\begin_inset Formula $\hat{f}:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+, כך ש
+\begin_inset Formula $\forall x\in\left[a,b\right]\,\hat{f}\left(x\right)=\begin{cases}
+\underset{x\rightarrow a^{+}}{\lim}f\left(x\right) & x=a\\
+f\left(x\right) & x\in\left(a,b\right)\\
+\underset{x\rightarrow b^{-}}{\lim}f\left(x\right) & x=b
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+ממשפט קנטור 
+\begin_inset Formula $\hat{f}$
+\end_inset
+
+ רבמש ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ובפרט לכן רבמש ב-
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ משום ש
+\begin_inset Formula $\left(a,b\right)\subseteq\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\hat{f},f$
+\end_inset
+
+ מתלכדות ב
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, לכן 
+\begin_inset Formula $f$
+\end_inset
+
+ רבמ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נניח ש-
+\begin_inset Formula $f$
+\end_inset
+
+ רבמש ב
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נשים לב להערה בהוכחה על קושי, אזי לכל 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ נתאים 
+\begin_inset Formula $\delta$
+\end_inset
+
+ בהגדרת רבמש, אזי תנאי קושי מתקיים ולכן יש גבולות ב
+\begin_inset Formula $\left\{ a,b\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+מסקנה)!( הפונקציה הרציפה 
+\begin_inset Formula $f:\left(a,b\right)\rightarrow\mathbb{R}$
+\end_inset
+
+ רבמ
+\begin_inset Quotes erd
+\end_inset
+
+ש בקטע הפתוח 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיימת לה הרחבה רציפה לקטע הסגור 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\series bold
+פונקציית הנגזרת 
+\begin_inset Formula $f'$
+\end_inset
+
+ חסומה אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $f$
+\end_inset
+
+ ליפשיצית
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה במקטע 
+\begin_inset Formula $I$
+\end_inset
+
+ וגזירה בכל נקודה פנימית של 
+\begin_inset Formula $I$
+\end_inset
+
+, ובנוסף 
+\begin_inset Formula $f'$
+\end_inset
+
+ חסומה ב
+\begin_inset Formula $I$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ היא ליפשיצית.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+הוכחה
+\series default
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $f'$
+\end_inset
+
+ חסומה ועל כן קיים 
+\begin_inset Formula $0\leq M\in\mathbb{R}$
+\end_inset
+
+ כך שמתקיים 
+\begin_inset Formula $\forall x\in I\,\left|f'\left(x\right)\right|\leq M$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+יהיו 
+\begin_inset Formula $x_{1}<x_{2}\in I$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה רציפה ב
+\begin_inset Formula $I$
+\end_inset
+
+ ולכן רציפה ב
+\begin_inset Formula $\left[x_{1},x_{2}\right]\subseteq I$
+\end_inset
+
+, וגזירה בפרט ב
+\begin_inset Formula $\left(x_{1},x_{2}\right)\subseteq I$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+לכן מקיימת בקטע את תנאי משפט לגראנז, אזי קיים 
+\begin_inset Formula $c\in\left(x_{1},x_{2}\right)$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $\left|f'\left(c\right)\right|=\frac{\left|f\left(x_{2}\right)-f\left(x_{1}\right)\right|}{\left|x_{2}-x_{1}\right|}\iff f'\left(c\right)=\frac{f\left(x_{2}\right)-f\left(x_{1}\right)}{x_{2}-x_{1}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ובתוספת של הנתון נקבל שמתקיים 
+\begin_inset Formula $\left|f\left(x_{2}\right)-f\left(x_{1}\right)\right|\leq M\left|x_{2}-x_{1}\right|$
+\end_inset
+
+ ועל כן ליפשיצית כנדרש.
+\end_layout
+
+\end_body
+\end_document
