@@ -1,0 +1,269 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Style Standard
+	Category              MainText
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Left
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+	# FIXME This ought to be set dynamically.
+	HTMLStyle
+		div.standard {
+			margin-bottom: 2ex;
+		}
+	EndHTMLStyle
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "Arial Hebrew Scholar"
+\font_typewriter "default" "Arial Black"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\numeric on
+3.1.7
+\numeric off
+ 
+\series bold
+קריטריון קושי לקיום גבול של פונקציה בנקודה 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+קריטריון קושי לקיום גבול של פונקציה בנקודה 
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:D\rightarrow\mathbb{R}$
+\end_inset
+
+ המוגדרת בסביבה מנוקבת של 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+אז יש ל
+\begin_inset Formula $f$
+\end_inset
+
+ גבול ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם מתקיים תנאי קושי לקיום גבול של פונקציה בנקודה:
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\,\exists\delta>0\,\forall\tilde{x},\hat{x}\in D\quad\tilde{x},\hat{x}\in\left(x_{0}-\delta,x_{0}+\delta\right)\backslash\left\{ x_{0}\right\} \Rightarrow\left|f\left(\tilde{x}\right)-f\left(\hat{x}\right)\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הוכחה יהא 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ נתון.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נניח שקיים 
+\begin_inset Formula $\underset{x\rightarrow x_{0}}{\lim}f\left(x\right)\overset{def}{=}L\in\mathbb{R}$
+\end_inset
+
+.
+ אזי קיימת 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ שעבורה 
+\begin_inset Formula $\hat{x}\in\left(x_{0}-\delta,x_{0}+\delta\right)\backslash\left\{ x_{0}\right\} \,\left|f\left(x\right)-L\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+.
+ אזי בפרט עבור 
+\begin_inset Formula $\tilde{x},\hat{x}\in\left(x_{0}-\delta,x_{0}+\delta\right)$
+\end_inset
+
+ מתקיים כנדרש: 
+\begin_inset Formula 
+\[
+\left|f\left(\tilde{x}\right)-f\left(\hat{x}\right)\right|=\left|f\left(\tilde{x}\right)-L+L-f\left(\hat{x}\right)\right|\overset{\triangle}{\leq}\left|f\left(\tilde{x}\right)-L\right|+\left|L-f\left(\hat{x}\right)\right|=\left|f\left(\tilde{x}\right)-L\right|+\left|f\left(\hat{x}\right)-L\right|<2\frac{\varepsilon}{2}=\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הערה ההבדל מרבמש הוא הסביבה המנוקבת!
+\end_layout
+
+\end_deeper
+\begin_layout Description
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ נגדיר סדרת היינה 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ ל
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f$
+\end_inset
+
+, אזי עבור 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ המתאימה ל
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ הנתון לפי תנאי קושי, ונקבל שקיים 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ שמקיים לכל 
+\begin_inset Formula $n>N$
+\end_inset
+
+ 
+\begin_inset Formula $0<\left|x_{n}-x_{0}\right|<\delta$
+\end_inset
+
+, ולכן בפרט לכל 
+\begin_inset Formula $N<m,n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $0<\left|x_{n}-x_{m}\right|<\delta$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\left|f\left(x_{n}\right)-f\left(x_{m}\right)\right|<\delta$
+\end_inset
+
+, אזי 
+\begin_inset Formula $f\left(x_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ היא סדרת קושי ועל כן מתקיים 
+\begin_inset Formula $\underset{x\rightarrow x_{0}}{\lim}f\left(x\right)=f\left(x_{0}\right)$
+\end_inset
+
+כנדרש.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

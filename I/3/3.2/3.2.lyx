@@ -1,0 +1,708 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\numeric on
+3.2
+\numeric off
+ גבול עליון ותחתון של סדרה
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+1
+\numeric off
+.
+ סדרות הסופרמה והאינפימה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה חסומה.
+ 
+\begin_inset Newline newline
+\end_inset
+
+נגדיר את 
+\begin_inset Formula $\left(u_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+, סדרת הסופרמה של 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+, המוגדרת 
+\begin_inset Formula $\forall n\in\mathbb{N}\,u_{n}=\sup\left\{ a_{k}\mid k\geq n\right\} $
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ונגדיר את 
+\begin_inset Formula $\left(\ell_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+, סדרת האינפימה של 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty},$
+\end_inset
+
+, המוגדרת 
+\begin_inset Formula $\forall n\in\mathbb{N}\,\ell_{n}=\inf\left\{ a_{k}\mid k\geq n\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+2
+\numeric off
+.
+ גבול עליון ותחתון של סדרה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה חסומה.
+ 
+\begin_inset Newline newline
+\end_inset
+
+המספר 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}u_{n}$
+\end_inset
+
+ נקרא 
+\series bold
+הגבול העליון
+\series default
+ של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ ומסומן 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}a_{n}$
+\end_inset
+
+ או 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\overline{\lim}}a_{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+המספר 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}\ell_{n}$
+\end_inset
+
+ נקרא 
+\series bold
+הגבול העליון
+\series default
+ של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ ומסומן 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\liminf}a_{n}$
+\end_inset
+
+ או 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\underline{\lim}}a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+3
+\numeric off
+.
+ גבול עליון ותחתון במובן הרחב
+\end_layout
+
+\begin_layout Standard
+תקף גם לסדרות לא חסומות.
+\begin_inset Newline newline
+\end_inset
+
+נגדיר:
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}a_{n}=\infty$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ לא חסומה מלעיל.
+\begin_inset Newline newline
+\end_inset
+
+נגדיר:
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}a_{n}=-\infty$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}a_{n}=-\infty$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+נגדיר
+\begin_inset Formula $\underset{n\rightarrow\infty}{\liminf}a_{n}=-\infty$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ לא חסומה מלרע
+\begin_inset Newline newline
+\end_inset
+
+נגדיר 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\liminf}a_{n}=\infty$
+\end_inset
+
+אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}a_{n}=\infty$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כלומר לסדרה 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ יש גבול במובן הרחב אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}a_{n}=\underset{n\rightarrow\infty}{\liminf}a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפטים
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+1
+\numeric off
+.
+ סדרות הסופרמה והאינפימה של סדרה חסומה מונוטוניות וחסומות )+קיום(
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה חסומה.
+ 
+\begin_inset Newline newline
+\end_inset
+
+אזי סדרת האינפימה 
+\begin_inset Formula $u_{n}$
+\end_inset
+
+ מונוטונית יורדת וחסומה מלעיל, וסדרת האינפימה 
+\begin_inset Formula $\ell_{n}$
+\end_inset
+
+ מונוטונית עולה וחסומה מלרע.
+\end_layout
+
+\begin_layout Paragraph*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+באינפי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוכחנו שבהינתן 
+\begin_inset Formula $\phi\ne A\subseteq B$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\inf B\leq\inf A\bigwedge\sup B\geq\sup A$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $A_{n}=\left\{ a_{k}\mid k\geq n\right\} $
+\end_inset
+
+, ונשים לב שמתקיים 
+\begin_inset Formula $\forall n\in\mathbb{N}\,A_{n+1}\subseteq A_{n}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+בנוסף מתקיים 
+\begin_inset Formula $\forall n\in\mathbb{N}\,u_{n}=\sup A_{n}\bigwedge\ell_{n}=\inf A_{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לכן 
+\begin_inset Formula $\ell_{n}\leq\ell_{n+1}\bigwedge u_{n}\geq u_{n+1}$
+\end_inset
+
+ ולכן הסופרמה מונוטונית יורדת והאינפימה מונוטונית עולה.
+\begin_inset Newline newline
+\end_inset
+
+חסימות נובעת ממשפט הירושה שכן 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ חסומה )מלרע ומלעיל(
+\begin_inset Newline newline
+\end_inset
+
+בפרט לכן הסדרות הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל חסומות שתיהן מלרע ומלעיל ומכך מתכנסות שתיהם, ולכן 
+\series bold
+בסדרה חסומה תמיד קיימים 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}a_{n},\underset{n\rightarrow\infty}{\liminf}a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+2
+\numeric off
+.
+ הגבול העליון הוא הגבול החלקי הגדול ביותר והתחתון הוא הקטן ביותר בסדרה חסומה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה חסומה.
+ 
+\begin_inset Newline newline
+\end_inset
+
+אזי 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}a_{n},\underset{n\rightarrow\infty}{\liminf}a_{n}$
+\end_inset
+
+ הם הגבול החלקי הקטן והגדול ביותר של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+, בהתאמה.
+\end_layout
+
+\begin_layout Paragraph*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+)זהה לגבול עליון או תחתון עם היפוך הסימנים, נוכיח על עליון(
+\begin_inset Newline newline
+\end_inset
+
+נסמן 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}a_{n}=\lambda\in\mathbb{R}$
+\end_inset
+
+, ויהי 
+\begin_inset Formula $\tilde{\lambda}$
+\end_inset
+
+גבול חלקי כלשהו של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+ אז קיימת תת סדרה 
+\begin_inset Formula $a_{n_{k}}$
+\end_inset
+
+ המתכנסת ל
+\begin_inset Formula $\tilde{\lambda}$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $\forall k\in\mathbb{N}\,a_{n_{k}}\leq u_{n_{K}}$
+\end_inset
+
+ ולכן מעקרון הסדר בגבולות 
+\begin_inset Formula $\tilde{\lambda}\leq\lambda$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נבנה בצורה רקורסיבית את 
+\begin_inset Formula $u_{n}$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ ונקבל ש
+\begin_inset Formula $\lambda$
+\end_inset
+
+ הוא הגבול שלה, ולכן גבול חלקי מקסימלי של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph*
+הערה
+\end_layout
+
+\begin_layout Standard
+מבולצאנו ויירשטראס, 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+חסומה ולכן קיימת לה תת סדרה מתכנסת, ובנוסף לכן קבוצת הגבולות החלקיים 
+\begin_inset Formula $S_{a}$
+\end_inset
+
+ חסומה ומקיימת ממשפט החסם העליון )והתחתון( ועקרון הסדר ש- 
+\begin_inset Formula 
+\[
+\inf\left(S_{a}\right)\overset{order}{=}\min\left(S_{a}\right)=\underset{n\rightarrow\infty}{\liminf}a_{n}\bigwedge\sup\left(S_{a}\right)\overset{order}{=}\max\left(S_{a}\right)=\underset{n\rightarrow\infty}{\limsup}a_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+3
+\numeric off
+.
+ 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ מתכנסת אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}a_{n}=\underset{n\rightarrow\infty}{\liminf}a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה זה יתקיים 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}a_{n}=\underset{n\rightarrow\infty}{\lim}a_{n}=\underset{n\rightarrow\infty}{\liminf}a_{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+הוכחה
+\series default
+ נובעת ישירות מהמשפט על סדרה חסומה מתכנסת אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ יש לה גבול יחיד
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+4
+\numeric off
+.
+ אפיון הגבול העליון )התחתון( של סדרה חסומה באמצעות סביבות
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ סדרה חסומה, 
+\begin_inset Formula $\lambda\in\mathbb{R}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אזי 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}a_{n}=\lambda$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $a_{n}>\lambda-\varepsilon$
+\end_inset
+
+ באופן שכיח וגם 
+\begin_inset Formula $a_{n}<\lambda+\varepsilon$
+\end_inset
+
+ מתקיים כמעט תמיד
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+5
+\numeric off
+.
+ עקרון הסדר בגבולות עליונים של סדרות חסומות
+\end_layout
+
+\begin_layout Standard
+יהיו הסדרות החסומות 
+\begin_inset Formula $a_{n},b_{n}$
+\end_inset
+
+.
+ אזי אם מתקיים 
+\begin_inset Formula $a_{n}\leq b_{n}$
+\end_inset
+
+ כמעט לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}a_{n}\leq\underset{n\rightarrow\infty}{\limsup}b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כנ
+\begin_inset Quotes erd
+\end_inset
+
+ל לגבי סדרת האינפימה ו
+\begin_inset Formula $\liminf$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

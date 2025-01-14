@@ -1,0 +1,1416 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Style Standard
+	Category              MainText
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Left
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+	# FIXME This ought to be set dynamically.
+	HTMLStyle
+		div.standard {
+			margin-bottom: 2ex;
+		}
+	EndHTMLStyle
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "Arial Hebrew Scholar"
+\font_typewriter "default" "Arial Black"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\numeric on
+9.2
+\numeric off
+ טורים אי-שליליים והתכנסותם
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Standard
+הטור 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ יקרא 
+\series bold
+אי שלילי 
+\series default
+)חיובי( אם
+\begin_inset Quotes erd
+\end_inset
+
+ם מתקיים 
+\begin_inset Formula $\left(\forall n\in\mathbb{N}\,a_{n}>0\right)\forall n\in\mathbb{N}\,a_{n}\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפטים על טורים א
+\begin_inset Quotes erd
+\end_inset
+
+ש
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+1
+\numeric off
+.
+ סדרת הסכומים החלקיים של טור א
+\begin_inset Quotes erd
+\end_inset
+
+ש מונוטונית עולה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה נתונה ותהי 
+\begin_inset Formula $\left(S_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+סדרת הסכומים החלקיים שלה.
+ 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ אי שלילי, אזי 
+\begin_inset Formula $\left(S_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+ מונוטונית עולה
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\left(S_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+ מונוטונית עולה, אזי 
+\begin_inset Formula $\underset{n}{\sum}a_{n+1}$
+\end_inset
+
+ טור ה
+\numeric on
+1-
+\numeric off
+זנב של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ אי שלילי.
+\end_layout
+
+\begin_layout Paragraph*
+
+\series bold
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נובע ישירות מכך שמתקיים 
+\begin_inset Formula $\forall k\in\mathbb{N}\,S_{k+1}-S_{k}=a_{k+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+2
+\numeric off
+.
+ טור א
+\begin_inset Quotes erd
+\end_inset
+
+ש מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם סדרת הסכומים החלקיים שלו חסומה
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ אם הטור א
+\begin_inset Quotes erd
+\end_inset
+
+ש ומתכנס, אזי סדרת הסכומים החלקיים מתכנסת, ובפרט לכן חסומה
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ הטור אי שלילי ולכן ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+ 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ מונוטונית עולה, ומשום שהיא חסומה היא בפרט מתכנסת, לכן הטור מתכנס.
+\end_layout
+
+\begin_layout Section*
+מבחני התכנסות לטורים א
+\begin_inset Quotes erd
+\end_inset
+
+ש
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+1
+\numeric off
+.
+ מבחן ההשוואה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty},\left(b_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+סדרות המקיימות 
+\begin_inset Formula $\forall N\in\mathbb{N}\,0\leq a_{n}\leq b_{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אזי אם 
+\begin_inset Formula $\underset{n}{\sum}b_{n}$
+\end_inset
+
+ מתכנס, גם 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס ומתקיים 
+\begin_inset Formula $\underset{n}{\sum}b_{n}\leq\underset{n}{\sum}a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph*
+
+\series bold
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר סדרות סכומים חלקיים 
+\begin_inset Formula $\forall k\in\mathbb{N}\quad S_{k}=\stackrel[n=1]{k}{\sum}a_{n},T_{k}=\stackrel[n=1]{k}{\sum}b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{k},T_{k}$
+\end_inset
+
+ סס
+\begin_inset Quotes erd
+\end_inset
+
+ח של סדרות אי שליליות ולכן מונוטוניות עולות, ובנוסף אי שליליות, כלומר 
+\begin_inset Formula $\forall k\in\mathbb{N}\,0\leq S_{k}\leq T_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אם
+\begin_inset Formula $\underset{n}{\sum}b_{n}$
+\end_inset
+
+מתכנס, מתקיים 
+\begin_inset Formula $\underset{k\rightarrow\infty}{\lim}T_{k}=\stackrel[n=1]{\infty}{\sum}b_{n}=L\in\mathbb{R}$
+\end_inset
+
+, ולכן מתקיים 
+\begin_inset Formula $\forall k\in\mathbb{N}\,0\leq S_{k}\leq L$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ חסומה
+\end_layout
+
+\begin_layout Standard
+ממשפט על התכנסות טורים אי שליליים שהוכח בהרצאה, טור א
+\begin_inset Quotes erd
+\end_inset
+
+ש מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם הסס
+\begin_inset Quotes erd
+\end_inset
+
+ח שלו חסומה, ועל כן 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס ומתקיים 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}a_{n}\leq\stackrel[n=1]{\infty}{\sum}b_{n}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+2
+\numeric off
+.מבחן ההשוואה כמעט תמיד
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty},\left(b_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרות המקיימות 
+\begin_inset Formula $0\leq a_{n}\leq b_{n}$
+\end_inset
+
+ כמעט תמיד
+\end_layout
+
+\begin_layout Standard
+אזי אם 
+\begin_inset Formula $\underset{n}{\sum}b_{n}$
+\end_inset
+
+ מתכנס, גם 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס ומתקיים 
+\begin_inset Formula $\underset{n}{\sum}b_{n}\leq\underset{n}{\sum}a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph*
+
+\series bold
+הוכחה
+\end_layout
+
+\begin_layout Standard
+מהנתון נסיק שקיים 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ שמקיים 
+\begin_inset Formula $\forall n>N\,0\leq a_{n}\leq b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר סדרות סכומים חלקיים 
+\begin_inset Formula $\forall k\in\mathbb{N}\quad S_{k}=\stackrel[n=1]{k}{\sum}a_{n},T_{k}=\stackrel[n=1]{k}{\sum}b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\underset{n}{\sum}b_{n}$
+\end_inset
+
+ מתכנס, גם ה-
+\begin_inset Formula $N$
+\end_inset
+
+ זנב שלנו 
+\begin_inset Formula $\underset{n}{\sum}b_{n+N}$
+\end_inset
+
+ מתכנס, אזי ממבחן השוואה 
+\begin_inset Formula $\underset{n}{\sum}a_{n+N}$
+\end_inset
+
+ מתכנס וזה מתקיים אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס, כנדרש.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+3
+\numeric off
+.
+ מבחן ההשוואה באמצעות מנה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\underset{n}{\sum}b_{n},\underset{n}{\sum}a_{n}$
+\end_inset
+
+ טורים 
+\series bold
+אי שליליים
+\series default
+ כך ש
+\begin_inset Formula $b_{n}\ne0$
+\end_inset
+
+ כמעט תמיד.
+\end_layout
+
+\begin_layout Standard
+אם קיימים 
+\begin_inset Formula $0<u,v\in\mathbb{R}$
+\end_inset
+
+ כך שמתקיים 
+\begin_inset Formula $u\leq\frac{a_{n}}{b_{n}}\leq v$
+\end_inset
+
+ כמעט תמיד, אזי 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\underset{n}{\sum}b_{n}$
+\end_inset
+
+ מתכנס.
+\end_layout
+
+\begin_layout Paragraph*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+מההנחה נסיק שמתקיים כמעט תמיד 
+\begin_inset Formula $0<u\cdot b_{n}\leq a_{n}\leq v\cdot b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי נוכיח את 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ממבחן ההשוואה + אריתמטיקה של טורים על אי השוויון 
+\begin_inset Formula $0<a_{n}\leq v\cdot b_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואת 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ ממבחן ההשוואה + אריתמטיקה של טורים על אי השוויון 
+\begin_inset Formula $0<u\cdot b_{n}\leq a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+4
+\numeric off
+.
+ מבחן ההשוואה הגבולי
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\underset{n}{\sum}b_{n},\underset{n}{\sum}a_{n}$
+\end_inset
+
+ טורים 
+\series bold
+אי שליליים
+\series default
+ כך ש
+\begin_inset Formula $b_{n}\ne0$
+\end_inset
+
+ כמעט תמיד.
+\end_layout
+
+\begin_layout Standard
+אם קיים 
+\begin_inset Formula $0<L\in\mathbb{R}$
+\end_inset
+
+ כך שמתקיים 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}\frac{a_{n}}{b_{n}}=L$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\underset{n}{\sum}b_{n}$
+\end_inset
+
+ מתכנס.
+\end_layout
+
+\begin_layout Paragraph*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+אם הגבול קיים, קיים 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $\forall n\in\mathbb{N}\,0<\frac{L}{2}\leq\frac{a_{n}}{b_{n}}\leq\frac{3L}{2}$
+\end_inset
+
+ ולכן מתקיימים תנאי מבחן ההשואה באמצעות מנה.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+5
+\numeric off
+.
+ מבחן ההשוואה באמצעות מנות של עוקבים
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\underset{n}{\sum}b_{n},\underset{n}{\sum}a_{n}$
+\end_inset
+
+ טורים 
+\series bold
+אי שליליים
+\series default
+ כך ש
+\begin_inset Formula $a_{n},b_{n}\ne0$
+\end_inset
+
+ כמעט תמיד.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\frac{a_{n+1}}{a_{n}}\leq\frac{b_{n+1}}{b_{n}}$
+\end_inset
+
+ כמעט תמיד ו
+\begin_inset Formula $\underset{n}{\sum}b_{n}$
+\end_inset
+
+ מתכנס, אזי 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס
+\end_layout
+
+\begin_layout Paragraph*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהא 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ שעבורו מתקיים הנתון לכל 
+\begin_inset Formula $n>N$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+נראה באינדוקציה שמתקיים 
+\begin_inset Formula $\forall k\in\mathbb{N}\quad0<\frac{a_{N+k}}{a_{N+1}}\leq\frac{b_{N+k}}{b_{N+1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכאן נקבל 
+\begin_inset Formula $\forall k\in\mathbb{N}\quad0<\frac{b_{N+1}}{a_{N+1}}\leq\frac{b_{N+k}}{a_{N+k}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואז נגדיר 
+\begin_inset Formula $v:=\frac{b_{N+1}}{a_{N+1}}$
+\end_inset
+
+ ולכן ממבחן ההשוואה באמצעות מנה מתקיים הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל כנדרש.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+6
+\numeric off
+.
+ מבחן ד'למבר
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ טור אי שלילי כך ש
+\begin_inset Formula $a_{n}\ne0$
+\end_inset
+
+ כמעט תמיד.
+\end_layout
+
+\begin_layout Enumerate
+אם קיים 
+\begin_inset Formula $q\in\left(0,1\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\frac{a_{n+1}}{a_{n}}\leq q$
+\end_inset
+
+ כמעט תמיד, 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס
+\end_layout
+
+\begin_layout Enumerate
+אם קיים 
+\begin_inset Formula $q\geq1$
+\end_inset
+
+ כך ש
+\begin_inset Formula $q\leq\frac{a_{n+1}}{a_{n}}$
+\end_inset
+
+ כמעט תמיד, 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתבדר
+\end_layout
+
+\begin_layout Paragraph*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+נסמן 
+\begin_inset Formula $\forall n\in\mathbb{N}\,b_{n}=q^{n}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}b_{n}=0$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\forall n\in\mathbb{N}\,b_{n}\ne0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לכן מתקיים כמעט תמיד 
+\begin_inset Formula $0<\frac{a_{n+1}}{a_{n}}\leq q\frac{q^{n}}{q^{n-1}}=\frac{b_{n+1}}{b_{n}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+בנוסף הוכחנו שטור סדרה הנדסית שקבוע הכפל בה מקיים 
+\begin_inset Formula $q\in\left(0,1\right)$
+\end_inset
+
+ מתכנס ולכן 
+\begin_inset Formula $\underset{n}{\sum}b_{n}$
+\end_inset
+
+ מתכנס.
+\begin_inset Newline newline
+\end_inset
+
+ על כן ממבחן ההשוואה לפי מנות של עוקבים 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+מתכנס
+\end_layout
+
+\begin_layout Enumerate
+אם מתקיים 
+\begin_inset Formula $1\leq q\leq\frac{a_{n+1}}{a_{n}}$
+\end_inset
+
+ כמעט תמיד, קיים 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\forall n\in\mathbb{N}\,1\leq q\leq\frac{a_{n+N+1}}{a_{n+N}}\iff a_{n+N}\leq a_{n+N+1}$
+\end_inset
+
+ ולכן יש לסדרה האי שלילית 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ זנב מונוטוני עולה ועל כן אינה אפסה, אזי לא מתכנסת.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+7
+\numeric off
+.
+ מבחן ד'למבר הגבולי
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ טור אי שלילי כך ש
+\begin_inset Formula $a_{n}\ne0$
+\end_inset
+
+ כמעט תמיד.
+ נניח שקיים הגבול 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}\frac{a_{n+1}}{a_{n}}=L\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L\in\left[0,1\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L>1$
+\end_inset
+
+ 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתבדר
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L=1$
+\end_inset
+
+ לא נוכל להסיק כלום על התכנסות הטור
+\end_layout
+
+\begin_layout Paragraph*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L\in\left[0,1\right)$
+\end_inset
+
+, אזי נקבע 
+\begin_inset Formula $q\in\left(0,L\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מהנתון נסיק שקיים 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ שמקיים 
+\begin_inset Formula $\forall n\in\mathbb{N}\quad\left|\frac{a_{n+N+1}}{a_{n+N}}-L\right|<q-L$
+\end_inset
+
+, ולכן מתקיים 
+\begin_inset Formula $0<\frac{a_{n+1}}{a_{n}}<q-L+L=q<1$
+\end_inset
+
+ כמעט תמיד.
+\begin_inset Newline newline
+\end_inset
+
+ממבחן דלמבר הטור מתכנס.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L>1$
+\end_inset
+
+, אזי נקבע 
+\begin_inset Formula $q\in\left(1,L\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+מהנתון נסיק שקיים 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ שמקיים 
+\begin_inset Formula $\forall n\in\mathbb{N}\quad\left|\frac{a_{n+N+1}}{a_{n+N}}-L\right|<L-q$
+\end_inset
+
+, ולכן מתקיים 
+\begin_inset Formula $\frac{a_{n+1}}{a_{n}}>-\left(L-q\right)+L=q>1$
+\end_inset
+
+ כמעט תמיד
+\begin_inset Newline newline
+\end_inset
+
+ממבחן דלמבר הטור מתבדר.
+\end_layout
+
+\begin_layout Enumerate
+נראה דוגמה שבה הטור מתכנס ועוד דוגמה בה הוא מתבדר )נגיד 
+\begin_inset Formula $\underset{n}{\sum}\frac{1}{n},\underset{n}{\sum}\frac{1}{n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+8
+\numeric off
+.
+ מבחן השורש של קושי להתכנסות טורים אי שליליים
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ טור א
+\begin_inset Quotes erd
+\end_inset
+
+ש.
+\end_layout
+
+\begin_layout Enumerate
+אם קיים 
+\begin_inset Formula $q\in\left(0,1\right)$
+\end_inset
+
+ כך שמתקיים כמעט תמיד 
+\begin_inset Formula $\sqrt[n]{a_{n}}\leq q$
+\end_inset
+
+, הטור מתכנס
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\sqrt[n]{a_{n}}\geq1$
+\end_inset
+
+ באופן שכיח, הטור מתבדר.
+\end_layout
+
+\begin_layout Paragraph*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+נשים לב שמתקיים כמעט תמיד 
+\begin_inset Formula $\sqrt[n]{a_{n}}\leq q$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם מתקיים כמעט תמיד 
+\begin_inset Formula $0\leq a_{n}\leq q^{n}$
+\end_inset
+
+, והרי 
+\begin_inset Formula $q\in\left(0,1\right)$
+\end_inset
+
+ ולכן הטור 
+\begin_inset Formula $\underset{n}{\sum}q^{n}$
+\end_inset
+
+מתכנס
+\begin_inset Newline newline
+\end_inset
+
+ממבחן השוואה נקבל שלכן 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס גם הוא.
+\end_layout
+
+\begin_layout Enumerate
+אם מתקיים כמעט תמיד 
+\begin_inset Formula $\sqrt[n]{a_{n}}\geq1$
+\end_inset
+
+, אזי בפרט מתקיים כמעט תמיד 
+\begin_inset Formula $a_{n}\geq1$
+\end_inset
+
+.
+ והרי הטור 
+\begin_inset Formula $\underset{n}{\sum}1$
+\end_inset
+
+ מתבדר לאינסוף.
+\begin_inset Newline newline
+\end_inset
+
+לכן ממבחן ההשוואה הטור מתבדר גם הוא.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+9
+\numeric off
+.
+ מבחן השורש הגבולי של קושי להתכנסות טורים אי שליליים
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ טור א
+\begin_inset Quotes erd
+\end_inset
+
+ש.
+ נניח שקיים הגבול העליון 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}\sqrt[n]{a_{n}}=L\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L\in\left[0,1\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L>1$
+\end_inset
+
+ 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתבדר
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L=1$
+\end_inset
+
+ לא נוכל להסיק כלום על התכנסות הטור
+\end_layout
+
+\begin_layout Paragraph*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+נסתכל על 
+\begin_inset Formula $u_{n}$
+\end_inset
+
+ סדרת הסופרמה של 
+\begin_inset Formula $\sqrt[n]{a_{n}}$
+\end_inset
+
+.
+ אזי מתקיים מהגדרתה 
+\begin_inset Formula $\forall n\in\mathbb{N}\,\sqrt[n]{a_{n}}\leq u_{n}\iff a_{n}\leq\left(u_{n}\right)^{n}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+משום שהגבול העליון של 
+\begin_inset Formula $\sqrt[n]{a_{n}}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $L\in\left[0,1\right)$
+\end_inset
+
+, מתקיים באופן שכיח עבור
+\begin_inset Formula $\varepsilon=\frac{1-L}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n}<\left(\frac{L+1}{2}\right)^{n}<1\iff\sqrt[n]{a_{n}}<L+\varepsilon=L+\frac{1-L}{2}=\frac{L+1}{2}<1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+והרי 
+\begin_inset Formula $L\in\left[0,1\right)\Rightarrow\frac{L+1}{2}\in\left(0,1\right)\forall n\in\mathbb{N}\,\left(\frac{L+1}{2}\right)^{n}\in\left(0,1\right)$
+\end_inset
+
+ ולכן ממבחן ההשוואה 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס 
+\end_layout
+
+\begin_layout Enumerate
+אם מתקיים 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}\sqrt[n]{a_{n}}>1$
+\end_inset
+
+, אזי בפרט מתקיים כמעט תמיד לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n}>\left(1+\varepsilon\right)^{n}>1$
+\end_inset
+
+.
+ והרי הטור 
+\begin_inset Formula $\underset{n}{\sum}1$
+\end_inset
+
+ מתבדר לאינסוף
+\begin_inset Newline newline
+\end_inset
+
+לכן ממבחן ההשוואה הטור מתבדר גם הוא.
+\end_layout
+
+\begin_layout Enumerate
+נראה דוגמה שבה הטור מתכנס ועוד דוגמה בה הוא מתבדר )נגיד 
+\begin_inset Formula $\underset{n}{\sum}\frac{1}{n},\underset{n}{\sum}\frac{1}{n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+10
+\numeric off
+.
+ מבחן האינטגרל לטורים חיוביים
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[1,\infty\right)\rightarrow\mathbb{R}$
+\end_inset
+
+ אי שלילית ומונוטונית יורדת ב
+\begin_inset Formula $\left[1,\infty\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי הטור 
+\begin_inset Formula $\underset{n}{\sum}f\left(n\right)$
+\end_inset
+
+ מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם האינטגרל 
+\begin_inset Formula $\stackrel[1]{\infty}{\int}f\left(x\right)dx$
+\end_inset
+
+ מתכנס
+\end_layout
+
+\begin_layout Standard
+ובמקרה זה מתקיים 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}f\left(n\right)\leq\stackrel[1]{\infty}{\int}f\left(x\right)dx\leq\stackrel[n=2]{\infty}{\sum}f\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר סדרה 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+המוגדרת על ידי 
+\begin_inset Formula $\forall n\in\mathbb{N}\,a_{n}=f\left(n\right)$
+\end_inset
+
+ ואת סדרת הסכומים החלקיים שלה 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ מונוטונית יורדת ולכן אינטגרבילית לכל 
+\begin_inset Formula $1<N\in\mathbb{N}$
+\end_inset
+
+ בקטע הסגור 
+\begin_inset Formula $\left[1,N\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בנוסף משום ש
+\begin_inset Formula $f$
+\end_inset
+
+ אי שלילית, האינטגרל 
+\begin_inset Formula $\stackrel[1]{\infty}{\int}f\left(x\right)dx$
+\end_inset
+
+ מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם הפונקציה הצוברת 
+\begin_inset Formula $\tilde{F}\left(N\right)=\stackrel[1]{N}{\int}f\left(x\right)dx$
+\end_inset
+
+ חסומה מלעיל,
+\end_layout
+
+\begin_layout Standard
+ו-
+\begin_inset Formula $\tilde{F}$
+\end_inset
+
+חסומה מלעיל אם
+\begin_inset Quotes erd
+\end_inset
+
+ם הסדרה 
+\begin_inset Formula $\left(\stackrel[1]{k}{\int}f\left(x\right)dx\right)_{k=1}^{\infty}$
+\end_inset
+
+ חסומה
+\end_layout
+
+\begin_layout Standard
+בדומה, 
+\begin_inset Formula $\underset{n}{\sum}f\left(n\right)$
+\end_inset
+
+ מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ חסומה מלעיל.
+\end_layout
+
+\begin_layout Standard
+משום ש
+\begin_inset Formula $f$
+\end_inset
+
+ מונוטונית יורדת, מתקיים 
+\begin_inset Formula $\forall n\in\mathbb{N}\,\forall x\in\left[n,n+1\right]\quad f\left(n+1\right)\leq f\left(x\right)\leq f\left(n\right)$
+\end_inset
+
+ ועל כן ממונוטוניות האינטגרל מתקיים לכל 
+\begin_inset Formula $n\in\mathbb{N},x\in\left[n,n+1\right]$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+f\left(n+1\right)=\left(n+1-n\right)f\left(n+1\right)=\stackrel[n]{n+1}{\int}f\left(n+1\right)dx\leq\stackrel[n]{n+1}{\int}f\left(x\right)dx\leq\stackrel[n]{n+1}{\int}f\left(n\right)dx=\left(n+1-n\right)f\left(n\right)=f\left(n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מתקיים מהנ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula 
+\[
+\forall2\leq k\in\mathbb{N}\quad\stackrel[n=1]{k-1}{\sum}f\left(n+1\right)\leq\stackrel[n=1]{k-1}{\sum}\stackrel[1]{k}{\int}f\left(x\right)dx\leq\stackrel[n=1]{k-1}{\sum}f\left(n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן הסדרה 
+\begin_inset Formula $\left(\stackrel[1]{k}{\int}f\left(x\right)dx\right)_{k=1}^{\infty}$
+\end_inset
+
+ חסומה, אזי 
+\begin_inset Formula $\tilde{F}$
+\end_inset
+
+, לכן האינטגרל מתכנס, וממבחן ההשוואה נקבל שהטור מתכנס גם הוא, כנדרש.
+\end_layout
+
+\end_body
+\end_document

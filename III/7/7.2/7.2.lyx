@@ -1,0 +1,316 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\numeric on
+7.2
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פונקציית רימן ואינטגרציה בחלקים
+\end_layout
+
+\begin_layout Section*
+פונקציית רימן
+\end_layout
+
+\begin_layout Subsection*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+פונקציית רימן 
+\begin_inset Formula $f:\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+ מוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+0 & x\notin\mathbb{Q}\\
+\frac{1}{q} & x\in\mathbb{Q},\,x=\frac{p}{q},p\in\mathbb{Z},q\in\mathbb{N}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תכונות
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+הערה
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f\left(0\right)=f\left(\frac{0}{1}\right)=\frac{1}{1}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in\mathbb{R}\,f\left(x\right)=f\left(x+1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+פונקציית רימן 
+\series bold
+איננה רציפה
+\series default
+ באף 
+\begin_inset Formula $x_{0}\in\mathbb{\mathbb{Q}}$
+\end_inset
+
+, ורציפה לכל 
+\begin_inset Formula $x_{0}\in\mathbb{R}\backslash\mathbb{Q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x_{0}\in\mathbb{R}\quad\underset{x\rightarrow x_{0}}{\lim}f\left(x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+פונקציית רימן אינטגרבילית בכל קטע 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, ומתקיים 
+\begin_inset Formula $\stackrel[a]{b}{\int}f\left(t\right)dt=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שיטות אינטגרציה
+\end_layout
+
+\begin_layout Subsection*
+אינטגרציה בחלקים
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $u,v$
+\end_inset
+
+ פונקציות גזירות ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, כך ש
+\begin_inset Formula $u',v'$
+\end_inset
+
+ אינטגרביליות ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $u\cdot v',u'\cdot v$
+\end_inset
+
+ אינטגרביליות גם הן ב-
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula 
+\[
+\stackrel[a]{b}{\int}u\left(x\right)v'\left(x\right)dx=\left.u\left(x\right)v\left(x\right)\right|_{a}^{b}-\stackrel[a]{b}{\int}u'\left(x\right)v\left(x\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+אינטגרציה בהצבה
+\end_layout
+
+\begin_layout Standard
+תהיינה הפונקציות 
+\begin_inset Formula $f,F,\varphi$
+\end_inset
+
+ המקיימות: 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ רציפה ב-
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, 
+\begin_inset Formula $F$
+\end_inset
+
+ פונקציה קדומה של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi:\left[\alpha,\beta\right]\rightarrow\left[a,b\right]$
+\end_inset
+
+ גזירה כך ש
+\begin_inset Formula $\varphi'$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[\alpha,\beta\right]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+אזי מתקיים 
+\begin_inset Formula 
+\[
+\stackrel[\alpha]{\beta}{\int}f\left(\varphi\left(x\right)\right)\varphi'\left(x\right)dx=\stackrel[\varphi\left(\alpha\right)]{\varphi\left(\beta\right)}{\int}f\left(u\right)du=F\left(\varphi\left(\beta\right)\right)-F\left(\varphi\left(\alpha\right)\right)=\left.\left(F\circ\varphi\right)\left(x\right)\right|_{\alpha}^{\beta}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

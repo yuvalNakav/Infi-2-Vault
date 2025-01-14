@@ -1,0 +1,235 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Style Standard
+	Category              MainText
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Left
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+	# FIXME This ought to be set dynamically.
+	HTMLStyle
+		div.standard {
+			margin-bottom: 2ex;
+		}
+	EndHTMLStyle
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "Arial Hebrew Scholar"
+\font_typewriter "default" "Arial Black"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\numeric on
+3.1.9
+\numeric off
+ 
+\series bold
+פונקציית הנגזרת 
+\begin_inset Formula $f'$
+\end_inset
+
+ חסומה אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $f$
+\end_inset
+
+ ליפשיצית
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה במקטע 
+\begin_inset Formula $I$
+\end_inset
+
+ וגזירה בכל נקודה פנימית של 
+\begin_inset Formula $I$
+\end_inset
+
+, ובנוסף 
+\begin_inset Formula $f'$
+\end_inset
+
+ חסומה ב
+\begin_inset Formula $I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ היא ליפשיצית.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הוכחה
+\series default
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f'$
+\end_inset
+
+ חסומה ועל כן קיים 
+\begin_inset Formula $0\leq M\in\mathbb{R}$
+\end_inset
+
+ כך שמתקיים 
+\begin_inset Formula $\forall x\in I\,\left|f'\left(x\right)\right|\leq M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $x_{1}<x_{2}\in I$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה רציפה ב
+\begin_inset Formula $I$
+\end_inset
+
+ ולכן רציפה ב
+\begin_inset Formula $\left[x_{1},x_{2}\right]\subseteq I$
+\end_inset
+
+, וגזירה בפרט ב
+\begin_inset Formula $\left(x_{1},x_{2}\right)\subseteq I$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+לכן מקיימת בקטע את תנאי משפט לגראנז, אזי קיים 
+\begin_inset Formula $c\in\left(x_{1},x_{2}\right)$
+\end_inset
+
+ המקיים 
+\begin_inset Formula 
+\[
+\left|f'\left(c\right)\right|=\frac{\left|f\left(x_{2}\right)-f\left(x_{1}\right)\right|}{\left|x_{2}-x_{1}\right|}\iff f'\left(c\right)=\frac{f\left(x_{2}\right)-f\left(x_{1}\right)}{x_{2}-x_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובתוספת של הנתון נקבל שמתקיים 
+\begin_inset Formula $\left|f\left(x_{2}\right)-f\left(x_{1}\right)\right|\leq M\left|x_{2}-x_{1}\right|$
+\end_inset
+
+ ועל כן ליפשיצית כנדרש.
+\end_layout
+
+\end_body
+\end_document

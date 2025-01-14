@@ -1,0 +1,290 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Style Standard
+	Category              MainText
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Left
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+	# FIXME This ought to be set dynamically.
+	HTMLStyle
+		div.standard {
+			margin-bottom: 2ex;
+		}
+	EndHTMLStyle
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "Arial Hebrew Scholar"
+\font_typewriter "default" "Arial Black"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+
+\numeric on
+3.1.8
+\numeric off
+ 
+\series bold
+רציפות בקטע פתוח + גבולות בקצוות 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ רבמש בקטע
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+, ותהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ פונקציה רציפה בכל 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ רמב
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיימים במובן הצר הגבולות החד צדדיים 
+\begin_inset Formula $\underset{x\rightarrow a^{+}}{\lim}f\left(x\right),\underset{x\rightarrow b^{-}}{\lim}f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הוכחה ראשית נשים לב שזוהי גרסה למשפט קנטור על קטע פתוח.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ נניח שהגבולות קיימים.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+נגדיר 
+\begin_inset Formula $\hat{f}:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+, כך ש
+\begin_inset Formula $\forall x\in\left[a,b\right]\,\hat{f}\left(x\right)=\begin{cases}
+\underset{x\rightarrow a^{+}}{\lim}f\left(x\right) & x=a\\
+f\left(x\right) & x\in\left(a,b\right)\\
+\underset{x\rightarrow b^{-}}{\lim}f\left(x\right) & x=b
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+ממשפט קנטור 
+\begin_inset Formula $\hat{f}$
+\end_inset
+
+ רבמש ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ובפרט לכן רבמש ב-
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ משום ש
+\begin_inset Formula $\left(a,b\right)\subseteq\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\hat{f},f$
+\end_inset
+
+ מתלכדות ב
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+, לכן 
+\begin_inset Formula $f$
+\end_inset
+
+ רבמ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נניח ש-
+\begin_inset Formula $f$
+\end_inset
+
+ רבמש ב
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+נשים לב להערה בהוכחה על קושי, אזי לכל 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ נתאים 
+\begin_inset Formula $\delta$
+\end_inset
+
+ בהגדרת רבמש, אזי תנאי קושי מתקיים ולכן יש גבולות ב
+\begin_inset Formula $\left\{ a,b\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+מסקנה)!( הפונקציה הרציפה 
+\begin_inset Formula $f:\left(a,b\right)\rightarrow\mathbb{R}$
+\end_inset
+
+ רבמ
+\begin_inset Quotes erd
+\end_inset
+
+ש בקטע הפתוח 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיימת לה הרחבה רציפה לקטע הסגור 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

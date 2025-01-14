@@ -1,0 +1,6 @@
+# Ignore LyX backup files (files ending with ~)
+*.lyx~
+*.pdf~
+
+# Ignore macOS metadata files
+.DS_Store
