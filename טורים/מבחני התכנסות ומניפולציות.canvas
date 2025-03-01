@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"beda4cd25e9f0b25","type":"file","file":"טורים/9/9.2/מבחני השוואה לטורים אי שליליים.md","x":-2201,"y":-4158,"width":661,"height":1939},
+		{"id":"f0c37b85a89281b9","type":"file","file":"טורים/10/10.1/10.1 אסוציאטיביות בטורים.md","x":-3615,"y":-4840,"width":1159,"height":1652},
+		{"id":"8a81b5336ef1353c","type":"file","file":"טורים/9/9.3/9.3.3/9.3.3 טורי ומשפט לייבניץ.md","x":-1360,"y":-2099,"width":694,"height":743},
+		{"id":"c80ccf00ee70b46e","type":"file","file":"טורים/9/9.1/9.1 - משפטים.md","x":-2290,"y":-5640,"width":840,"height":1380},
+		{"id":"d33cbf98bac7b570","type":"file","file":"טורים/9/9.1/9.1 - הגדרות.md","x":-1160,"y":-5040,"width":712,"height":980},
+		{"id":"a7b614a5f0951bea","type":"file","file":"טורים/9/9.2/9.2 טורים אי-שליליים והתכנסותם.md","x":-1160,"y":-3901,"width":680,"height":560},
+		{"id":"f60e090341054ff0","type":"file","file":"טורים/10/10.2/10.2 שינוי סדר.md","x":-3200,"y":-2920,"width":744,"height":901},
+		{"id":"101ee5dbbbd67d90","type":"file","file":"טורים/9/9.3/9.3.1/9.3.1 התכנסות בהחלט של טורים כלליים.md","x":-3178,"y":-1727,"width":722,"height":1168},
+		{"id":"9783828ecc230f03","type":"file","file":"טורים/9/9.3/9.3.2/9.3.2 התכנסות בתנאי של טורים כלליים.md","x":-2082,"y":-1563,"width":722,"height":840},
+		{"id":"9aa1f70b3790f4b8","type":"file","file":"טורים/9/9.3/9.3.4/9.3.4 משפט דיריכלה והלמה של אבל  ומבחני התכנסות נוספים.md","x":-1116,"y":-3188,"width":901,"height":908}
+	],
+	"edges":[
+		{"id":"0cb9d8a56f6e5b42","fromNode":"d33cbf98bac7b570","fromSide":"left","toNode":"c80ccf00ee70b46e","toSide":"right","color":"2","label":"קובץ\nמפוצל"},
+		{"id":"d66bc743ddef1f48","fromNode":"9aa1f70b3790f4b8","fromSide":"bottom","toNode":"8a81b5336ef1353c","toSide":"top","color":"4","label":"מקרה פרטי\n\n"},
+		{"id":"5fc0061a5258b446","fromNode":"9aa1f70b3790f4b8","fromSide":"left","toNode":"beda4cd25e9f0b25","toSide":"right","color":"1","label":"מבחן\n התכנסות"},
+		{"id":"3a188a68fcdd3491","fromNode":"a7b614a5f0951bea","fromSide":"left","toNode":"d33cbf98bac7b570","toSide":"left","color":"4"},
+		{"id":"d67368666c63662b","fromNode":"a7b614a5f0951bea","fromSide":"left","toNode":"beda4cd25e9f0b25","toSide":"right","fromEnd":"arrow","color":"3","label":"טורים אי\nשליליים"},
+		{"id":"49fef031442f0288","fromNode":"101ee5dbbbd67d90","fromSide":"right","toNode":"9783828ecc230f03","toSide":"left","fromEnd":"arrow","color":"2","label":"סוגי \nהתכנסויות\nשל טורים"},
+		{"id":"0d6f3ae4cd185934","fromNode":"8a81b5336ef1353c","fromSide":"left","toNode":"beda4cd25e9f0b25","toSide":"right","color":"1","label":"מבחן\nהתכנסות"},
+		{"id":"74e4fc9f8840d8c3","fromNode":"8a81b5336ef1353c","fromSide":"bottom","toNode":"9783828ecc230f03","toSide":"right","color":"1","label":"ד״נ טובות\nלהתכנסות בתנאי\nולא בהחלט"},
+		{"id":"dc5e813950388469","fromNode":"c80ccf00ee70b46e","fromSide":"right","toNode":"beda4cd25e9f0b25","toSide":"right","color":"4","label":"קריטריון קושי\nמבחן התכנסות\nאם״ם"},
+		{"id":"d1a5d03408398512","fromNode":"f0c37b85a89281b9","fromSide":"right","toNode":"beda4cd25e9f0b25","toSide":"left","fromEnd":"arrow","color":"3","label":"טורים אי\nשליליים"},
+		{"id":"468cfe25e17ff300","fromNode":"f60e090341054ff0","fromSide":"bottom","toNode":"8a81b5336ef1353c","toSide":"left","color":"4","label":"אוהבים\nהתכנסות\nבתנאי"},
+		{"id":"38b65a6d9a30d9a4","fromNode":"f60e090341054ff0","fromSide":"top","toNode":"f0c37b85a89281b9","toSide":"bottom","fromEnd":"arrow","color":"2","label":"מניפולציות"},
+		{"id":"eb53671da3a148f5","fromNode":"101ee5dbbbd67d90","fromSide":"top","toNode":"beda4cd25e9f0b25","toSide":"bottom","color":"1","label":"טור ערך מוחלט\nהוא א״ש"}
+	]
+}

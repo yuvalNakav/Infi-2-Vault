@@ -1,0 +1,1040 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Style Standard
+	Category              MainText
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Left
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+	# FIXME This ought to be set dynamically.
+	HTMLStyle
+		div.standard {
+			margin-bottom: 2ex;
+		}
+	EndHTMLStyle
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "Arial Hebrew Scholar"
+\font_typewriter "default" "Arial Black"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\numeric on
+12
+\numeric off
+ טורי חזקות
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ טור טיילור
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $f:\left[x_{0}-\delta,x_{0}+\delta\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ המוגדרת בסביבה מלאה של 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ וגזירה בה אינסוף פעמים.
+ 
+\end_layout
+
+\begin_layout Standard
+נגדיר את 
+\series bold
+טור טיילור של 
+\begin_inset Formula $f$
+\end_inset
+
+ סביב 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ 
+\series default
+ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\series bold
+: 
+\begin_inset Formula 
+\[
+T_{f,x_{0}}\left(x\right)=\sum_{k=0}^{\infty}\frac{f^{\left(k\right)}\left(x\right)}{k!}\left(x-x_{0}\right)^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן, לכל 
+\begin_inset Formula $x_{1}\in\mathbb{R}$
+\end_inset
+
+ הסכום החלקי ה-
+\begin_inset Formula $-n$
+\end_inset
+
+י, 
+\begin_inset Formula $S_{n}\left(x_{1}\right)$
+\end_inset
+
+ של הטור 
+\begin_inset Formula $T_{f,x_{0}}$
+\end_inset
+
+ הוא הערך בנקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ של פולינום טיילור מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ סביב 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+S_{n}\left(x_{1}\right)=\sum_{k=1}^{n}\frac{f^{\left(k\right)}\left(x_{1}\right)}{k!}\left(x-x_{0}\right)^{k}=P_{n,f,x_{0}}\left(x_{1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+2
+\numeric off
+.
+ טור חזקות
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $\left(a_{k}\right)_{k=0}^{\infty}$
+\end_inset
+
+ סדרה ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, ו
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+.
+ הטור 
+\begin_inset Formula $\overset{\infty}{\underset{k=0}{\sum}}a_{k}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+ נקרא 
+\series bold
+טור חזקות )ב-
+\begin_inset Formula $x$
+\end_inset
+
+( סביב 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב שטור חזקות הוא טור של פונקציות, והצבת 
+\begin_inset Formula $x$
+\end_inset
+
+ים שונים תוליד טורים מספריים שונים.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+3
+\numeric off
+.
+ תחום התכנסות
+\end_layout
+
+\begin_layout Standard
+נגדיר את הקבוצה 
+\begin_inset Formula $\mathbb{R}\supseteq D=\left\{ x\in\mathbb{R}\mid\exists L\in\mathbb{R}\,\overset{\infty}{\underset{k=0}{\sum}}a_{k}\left(x-x_{0}\right)^{k}=L\right\} $
+\end_inset
+
+,
+\series bold
+ קבוצת כל ה
+\begin_inset Formula $x$
+\end_inset
+
+ים הממשיים שהטור המוגדר בעזרת הסדרה 
+\begin_inset Formula $a_{k}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+ סביב 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ מתכנס
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+נקרא ל 
+\begin_inset Formula $D$
+\end_inset
+
+ 
+\series bold
+תחום ההתכנסות של 
+\begin_inset Formula $\overset{\infty}{\underset{k=0}{\sum}}a_{k}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב שהטור הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל מגדיר בתחום ההכנסות שלו את הפונקציה 
+\begin_inset Formula $f:D\rightarrow\mathbb{R}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $f\left(x\right)=\overset{\infty}{\underset{k=0}{\sum}}a_{k}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+נסמן 
+\series default
+בנוסף 
+\begin_inset Formula 
+\[
+\forall x\in D\,\forall n\in\mathbb{N}\quad f_{n}\left(x\right)=\sum_{k=0}^{n}a_{k}\left(x-x_{0}\right)^{k}
+\]
+
+\end_inset
+
+ונשים לב שמתקיים 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}f_{n}\left(x\right)=f\left(x\right)$
+\end_inset
+
+.
+ ובנוסף 
+\begin_inset Formula $f_{n}\in\mathbb{R}\left[x\right]$
+\end_inset
+
+ ומקיימת 
+\begin_inset Formula $\deg f_{n}\leq n$
+\end_inset
+
+.
+ זהו בפרט טור פונקציות
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+4
+\numeric off
+.
+ רדיוס התכנסות
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $L$
+\end_inset
+
+ )כתוצאה מקושי-הדאמאר או מדלמבר(, נקרא ל
+\begin_inset Formula $R:=\frac{1}{L}$
+\end_inset
+
+ 
+\series bold
+רדיוס ההתכנסות של הטור 
+\begin_inset Formula $\overset{\infty}{\underset{k=0}{\sum}}a_{k}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+
+\series default
+, 
+\end_layout
+
+\begin_layout Standard
+כאשר מוסכם בהקשר זה 
+\begin_inset Formula $\frac{1}{0}=\infty,\frac{1}{\infty}=0$
+\end_inset
+
+, ומתקיים 
+\begin_inset Formula $R=\underset{x\in D}{\sup}\left|x-x_{0}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $0<R\in\mathbb{R}$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $\left(x_{0}-R,x_{0}+R\right)\subseteq D\subseteq\left[x_{0}-R,x_{0}+R\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי למרות שהוגדר בעזרת קושי-הדאמר, בהינתן 
+\begin_inset Formula $D$
+\end_inset
+
+ נוכל לחשב 
+\begin_inset Formula $R$
+\end_inset
+
+ בעזרת 
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+5
+\numeric off
+.
+ אנליטיות
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $f$
+\end_inset
+
+, נאמר ש
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ 
+\series bold
+אנליטית ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ 
+\series default
+אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיימים 
+\begin_inset Formula $0<r\in\mathbb{R}$
+\end_inset
+
+, וסדרה 
+\begin_inset Formula $\left(a_{k}\right)_{k=0}^{\infty}$
+\end_inset
+
+ כך ש
+\begin_inset Formula 
+\[
+\forall x\in\left(x_{0}-r,x_{0}+r\right)\,f\left(x\right)=\sum_{k=0}^{\infty}a_{k}\left(x-x_{0}\right)^{k}
+\]
+
+\end_inset
+
+, כלומר אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\series bold
+קיימת ל-
+\begin_inset Formula $f$
+\end_inset
+
+ הצגה כטור חזקות בסביבת 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפטים
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ משפט קושי-הדאמר
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $\left(a_{k}\right)_{k=0}^{\infty}$
+\end_inset
+
+ סדרה ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, ו
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+נסמן ב
+\begin_inset Formula $L$
+\end_inset
+
+ את הגבול במובן הרחב 
+\begin_inset Formula $\underset{k\rightarrow\infty}{\limsup}\sqrt[k]{\left|a_{k}\right|}$
+\end_inset
+
+.
+ אזי אם:
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $L=0$
+\end_inset
+
+ אזי הטור 
+\begin_inset Formula $\overset{\infty}{\underset{k=0}{\sum}}a_{k}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+ מתכנס בהחלט לכל 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $L=\infty$
+\end_inset
+
+ אזי הטור 
+\begin_inset Formula $\overset{\infty}{\underset{k=0}{\sum}}a_{k}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+מתבדר לכל 
+\begin_inset Formula $x\ne x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $0<L\in\mathbb{R}$
+\end_inset
+
+ אזי הטור 
+\begin_inset Formula $\overset{\infty}{\underset{k=0}{\sum}}a_{k}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+ מתכנס בהחלט לכל 
+\begin_inset Formula $x\in\left(x_{0}-\frac{1}{L},x_{0}+\frac{1}{L}\right)$
+\end_inset
+
+ ומתבדר לכל 
+\begin_inset Formula $x\notin\left(x_{0}-\frac{1}{L},x_{0}+\frac{1}{L}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\numeric on
+2
+\numeric off
+.
+ משפט דלמבר
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a_{k}\right)_{k=0}^{\infty}$
+\end_inset
+
+ סדרה ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ שונים מאפס החל ממקום מסויים, עבורה קיים הגבול במובן הרחב 
+\begin_inset Formula $\underset{k\rightarrow\infty}{\lim}\frac{\left|a_{k+1}\right|}{\left|a_{k}\right|}=L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי רדיוס ההתכנסות 
+\begin_inset Formula $R$
+\end_inset
+
+ של טור החזקות 
+\begin_inset Formula $\overset{\infty}{\underset{k=0}{\sum}}a_{k}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+ הנו 
+\begin_inset Formula $R=\frac{1}{L}$
+\end_inset
+
+, עם אותן ההסכמות בהגדרת 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+3
+\numeric off
+.
+ למה-קירוב טור חזקות
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $f\left(x\right)=\overset{\infty}{\underset{k=0}{\sum}}a_{k}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+ טור חזקות בעל רדיוס התכנסות 
+\begin_inset Formula $R>0$
+\end_inset
+
+ ויהי 
+\begin_inset Formula $r\in\left(0,R\right)$
+\end_inset
+
+.
+ אזי מתקיים 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\,\exists N\in\mathbb{N}\,\forall x\in\left[x_{0}-r,x_{0}+r\right]\,\forall n\geq N\quad\left|f\left(x\right)-f_{n}\left(x\right)\right|\leq\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+4
+\numeric off
+.
+ רציפות טור חזקות
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $f\left(x\right)=\overset{\infty}{\underset{k=0}{\sum}}a_{k}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+ טור חזקות בעל רדיוס התכנסות 
+\begin_inset Formula $0<R\in\mathbb{R}$
+\end_inset
+
+.
+ אזי הפונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left(x_{0}-R,x_{0}+R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+5
+\numeric off
+.
+ למה: 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}\sqrt[n]{\left|a_{n}\right|}=\underset{n\rightarrow\infty}{\limsup}\sqrt[n+1]{\left|a_{n}\right|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהינתן הסדרה 
+\begin_inset Formula $\left(a_{n}\right)_{n=0}^{\infty}$
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\limsup}\sqrt[n]{\left|a_{n}\right|}=\underset{n\rightarrow\infty}{\limsup}\sqrt[n+1]{\left|a_{n}\right|}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+6
+\numeric off
+.
+ לטורי החזקות 
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}\frac{a_{n-1}}{n}\left(x-x_{0}\right)^{n}=\sum_{n=0}^{\infty}\frac{a_{n}}{n+1}\left(x-x_{0}\right)^{n+1},\sum_{n=0}^{\infty}a_{n}\left(x-x_{0}\right)^{n}
+\]
+
+\end_inset
+
+ אותו 
+\bar under
+רדיוס
+\bar default
+ התכנסות
+\end_layout
+
+\begin_layout Description
+הערה: לא חייב להיות להם אותו 
+\bar under
+תחום
+\bar default
+ התכנסות
+\end_layout
+
+\begin_layout Description
+מסקנה בשילוב עם המשפט על אינטגרציה איבר איבר, נקבל שבנוסף הטורים חולקים
+ את רדיוס ההתכנסות עם הטור 
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}na_{n}\left(x-x_{0}\right)^{n-1}=\sum_{n=0}^{\infty}\left(n+1\right)a_{n}\left(x-x_{0}\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הבהרה רדיוס ההתנסות של פונקציה המוגדרת כנ
+\begin_inset Quotes erd
+\end_inset
+
+ל זהה גם לרדיוס ההתכנסות של הנגזרת וגם של הפונקציה הקדומה שלו!
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+7
+\numeric off
+.
+ אינטגרציה איבר-איבר של טורי חזקות
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $f\left(x\right)=\stackrel[n=0]{\infty}{\sum}a_{n}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+ טור חזקות בעל רדיוס התכנסות 
+\begin_inset Formula $0<R$
+\end_inset
+
+.
+ אזי מתקיים לכל 
+\begin_inset Formula $x\in\left(x_{0}-R,x_{0}+R\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{x_{0}}^{x}f\left(t\right)dt=\int_{x_{0}}^{x}\left(\sum_{n=0}^{\infty}a_{n}\left(t-x_{0}\right)^{n}\right)dt=\sum_{n=0}^{\infty}\int_{x_{0}}^{x}a_{n}\left(t-x_{0}\right)^{n}dt=\sum_{n=0}^{\infty}\frac{a_{n}}{n+1}\left(t-x_{0}\right)^{n+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+מסקנה הפונקציה 
+\begin_inset Formula $\stackrel[n=0]{\infty}{\sum}\frac{a_{n}}{n+1}\left(x-x_{0}\right)^{n+1}$
+\end_inset
+
+ היא פונקציה קדומה של 
+\begin_inset Formula $\stackrel[n=0]{\infty}{\sum}a_{n}\left(x-x_{0}\right)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+8
+\numeric off
+.
+ גזירה איבר איבר של טורי חזקות
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $f\left(x\right)=\stackrel[n=0]{\infty}{\sum}a_{n}\left(x-x_{0}\right)^{n}$
+\end_inset
+
+ טור חזקות בעל רדיוס התכנסות 
+\begin_inset Formula $0<R$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה בכל 
+\begin_inset Formula $x\in\left(x_{0}-R,x_{0}+R\right)$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula 
+\[
+f'\left(x\right)=\sum_{n=0}^{\infty}\left(n+1\right)a_{n}\left(x-x_{0}\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה בעזרת המשפט על אינטגרציה איבר איבר 
+\end_layout
+
+\begin_layout Subsubsection*
+מסקנה 
+\end_layout
+
+\begin_layout Standard
+כל נגזרת מכל סדר ניתנת להצגה כטור חזקות
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+9
+\numeric off
+.
+ יחידות טור חזקות המייצג פונקציה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה בעלת נגזרת מכל סדר ב
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+.
+ אם יש ל-
+\begin_inset Formula $f$
+\end_inset
+
+ יצוג כטור חזקות בסביבה כלשהי של 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, הוא יחיד, ומתקיים 
+\begin_inset Formula $\forall k\in\mathbb{N}\cup\left\{ 0\right\} \quad a_{k}=\frac{f^{\left(k\right)}\left(x_{0}\right)}{k!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+10
+\numeric off
+.
+ ל-
+\begin_inset Formula $f$
+\end_inset
+
+ קיימת הצגה כטור חזקות אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $f$
+\end_inset
+
+ היא הגבול של 
+\begin_inset Formula $\left(P_{m,f,x_{0}}\right)_{m=1}^{\infty}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה לפי המשפט על יחידות הייצוג של טור חזקות, ובנוסף אפשר להוכיח עם יחידות
+ פולינום טיילור ולהשאיף לאינסוף.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+11
+\numeric off
+.
+ ל-
+\begin_inset Formula $f$
+\end_inset
+
+ קיימת הצגה כטור חזקות אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula $\underset{m\rightarrow\infty}{\lim}R_{m,f,x_{0}}\left(x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נובע מההוכחה הקודמת, בנוסף למשפט על שארית הפיתוח של פולינומי טיילור
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+12
+\numeric off
+.
+ הלמה של אבל 
+\begin_inset Formula $\left(\text{Abel}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\mathbb{R}\supseteq\left(a_{k}\right)_{k=0}^{\infty}$
+\end_inset
+
+ סדרה נתונה.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+המקרה הפרטי
+\end_layout
+
+\begin_layout Standard
+אם קיים 
+\begin_inset Formula $0\ne x_{1}\in\mathbb{R}$
+\end_inset
+
+ שעבורו הטור 
+\begin_inset Formula $\overset{\infty}{\underset{k=0}{\sum}}a_{k}x_{1}^{k}$
+\end_inset
+
+, אזי הטור 
+\begin_inset Formula $\overset{\infty}{\underset{k=0}{\sum}}a_{k}x^{k}$
+\end_inset
+
+ מתכנס לכל 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $\left|x\right|<\left|x_{1}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+המקרה הכללי:
+\end_layout
+
+\begin_layout Standard
+אם קיים 
+\begin_inset Formula $x_{0}\ne x_{1}$
+\end_inset
+
+ עבורו הטור 
+\begin_inset Formula $\overset{\infty}{\underset{k=0}{\sum}}a_{k}\left(x_{1}-x_{0}\right)^{k}$
+\end_inset
+
+ מתכנס, אזי הטור 
+\begin_inset Formula $\overset{\infty}{\underset{k=0}{\sum}}a_{k}\left(x-x_{0}\right)^{k}$
+\end_inset
+
+ מתכנס להחלט לכל 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $\left|x-x_{0}\right|<\left|x-x_{1}\right|$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

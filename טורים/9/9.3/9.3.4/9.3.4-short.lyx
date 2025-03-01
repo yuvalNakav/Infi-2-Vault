@@ -1,0 +1,294 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Style Standard
+	Category              MainText
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Left
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+	# FIXME This ought to be set dynamically.
+	HTMLStyle
+		div.standard {
+			margin-bottom: 2ex;
+		}
+	EndHTMLStyle
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\numeric on
+9.3.4
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ משפט דיריכלה והלמה של אבל
+\end_layout
+
+\begin_layout Subsection*
+משפט )למת הסכימה של אבל(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $m\in\mathbb{N}$
+\end_inset
+
+ ונניח ש 
+\begin_inset Formula $\left(a_{1},\dots,a_{m}\right),\left(b_{1},\dots,b_{m}\right)$
+\end_inset
+
+ סדרות סופיות באורך 
+\begin_inset Formula $m$
+\end_inset
+
+ של מספרים ממשיים.
+ אזי 
+\begin_inset Formula 
+\[
+\sum_{j=1}^{m}a_{j}b_{j}=a_{m}B_{m}+\sum_{j=1}^{m-1}B_{j}\left(a_{j}-a_{j+1}\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $\forall k\in\left[m\right]\quad B_{k}:=\overset{k}{\underset{j=1}{\sum}}b_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מסקנה מהלמה
+\end_layout
+
+\begin_layout Standard
+אם ידוע ש
+\begin_inset Formula $\left(a_{j}\right)_{j=1}^{m}$
+\end_inset
+
+ מונוטונית, ושקיים 
+\begin_inset Formula $L>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $k\in\left[m\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|B_{k}\right|\leq L$
+\end_inset
+
+, אזי 
+\begin_inset Formula 
+\[
+\left|\sum_{j=1}^{m}a_{j}b_{j}\right|\leq L\left(2\left|a_{m}\right|+\left|a_{1}\right|\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מבחן דיריכלה
+\end_layout
+
+\begin_layout Standard
+נניח ש
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ מונוטונית ו
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}a_{n}=0$
+\end_inset
+
+, ו
+\begin_inset Formula $\underset{n}{\sum}b_{n}$
+\end_inset
+
+ טור חסום )כלומר הסס
+\begin_inset Quotes erd
+\end_inset
+
+ח שלו 
+\begin_inset Formula $\left(T_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+חסומה(.
+ אזי הטור 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}a_{n}b_{n}$
+\end_inset
+
+מתכנס.
+\end_layout
+
+\begin_layout Subsubsection*
+אבחנה
+\end_layout
+
+\begin_layout Standard
+זהו מקרה פרטי למשפט לייבניץ
+\end_layout
+
+\begin_layout Subsection*
+מבחן העיבוי של קושי 
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה מונוטונוית יורדת.
+ אזי הטור 
+\begin_inset Formula $\underset{n=1}{\overset{\infty}{\sum}}a_{n}$
+\end_inset
+
+ מתכנס 
+\bar under
+אם ורק אם
+\bar default
+ 
+\series bold
+הטור המעובה
+\series default
+ 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}a_{2^{n}}2^{n}$
+\end_inset
+
+ מתכנס
+\end_layout
+
+\begin_layout Subsection*
+קריטריון אבל להתכנסות טורים
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a_{n},b_{n}$
+\end_inset
+
+ סדרות, כך שהטור 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}a_{n}$
+\end_inset
+
+ מתכנס, ו
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ סדרה מונוטונית וחסומה.
+\end_layout
+
+\begin_layout Standard
+אזי הטור 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}a_{n}b_{n}$
+\end_inset
+
+ מתכנס אף הוא.
+\end_layout
+
+\end_body
+\end_document

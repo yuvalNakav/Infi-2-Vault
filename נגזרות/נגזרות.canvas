@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"731a875fba28ea7e","type":"file","file":"נגזרות/4/4.1/4.1.1/4.1.1 הגדרת הנגזרת.md","x":2560,"y":-1748,"width":582,"height":739},
+		{"id":"12584926b0773001","type":"file","file":"נגזרות/5/5.2/5.2.3/5.2.3 פעולות על פולינומים.md","x":-560,"y":-733,"width":742,"height":1060},
+		{"id":"8d785508e6d1820c","type":"file","file":"נגזרות/4/4.4/4.4.1/4.4.1 זהויות והגדרות.md","x":-338,"y":501,"width":520,"height":541},
+		{"id":"1afe3eb5a8e2a56a","type":"file","file":"נגזרות/4/4.5/4.5.3/4.5.3 לופיטל.md","x":317,"y":-661,"width":984,"height":1750},
+		{"id":"a6255a40a10cd873","type":"file","file":"נגזרות/4/4.2/4.2 משפטים חשובים על הנגזרת.md","x":1455,"y":-2400,"width":825,"height":1198},
+		{"id":"b115982d69342cff","type":"file","file":"נגזרות/4/4.5/4.5.1/4.5.1 מינימום ומקסימום.md","x":1520,"y":-261,"width":760,"height":1120},
+		{"id":"853e91a428f743aa","type":"file","file":"נגזרות/4/4.3/4.3 פונקציית הנגזרת בקטע.md","x":1520,"y":-1037,"width":613,"height":277},
+		{"id":"26bdc8acb77b127a","type":"file","file":"נגזרות/4/4.4/4.4.2/4.4.2 משפטים.md","x":-1369,"y":405,"width":658,"height":367},
+		{"id":"75c6cd8d419659da","type":"file","file":"נגזרות/5/5.2/5.2.2/5.2.2 פולינומים חשובים.md","x":-1600,"y":-541,"width":782,"height":560},
+		{"id":"9f7d83f63fa0dfea","type":"file","file":"נגזרות/5/5.2/5.2.1/5.2.1 פולינומי טיילור.md","x":-1069,"y":-2777,"width":1018,"height":1740},
+		{"id":"f8da0822dfbafa20","type":"file","file":"נגזרות/4/4.5/4.5.2/4.5.2 נקודות מיוחדות.md","x":480,"y":-2649,"width":875,"height":1644},
+		{"id":"afacafdece76f89b","type":"file","file":"נגזרות/5/5.1/5.1 דיפרנציאביליות.md","x":2651,"y":-261,"width":400,"height":400},
+		{"id":"90ea612579ad9483","type":"text","text":"# שווה לזכור:\n* קשר לטורי חזקות\n* פתרון גבולות של פונקציות מעצבנות\n* מחליף מספר גדול של לופטילים\n","x":-1619,"y":-1454,"width":250,"height":449}
+	],
+	"edges":[
+		{"id":"fb32dc308b9e970a","fromNode":"9f7d83f63fa0dfea","fromSide":"right","toNode":"afacafdece76f89b","toSide":"top","color":"1"},
+		{"id":"efa7442772f6bbf5","fromNode":"853e91a428f743aa","fromSide":"left","toNode":"f8da0822dfbafa20","toSide":"right","fromEnd":"arrow","color":"2"},
+		{"id":"4f302e1248d7c575","fromNode":"b115982d69342cff","fromSide":"top","toNode":"f8da0822dfbafa20","toSide":"bottom","fromEnd":"arrow","color":"2","label":"רול \nופרמה"},
+		{"id":"9c10f4fbf17c2719","fromNode":"1afe3eb5a8e2a56a","fromSide":"top","toNode":"f8da0822dfbafa20","toSide":"bottom","color":"1","label":"הוכחה\nעל ידי\nרול ופרמה"},
+		{"id":"c5f64717113843df","fromNode":"75c6cd8d419659da","fromSide":"bottom","toNode":"26bdc8acb77b127a","toSide":"top","color":"4","label":"דוגמאות \nרלוונטיות"},
+		{"id":"f7ab57b7d1fc13f8","fromNode":"12584926b0773001","fromSide":"top","toNode":"9f7d83f63fa0dfea","toSide":"bottom","fromEnd":"arrow","color":"2","label":"טיילור"},
+		{"id":"18b29b43b106984b","fromNode":"75c6cd8d419659da","fromSide":"top","toNode":"9f7d83f63fa0dfea","toSide":"bottom","fromEnd":"arrow","color":"2","label":"טיילור"},
+		{"id":"552b44e8669a2223","fromNode":"12584926b0773001","fromSide":"bottom","toNode":"8d785508e6d1820c","toSide":"top"},
+		{"id":"3e0378b9381163de","fromNode":"b115982d69342cff","fromSide":"top","toNode":"853e91a428f743aa","toSide":"bottom","color":"1","label":"פונקציות\nגזירות\nברציפות"},
+		{"id":"148f6eae4ef45db1","fromNode":"f8da0822dfbafa20","fromSide":"left","toNode":"1afe3eb5a8e2a56a","toSide":"left","color":"1","label":"הוכחה\nעל ידי\nקושי"},
+		{"id":"afc427313c030b59","fromNode":"afacafdece76f89b","fromSide":"top","toNode":"731a875fba28ea7e","toSide":"bottom","fromEnd":"arrow","color":"4"},
+		{"id":"f96b3e7ced3488e2","fromNode":"853e91a428f743aa","fromSide":"right","toNode":"731a875fba28ea7e","toSide":"bottom"},
+		{"id":"aef617ffee3698f1","fromNode":"8d785508e6d1820c","fromSide":"left","toNode":"26bdc8acb77b127a","toSide":"right","fromEnd":"arrow","color":"2","label":"טריגו"},
+		{"id":"20ad8dbff0a75ded","fromNode":"9f7d83f63fa0dfea","fromSide":"left","toNode":"90ea612579ad9483","toSide":"right"},
+		{"id":"3edbb4707c9c0682","fromNode":"9f7d83f63fa0dfea","fromSide":"bottom","toNode":"1afe3eb5a8e2a56a","toSide":"top","fromEnd":"arrow","color":"4","label":"פתרונות\nלבעיות\nזהות"}
+	]
+}

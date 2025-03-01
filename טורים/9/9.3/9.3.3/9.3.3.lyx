@@ -1,0 +1,533 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Style Standard
+	Category              MainText
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Left
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+	# FIXME This ought to be set dynamically.
+	HTMLStyle
+		div.standard {
+			margin-bottom: 2ex;
+		}
+	EndHTMLStyle
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "Arial Hebrew Scholar"
+\font_typewriter "default" "Arial Black"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\numeric on
+9.3.3
+\numeric off
+ טורי ומשפט לייבניץ
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ טור לייבניץ
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה יורדת, אי שלילית ואפסה, אז הטור המתחלף 
+\begin_inset Formula $\underset{n}{\sum}\left(-1\right)^{n+1}a_{n}=a_{1}-a_{2}+a_{3}-a_{4}$
+\end_inset
+
+ יקרא 
+\series bold
+טור לייבניץ
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+הערות 
+\end_layout
+
+\begin_layout Itemize
+גם הטור 
+\begin_inset Formula $\underset{n}{\sum}\left(-1\right)^{n}a_{n}$
+\end_inset
+
+ הוא טור לייבניץ
+\end_layout
+
+\begin_layout Itemize
+משום ש
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ אי שלילית ומונוטונית יורדת, אם 
+\begin_inset Formula $a_{N}=0$
+\end_inset
+
+ עבור 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ כלשהו, אז היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ כמעט תמיד.
+ לכן נתמקד בסדרות חיוביות ולא רק אי שליליות.
+\end_layout
+
+\begin_layout Section*
+משפטים
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ משפט לייבניץ לטורים מתחלפים
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\underset{n}{\sum}\left(-1\right)^{n+1}a_{n}$
+\end_inset
+
+ טור לייבניץ.
+ אזי:
+\end_layout
+
+\begin_layout Enumerate
+הטור 
+\begin_inset Formula $\underset{n}{\sum}\left(-1\right)^{n+1}a_{n}$
+\end_inset
+
+ מתכנס
+\end_layout
+
+\begin_layout Enumerate
+נסמן 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}\left(-1\right)^{n+1}a_{n}=L\in\mathbb{R}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $0\leq a_{1}-a_{2}\leq L\leq a_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $r_{N}=\overset{\infty}{\underset{n=N+1}{\sum}}\left(-1\right)^{n+1}a_{n}$
+\end_inset
+
+ סכום טור ה-
+\begin_inset Formula $N$
+\end_inset
+
+ זנב של 
+\begin_inset Formula $\underset{n}{\sum}\left(-1\right)^{n+1}a_{n}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\left|r_{N}\right|\leq a_{N+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Enumerate
+נגדיר 
+\begin_inset Formula $\forall n\in\mathbb{N}\,b_{n}=\left(-1\right)^{n+1}a_{n}$
+\end_inset
+
+, ונגדיר את הסס
+\begin_inset Quotes erd
+\end_inset
+
+ח 
+\begin_inset Formula $\left(S_{k}\right)_{n=1}^{\infty}$
+\end_inset
+
+, ונסתכל על תתי הסדרות 
+\begin_inset Formula $S_{2k-1},S_{2k}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+S_{2\left(k+1\right)}-S_{2k}=\left(-1\right)^{2k+2}a_{2k+2}+\left(-1\right)^{2k+1}a_{2k+1}+\stackrel[n=1]{2k}{\sum}\left(-1\right)^{n+1}a_{n}-\stackrel[n=1]{2k}{\sum}\left(-1\right)^{n+1}a_{n}=a_{2k+2}-a_{2k+1}\stackrel[decreaseing]{monotonic}{\geq}0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S_{2\left(k+1\right)-1}-S_{2k-1}=\left(-1\right)^{2k+1}a_{2k+1}+\left(-1\right)^{2k}a_{2k}+\stackrel[n=1]{2k}{\sum}\left(-1\right)^{n+1}a_{n}-\stackrel[n=1]{2k}{\sum}\left(-1\right)^{n+1}a_{n}=a_{2k}-a_{2k+1}\stackrel[decreaseing]{monotonic}{\leq}0
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $S_{2k}$
+\end_inset
+
+ מונוטונית עולה ו
+\begin_inset Formula $S_{2k-1}$
+\end_inset
+
+ מונוטונית יורדת
+\begin_inset Newline newline
+\end_inset
+
+בנוסף נשים לב שמתקיים 
+\begin_inset Formula 
+\[
+\forall k\in\mathbb{N}\,S_{2k}=S_{2k-1}+b_{2k}=S_{2k-1}+\left(-1\right)^{2k+1}a_{2k}\overset{\left(a_{2k}\geq0\right)}{\leq}S_{2k-1}
+\]
+
+\end_inset
+
+ולכן סדרת הקטעים 
+\begin_inset Formula $\left(\left[S_{2k},S_{2k-1}\right]\right)_{k=1}^{\infty}$
+\end_inset
+
+ מקיימת את הלמה של קנטור, ובנוסף מכך מתקיים 
+\begin_inset Formula 
+\[
+\forall k\in\mathbb{N}\,S_{2k-1}-S_{2k}=S_{2k-1}-\left(S_{2k-1}+b_{2k}\right)=a_{2k}\iff\underset{k\rightarrow\infty}{\lim}\left(S_{2k-1}-S_{2k}\right)=0
+\]
+
+\end_inset
+
+ אזי מהלמה של קנטור נקבל שמתקיים 
+\begin_inset Formula $\underset{k\rightarrow\infty}{\lim}S_{2k-1}=L=\underset{k\rightarrow\infty}{\lim}S_{2k}$
+\end_inset
+
+, ומשום ש
+\begin_inset Formula $\left\{ S_{2k-1}\mid k\in\mathbb{N}\right\} \cup\left\{ S_{2k}\mid k\in\mathbb{N}\right\} =\left\{ S_{k}\mid k\in\mathbb{N}\right\} $
+\end_inset
+
+, מתקיים 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}\left(-1\right)^{n+1}a_{n}=L$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+מהלמה של קנטור, נקבל שמתקיים 
+\begin_inset Formula $L=\sup\left\{ S_{2k}\mid k\in\mathbb{N}\right\} $
+\end_inset
+
+, אזי ממשפט החסם העליון 
+\begin_inset Formula $L\geq S_{2}=a_{1}-a_{2}\geq0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+באותו אופן 
+\begin_inset Formula $L=\inf\left\{ S_{2k-1}\mid k\in\mathbb{N}\right\} $
+\end_inset
+
+ ולכן ממשפט החסם התחתון 
+\begin_inset Formula $L\leq S_{1}=a_{1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כלומר קיבלנו 
+\begin_inset Formula $0\leq a_{1}-a_{2}\leq L\leq a_{1}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+ממשפט על טורים מתכנסים, נקבל שטור ה-
+\begin_inset Formula $N$
+\end_inset
+
+ זנב של 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ מתכנס גם הוא, ומתקיים 
+\begin_inset Formula 
+\[
+r_{N}=\stackrel[n=N+1]{\infty}{\sum}\left(-1\right)^{n+1}a_{n}=\left(-1\right)^{N}\stackrel[n=1]{\infty}{\sum}\left(-1\right)^{n+1}a_{n+N}
+\]
+
+\end_inset
+
+והרי סדרת הזנב 
+\begin_inset Formula $a_{n+N}$
+\end_inset
+
+ אפסה, אי שלילית ומונוטונית יורדת גם היא ממשפט הירושה.
+ לכן 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}\left(-1\right)^{n+1}a_{n+N}$
+\end_inset
+
+ טור לייבניץ.
+\begin_inset Newline newline
+\end_inset
+
+אזי מסעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקבל שמתקיים 
+\begin_inset Formula $\left(*\right)\quad0\leq\stackrel[n=1]{\infty}{\sum}\left(-1\right)^{n+1}a_{n+N}\leq a_{N+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכן אם 
+\begin_inset Formula $N$
+\end_inset
+
+ זוגי, מתקיים 
+\begin_inset Formula $r_{N}=\stackrel[n=1]{\infty}{\sum}\left(-1\right)^{n+1}a_{n+N}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $0\leq r_{N}\leq a_{N+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אחרת אם 
+\begin_inset Formula $N$
+\end_inset
+
+ אי זוגי, מתקיים 
+\begin_inset Formula $r_{N}=-\stackrel[n=1]{\infty}{\sum}\left(-1\right)^{n+1}a_{n+N}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $0\leq-r_{N}\leq a_{N+1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ובכל מקרה נקבל 
+\begin_inset Formula $\left|r_{N}\right|\leq a_{N+1}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

@@ -1,0 +1,330 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Formula $4.5.1$
+\end_inset
+
+ מינימום ומקסימום
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $A\subseteq D,f:D\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Subsection*
+מינימום ומקסימום גלובלי
+\end_layout
+
+\begin_layout Standard
+נאמר ש
+\begin_inset Formula $x_{0}\in A$
+\end_inset
+
+ נקודת מקסימום )מינימום( גלובלי בקבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ אם מתקיים 
+\begin_inset Formula $\forall x\in A\quad f\left(x\right)\leq f\left(x_{0}\right)$
+\end_inset
+
+.
+ ל-
+\begin_inset Formula $f\left(x_{0}\right)$
+\end_inset
+
+ נקרא 
+\series bold
+הערך המקסימלי 
+\series default
+של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב-
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הערות 
+\end_layout
+
+\begin_layout Enumerate
+לא בהכרח קיים ערך מקסימלי
+\backslash
+מינימלי בקבוצה
+\end_layout
+
+\begin_layout Enumerate
+אם קיים ערך מקסימלי ל-
+\begin_inset Formula $A$
+\end_inset
+
+, הוא יחיד מעקרון הסדר ב-
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, אך יכול להתקיים: 
+\begin_inset Formula $\exists x_{0}\ne x_{1}\in A\,s.t.\,f\left(x_{0}\right)=f\left(x_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+נקודת קיצון מקומי
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $x_{0}\in D$
+\end_inset
+
+ יקרא נקודת 
+\series bold
+מקסימום
+\backslash
+מינימום מקומי
+\series default
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ אם קיימת 
+\begin_inset Formula $U$
+\end_inset
+
+ סביבה מלאה של 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ שבה 
+\begin_inset Formula $\forall x\in U\,f\left(x\right)\leq f\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפטים
+\end_layout
+
+\begin_layout Subsection*
+משפט פרמה 
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $f:D\rightarrow\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{0}\in D\subseteq\mathbb{R}$
+\end_inset
+
+ נקודת קיצון מקומי של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $f'\left(x_{0}\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+הערות:
+\end_layout
+
+\begin_layout Enumerate
+גם אם 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ נק' קיצון של 
+\begin_inset Formula $f$
+\end_inset
+
+, לא תמיד 
+\begin_inset Formula $f$
+\end_inset
+
+ תהיה גזירה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ )דוגמה - 
+\begin_inset Formula $f\left(x\right)=\left|x\right|,x_{0}=0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+קיימות פונקציות בהן קיימים 
+\begin_inset Formula $x_{0}\in D$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $f'\left(x_{0}\right)=0$
+\end_inset
+
+ אבל 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ אינה נקודות קיצון )דוגמה - 
+\begin_inset Formula $f\left(x\right)=x^{3},x_{0}=0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection*
+מסקנה: 
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ אם קיימת 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש-
+\begin_inset Formula $f$
+\end_inset
+
+ מונוטונית עולה )יורדת( בסביבת 
+\begin_inset Formula $\delta$
+\end_inset
+
+ חד צדדית מלאה, אזי 
+\begin_inset Formula $f'\left(x_{0}\right)\geq0$
+\end_inset
+
+ 
+\begin_inset Formula $\left(f'\left(x_{0}\right)\leq0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

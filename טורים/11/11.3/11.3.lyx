@@ -1,0 +1,1098 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{enumitem}
+\setlist[itemize,1]{label={\fontfamily{cmr}\fontencoding{T1}\selectfont\textbullet}}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Style Standard
+	Category              MainText
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Left
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+	# FIXME This ought to be set dynamically.
+	HTMLStyle
+		div.standard {
+			margin-bottom: 2ex;
+		}
+	EndHTMLStyle
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "Arial Hebrew Scholar"
+\font_typewriter "default" "Arial Black"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\numeric on
+11.3
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מסקנות מהתכנסות במידה שווה של סדרות וטורי פונקציות 
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Section*
+משפטים
+\end_layout
+
+\begin_layout Subsection*
+התכנסות במ
+\begin_inset Quotes erd
+\end_inset
+
+ש משמרת רציפות
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(f_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+, 
+\begin_inset Formula $I\subseteq D\subseteq\mathbb{R}$
+\end_inset
+
+ סדרת פונקציות המתכנסת במ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $I$
+\end_inset
+
+ לפונקציה 
+\begin_inset Formula $f:I\rightarrow\mathbb{R}$
+\end_inset
+
+, ויהי 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+.
+ 
+\series bold
+אם 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+רציפה
+\series default
+ )מימין, משמאל(, 
+\series bold
+אזי גם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה
+\series default
+ )מימין, משמאל(
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+ ו
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ נתון.
+ 
+\end_layout
+
+\begin_layout Standard
+מההתכנסות במ
+\begin_inset Quotes erd
+\end_inset
+
+ש קיים 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ שעבורו לכל 
+\begin_inset Formula $n>N$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in I$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\left(x\right)-f\left(x_{n}\right)\right|<\frac{\varepsilon}{3}$
+\end_inset
+
+.
+ נקבע 
+\begin_inset Formula $n_{0}>N$
+\end_inset
+
+, והרי 
+\begin_inset Formula $f_{n_{0}}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ ועל כן קיימת 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ שעבורה 
+\begin_inset Formula $\left|f_{n_{0}}\left(x\right)-f_{n_{0}}\left(x_{0}\right)\right|<\frac{\varepsilon}{3}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in\left(x_{0}-\delta,x_{0}+\delta\right)$
+\end_inset
+
+.
+ אזי לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ שכזה מתקיים 
+\begin_inset Formula 
+\begin{align*}
+\left|f\left(x\right)-f\left(x_{0}\right)\right| & =\left|f\left(x\right)-f\left(x_{0}\right)+f_{n_{0}}\left(x\right)-f_{n_{0}}\left(x\right)+f_{n_{0}}\left(x_{0}\right)-f_{n_{0}}\left(x_{0}\right)\right|\overset{\left(\triangle\right)}{\leq}\\
+\overset{\left(\triangle\right)}{\leq} & \left|f\left(x\right)-f_{n_{0}}\left(x\right)\right|+\left|f\left(x_{0}\right)-f_{n_{0}}\left(x_{0}\right)\right|+\left|f_{n_{0}}\left(x\right)-f_{n_{0}}\left(x_{0}\right)\right|<\\
+< & 3\frac{\varepsilon}{3}=\varepsilon
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+מסקנות
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $I$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(f_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ מתכנסת במ
+\begin_inset Quotes erd
+\end_inset
+
+ש ל-
+\begin_inset Formula $f$
+\end_inset
+
+ ב-
+\begin_inset Formula $I$
+\end_inset
+
+, אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}f_{n}$
+\end_inset
+
+ מתכנס במ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $I$
+\end_inset
+
+ ל-
+\begin_inset Formula $g$
+\end_inset
+
+ ו
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}f_{n}$
+\end_inset
+
+ מתכנס במ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $I$
+\end_inset
+
+ ל-
+\begin_inset Formula $g$
+\end_inset
+
+ ו
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $I$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph*
+הערה
+\end_layout
+
+\begin_layout Standard
+נוכל לנסח את תוצאת המשפט בצורה הבאה:
+\begin_inset Formula 
+\[
+\underset{x\rightarrow x_{0}}{\lim}\left(\underset{n\rightarrow\infty}{\lim}f_{n}\left(x\right)\right)=f\left(x_{0}\right)=\underset{n\rightarrow\infty}{\lim}\left(\underset{x\rightarrow x_{0}}{\lim}f_{n}\left(x_{0}\right)\right)
+\]
+
+\end_inset
+
+בתנאי ש
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ והסדרה 
+\begin_inset Formula $\left(f_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ מתכנסת במ
+\begin_inset Quotes erd
+\end_inset
+
+ש ל
+\begin_inset Formula $f$
+\end_inset
+
+ ב
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+התכנסות במ
+\begin_inset Quotes erd
+\end_inset
+
+ש משמרת חסימות
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(f_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+, 
+\begin_inset Formula $I\subseteq D\subseteq\mathbb{R}$
+\end_inset
+
+ סדרת פונקציות המתכנסת במ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $I$
+\end_inset
+
+ לפונקציה 
+\begin_inset Formula $f:I\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ חסומה ב
+\begin_inset Formula $I$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ חסומה ב
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $0<K_{n}\in\mathbb{R}$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $\forall x\in I\quad\left|f_{n}\left(x\right)\right|\leq K_{n}$
+\end_inset
+
+.
+ בפרט קיים 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ שעבורו לכל 
+\begin_inset Formula $x\in I,n>N$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\left(x\right)-f_{n}\left(x\right)\right|<1$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula 
+\[
+\left|f\left(x\right)\right|=\left|f\left(x\right)-f_{N+1}\left(x\right)+f_{N+1}\left(x\right)\right|\overset{\left(\triangle\right)}{\leq}\left|f\left(x\right)-f_{N+1}\left(x\right)\right|+\left|f_{N+1}\left(x\right)\right|<1+K_{N+1}
+\]
+
+\end_inset
+
+אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ חסומה ב
+\begin_inset Formula $I$
+\end_inset
+
+, כנדרש.
+\end_layout
+
+\begin_layout Subsection*
+התכנסות במ
+\begin_inset Quotes erd
+\end_inset
+
+ש משמרת אינטגרביליות
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $\left(f_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרת פונקציות אינטגרביליות ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ המתכנסת במ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ל
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula 
+\[
+\tilde{F}_{n}\left(x\right)=\int_{a}^{x}f_{n}\left(t\right)dt\overset{U\left[a,b\right]}{\underset{n\rightarrow\infty}{\longrightarrow}}\tilde{F}\left(x\right)=\int_{a}^{x}f\left(t\right)dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה 
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ אינטגרבילית בקטע הסגור אזי אינטגרבילית רימן ועל כן חסומה, ואינטגרבילית
+ בפרט ב
+\begin_inset Formula $\left[a,x\right]$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+.
+ משימור החסימות )משפט קודם(, 
+\begin_inset Formula $f$
+\end_inset
+
+ גם היא חסומה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ועל כן אינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, כנדרש.
+\end_layout
+
+\begin_layout Subsection*
+אינטגרציה איבר איבר
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $\left(f_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרת פונקציות אינטגרביליות ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, כך ש
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}f_{n}$
+\end_inset
+
+ מתכנס במ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ל-
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ )התכנסות במ
+\begin_inset Quotes erd
+\end_inset
+
+ש משמרת אינטגרביליות( ומתקיים 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f\left(t\right)dt=\int_{a}^{b}\sum_{n=1}^{\infty}f_{n}\left(t\right)dt=\sum_{n=1}^{\infty}\int_{a}^{b}f_{n}\left(t\right)dt
+\]
+
+\end_inset
+
+הוכחה מלינאריות ואדיטיביות של האינטגרל ושל הטור 
+\end_layout
+
+\begin_layout Subsection*
+גזירות לא משתמרת בהתכנסות במ
+\begin_inset Quotes erd
+\end_inset
+
+ש.
+\end_layout
+
+\begin_layout Subsubsection*
+דוגמה נגדית: 
+\end_layout
+
+\begin_layout Standard
+נגדיר לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $x\in I$
+\end_inset
+
+, 
+\begin_inset Formula $f_{n}\left(x\right):=\begin{cases}
+\frac{1}{n}\sin nx & x\geq0\\
+x & x<0
+\end{cases}$
+\end_inset
+
+.
+ נבחין כי 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ מתכנסת במ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ ל
+\begin_inset Formula $f$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $f\left(x\right):=\begin{cases}
+0 & x\geq0\\
+x & x<0
+\end{cases}$
+\end_inset
+
+.
+ נבחין כי 
+\begin_inset Formula $f$
+\end_inset
+
+ אינה גזירה ב
+\begin_inset Formula $0$
+\end_inset
+
+, אך לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ 
+\begin_inset Formula $f_{n}^{\prime}\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+גזירה של פונקציה גבולית - המקרה הפרטי )כולל הוכחה(
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $\left(f_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרת פונקציות גזירות 
+\bar under
+ברציפות
+\bar default
+ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ נתון שקיימת 
+\begin_inset Formula $g:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $f_{n}^{\prime}\overset{U\left[a,b\right]}{\underset{n\rightarrow\infty}{\longrightarrow}}g$
+\end_inset
+
+ במ
+\begin_inset Quotes erd
+\end_inset
+
+ְ ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ וגם קיים 
+\begin_inset Formula $u\in\left[a,b\right]$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}f_{u}\left(u\right)=L\in\mathbb{R}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+אזי קיימת 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ המקיימת:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f_{n}\overset{U\left[a,b\right]}{\underset{n\rightarrow\infty}{\longrightarrow}}f$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $f\left(u\right)=L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f^{\prime}\equiv g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+מהנוסחה היסודית נקבל שלכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f_{n}\left(x\right)=f_{n}\left(u\right)+\int_{u}^{x}f_{n}^{\prime}\left(t\right)dt\iff\int_{u}^{x}f_{n}^{\prime}\left(t\right)dt=f_{n}\left(x\right)-f_{n}\left(u\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+והרי 
+\begin_inset Formula $f_{n}^{\prime}\overset{U\left[a,b\right]}{\underset{n\rightarrow\infty}{\longrightarrow}}g$
+\end_inset
+
+ , אזי 
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, ו
+\begin_inset Formula $\int_{a}^{b}f_{n}^{\prime}\left(t\right)dt\overset{U\left[a,b\right]}{\underset{n\rightarrow\infty}{\longrightarrow}}\int_{a}^{b}g\left(t\right)dt$
+\end_inset
+
+, ועל כן 
+\begin_inset Formula $f_{n}\left(x\right)=f_{n}\left(u\right)+\int_{u}^{x}f_{n}^{\prime}\left(t\right)dt\overset{U\left[a,b\right]}{\underset{n\rightarrow\infty}{\longrightarrow}}L+\int_{u}^{x}g\left(t\right)dt$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\forall x\in\left[a,b\right]\quad f\left(x\right)=L+\int_{u}^{x}g\left(t\right)dt$
+\end_inset
+
+, והרי 
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה אז מהמשפט היסודי 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה 
+\begin_inset Formula $\left(2\right)$
+\end_inset
+
+, ומקיימת , כנדרש.
+\end_layout
+
+\begin_layout Subsection*
+גזירה של פונקציה גבולית - המקרה הכללי
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $\left(f_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+ סדרת פונקציות גזירות ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ נתון שקיימת 
+\begin_inset Formula $g:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula $\overset{\infty}{\underset{k=1}{\sum}}f_{k}^{\prime}\overset{U\left[a,b\right]}{\underset{n\rightarrow\infty}{\longrightarrow}}g$
+\end_inset
+
+ ושקיים 
+\begin_inset Formula $u\in\left[a,b\right]$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $\overset{\infty}{\underset{k=1}{\sum}}f_{k}\left(u\right)=L\in\mathbb{R}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+אזי קיימת 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ המקיימת:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overset{\infty}{\underset{k=1}{\sum}}f_{k}\overset{U\left[a,b\right]}{\underset{n\rightarrow\infty}{\longrightarrow}}f$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $f\left(u\right)=L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f^{\prime}\equiv g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ללא הוכחה
+\end_layout
+
+\begin_layout Subsection*
+גזירה איבר איבר של טורים
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $\left(f_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+ סדרת פונקציות גזירות ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ נתון שקיימת 
+\begin_inset Formula $g:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula $\overset{\infty}{\underset{k=1}{\sum}}f_{k}^{\prime}\overset{U\left[a,b\right]}{\underset{n\rightarrow\infty}{\longrightarrow}}g$
+\end_inset
+
+ ושקיים 
+\begin_inset Formula $u\in\left[a,b\right]$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $\overset{\infty}{\underset{k=1}{\sum}}f_{k}\left(u\right)=L\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי קיימת 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ המקיימת:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\overset{\infty}{\underset{k=1}{\sum}}f_{k}\overset{U\left[a,b\right]}{\underset{n\rightarrow\infty}{\longrightarrow}}f$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $f\left(u\right)=L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f^{\prime}\equiv g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבחין כי 
+\begin_inset Formula 
+\begin{align*}
+\left(3\right) & \iff\forall x\in\left[a,b\right]\\
+\iff & \left(\sum_{k=1}^{\infty}f_{k}\right)^{\prime}\left(x\right)=\sum_{k=1}^{\infty}f_{k}^{\prime}\left(x\right)
+\end{align*}
+
+\end_inset
+
+הוכחה מיידית מהמסקנות הקודמות
+\end_layout
+
+\begin_layout Section*
+דוגמאות
+\end_layout
+
+\end_body
+\end_document

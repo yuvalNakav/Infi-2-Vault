@@ -1,5 +1,7 @@
 {
   "alwaysUpdateLinks": true,
   "focusNewTab": false,
-  "rightToLeft": true
+  "rightToLeft": true,
+  "showUnsupportedFiles": true,
+  "promptDelete": false
 }

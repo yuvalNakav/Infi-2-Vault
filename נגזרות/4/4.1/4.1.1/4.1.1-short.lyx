@@ -1,0 +1,257 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Formula $4.1.1$
+\end_inset
+
+ הגדרת הנגזרת
+\end_layout
+
+\begin_layout Paragraph
+תהא 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה המוגדרת בסביבה מלאה של 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+הגדרה
+\end_layout
+
+\begin_layout Standard
+
+\series medium
+נאמר ש-
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה בנקודה 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיים הגבול במובן הצר 
+\begin_inset Formula $\underset{x\rightarrow x_{0}}{\lim}\frac{f\left(x\right)-f\left(x_{0}\right)}{x-x_{0}}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם גבול זה קיים, הוא יקרא הנגזרת של 
+\begin_inset Formula $f$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ ויסומן 
+\begin_inset Formula $f`\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ גזירות חד צדדית )
+\begin_inset Formula $f$
+\end_inset
+
+ מוגדרת בסביבה מלאה ימנית
+\backslash
+שמאלית של 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+f'_{\_}\left(x_{0}\right)=\underset{x\rightarrow x_{0}^{-}}{\lim}\frac{f\left(x\right)-f\left(x_{0}\right)}{x-x_{0}},\quad f_{+}^{'}\left(x_{0}\right)=\underset{x\rightarrow x_{0}^{+}}{\lim}\frac{f\left(x\right)-f\left(x_{0}\right)}{x-x_{0}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הגדרות שקולות לגזירות בנקודה: 
+\end_layout
+
+\begin_layout Standard
+
+\series medium
+נאמר ש-
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה בנקודה 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם:
+\end_layout
+
+\begin_layout Description
+
+\series medium
+\begin_inset Formula $\Updownarrow$
+\end_inset
+
+ הגבול 
+\begin_inset Formula $\underset{h\rightarrow0}{\lim}\frac{f\left(x_{0}+h\right)-f\left(x_{0}\right)}{h}$
+\end_inset
+
+ קיים במובן הצר.
+ ממנו נובע:
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Updownarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\underset{h\rightarrow0}{\lim}\frac{f\left(x_{0}\right)-f\left(x_{0}-h\right)}{h}\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Updownarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\underset{h\rightarrow0}{\lim}\frac{f\left(x_{0}+h\right)-f\left(x_{0}-h\right)}{2h}\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\series medium
+\begin_inset Formula $\Updownarrow$
+\end_inset
+
+ הגבולות מימין ומשמאל 
+\series default
+קיימים 
+\series medium
+במובן הצר ומקיימים 
+\begin_inset Formula $\underset{x\rightarrow x_{0}^{-}}{\lim}\frac{f\left(x\right)-f\left(x_{0}\right)}{x-x_{0}}=\underset{x\rightarrow x_{0}^{+}}{\lim}\frac{f\left(x\right)-f\left(x_{0}\right)}{x-x_{0}}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+f_{-}^{'}\left(x_{0}\right)=f^{'}\left(x_{0}\right)=f_{+}^{'}\left(x_{0}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

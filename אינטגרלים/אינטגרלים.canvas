@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"6b1e8d3806ec6492","type":"file","file":"אינטגרלים/6/6.2/6.2 אינטגרביליות - משפטים.md","x":29,"y":-1390,"width":880,"height":2510},
+		{"id":"c5b5e59b4d17cb65","type":"file","file":"אינטגרלים/6/6.1/6.1 סכומי דרבו-משפטים.md","x":1060,"y":-596,"width":714,"height":516},
+		{"id":"a121a27433d92050","type":"file","file":"אינטגרלים/6/6.1/6.1 סכומי דרבו - הגדרות.md","x":1060,"y":-2480,"width":1040,"height":1538},
+		{"id":"b1192a814fc226c0","type":"file","file":"אינטגרלים/6/6.2/6.2 אינטגרביליות - הגדרות.md","x":29,"y":-2139,"width":756,"height":589},
+		{"id":"eba70f0f73abcaaa","type":"file","file":"אינטגרלים/7/7.2/7.2 שיטות אינטגרציה.md","x":1920,"y":-613,"width":785,"height":533},
+		{"id":"6209336958259231","type":"text","text":"# אינטגרלים המוגדרים על קטע סגור\n  ","x":29,"y":-2680,"width":546,"height":81},
+		{"id":"8cf0e1d23d8d95aa","type":"file","file":"אינטגרלים/6/6.3/6.3 אי-רגישות האינטגרל למספר סופי של שינויים באינטגרנד.md","x":-1111,"y":-1047,"width":1018,"height":1401},
+		{"id":"18d6b33543ffc7be","type":"file","file":"אינטגרלים/7/7.1/7.1 המשפט והנוסחה היסודיים- משפטים.md","x":-2080,"y":-1047,"width":862,"height":1702},
+		{"id":"6b045f54949215c5","type":"file","file":"אינטגרלים/7/7.1/7.1 המשפט והנוסחה היסודיים - הגדרות.md","x":-2129,"y":-2156,"width":960,"height":859},
+		{"id":"007a91b72482dd98","type":"file","file":"אינטגרלים/8/8.1/8.1 סוגים של אינטגרלים לא אמיתיים.md","x":-3200,"y":-2480,"width":960,"height":2042},
+		{"id":"0cdab6ba33a16ea6","type":"file","file":"אינטגרלים/8/8.2/8.2 מבחני השוואה להתכנסות והתכנסות בהחלט (אינטגרלים).md","x":-3164,"y":-338,"width":889,"height":1106},
+		{"id":"beafea9d63bcf2ab","type":"file","file":"אינטגרלים/6/6.4/6.4 סכומי רימן.md","x":-1011,"y":-2139,"width":818,"height":880}
+	],
+	"edges":[
+		{"id":"f68b1348de4d6290","fromNode":"a121a27433d92050","fromSide":"left","toNode":"b1192a814fc226c0","toSide":"right","fromEnd":"arrow","color":"1"},
+		{"id":"c0c7e14b720b79c9","fromNode":"beafea9d63bcf2ab","fromSide":"right","toNode":"6b1e8d3806ec6492","toSide":"top","fromEnd":"arrow","color":"2","label":"אם״ם"},
+		{"id":"daa46916feed17eb","fromNode":"8cf0e1d23d8d95aa","fromSide":"left","toNode":"18d6b33543ffc7be","toSide":"right","fromEnd":"arrow","color":"3"},
+		{"id":"39f8966da82aea67","fromNode":"0cdab6ba33a16ea6","fromSide":"top","toNode":"007a91b72482dd98","toSide":"bottom","color":"4"},
+		{"id":"e461021551e7176b","fromNode":"6b045f54949215c5","fromSide":"bottom","toNode":"8cf0e1d23d8d95aa","toSide":"top"},
+		{"id":"09cc3537710427af","fromNode":"b1192a814fc226c0","fromSide":"left","toNode":"beafea9d63bcf2ab","toSide":"right","fromEnd":"arrow","color":"2","label":"אם״ם"},
+		{"id":"1bc64d4651615da3","fromNode":"a121a27433d92050","fromSide":"left","toNode":"beafea9d63bcf2ab","toSide":"right","fromEnd":"arrow","color":"4"},
+		{"id":"0064dc77cdead1f9","fromNode":"007a91b72482dd98","fromSide":"top","toNode":"6b045f54949215c5","toSide":"top"}
+	]
+}

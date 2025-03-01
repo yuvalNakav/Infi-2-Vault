@@ -1,0 +1,730 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Style Standard
+	Category              MainText
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Left
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+	# FIXME This ought to be set dynamically.
+	HTMLStyle
+		div.standard {
+			margin-bottom: 2ex;
+		}
+	EndHTMLStyle
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "Arial Hebrew Scholar"
+\font_typewriter "default" "Arial Black"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+
+\numeric on
+11
+\numeric off
+.
+ סדרות וטורי פונקציות 
+\end_layout
+
+\begin_layout Subsection*
+הגדרות
+\end_layout
+
+\begin_layout Description
+סדרת
+\begin_inset space ~
+\end_inset
+
+פונקציות יהי 
+\begin_inset Formula $D\subseteq\mathbb{R}$
+\end_inset
+
+.
+ נניח שלכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ נתונה פונקציה 
+\begin_inset Formula $f_{n}:D\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ אז הסדרה 
+\begin_inset Formula $\left(f_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ תיקרא 
+\series bold
+סדרת פונקציות
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הערה זוהי העתקה מהטבעיים למרחב הפונקציות, ול 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+ לא חייב בהכרח להיות קשר אלגברי ל
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Description
+הערה
+\numeric on
+2
+\begin_inset space ~
+\end_inset
+
+
+\numeric off
+ סדרות פונקציות יהיו בעלות תחום משותף - 
+\begin_inset Formula $\forall n\ne k\in\mathbb{N}\quad f_{n}^{-1}=f_{k}^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+טור
+\begin_inset space ~
+\end_inset
+
+פונקציות אם 
+\begin_inset Formula $\left(f_{n}\right)_{n=1}^{\infty};\forall n\in\mathbb{N}\,f_{n}:D\rightarrow\mathbb{R}$
+\end_inset
+
+ היא סדרת פונקציות, נגדיר 
+\begin_inset Formula $\left(s_{n}\right)_{n=1}^{\infty};\forall n\in\mathbb{N}\,s_{n}:D\rightarrow\mathbb{R}$
+\end_inset
+
+ סדרת הסכומים החלקיים של 
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\forall n\in\mathbb{N}\,\forall x\in D\quad s_{n}\left(x\right)=\sum_{k=1}^{n}f_{k}\left(x\right)
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $s_{n}$
+\end_inset
+
+ סדרת פונקציות שהיא סס
+\begin_inset Quotes erd
+\end_inset
+
+ח של הטור 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}f_{n}$
+\end_inset
+
+.
+ הטור 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}f_{n}$
+\end_inset
+
+ יקרא 
+\series bold
+טור פונקציות
+\end_layout
+
+\begin_layout Description
+התכנסות
+\begin_inset space ~
+\end_inset
+
+נקודתית יהי 
+\begin_inset Formula $D\subseteq\mathbb{R}$
+\end_inset
+
+.
+ אם לסדרת הפונקציות 
+\begin_inset Formula $\left(f_{n}\right)_{n=1}^{\infty},\,f_{n}:D\rightarrow\mathbb{R}$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $A\subseteq D$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ הסדרה 
+\begin_inset Formula $\left(f_{n}\left(x\right)\right)_{n=1}^{\infty}$
+\end_inset
+
+ מתכנסת 
+\bar under
+)במובן הצר!
+\bar default
+(, נסמן את הגבול 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}f_{n}\left(x\right):=f\left(x\right)$
+\end_inset
+
+, ונאמר שסדרת הפונקציות מתכנסת 
+\series bold
+נקודתית
+\series default
+ 
+\series bold
+לגבול 
+\begin_inset Formula $f$
+\end_inset
+
+ בקבוצה
+\series default
+ 
+\begin_inset Formula $A\subseteq D$
+\end_inset
+
+, ו
+\begin_inset Formula $A$
+\end_inset
+
+ יקרא 
+\series bold
+תחום ההתכנסות )הנקודתית( של הסדרה 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הבהרה הכוונה בגבול הוא בקיבוע של 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+: 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}f_{n}\left(x_{0}\right)=f\left(x_{0}\right)\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה יחידות הגבול - אם קיים ל
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ גבול, הוא יחיד
+\end_layout
+
+\begin_layout Description
+הערה
+\series bold
+\numeric on
+2
+\begin_inset space ~
+\end_inset
+
+
+\family roman
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+גבול נקודתי אינו משמר רציפות - יתכן ו
+\begin_inset Formula $\left(f_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרת פונקציות רציפות, המתכנסות נקודתית ב
+\begin_inset Formula $B\subseteq\mathbb{R}$
+\end_inset
+
+ ל
+\begin_inset Formula $f$
+\end_inset
+
+, אך 
+\begin_inset Formula $f$
+\end_inset
+
+ אינה רציפה )ספויילר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - התכנסות במ
+\begin_inset Quotes erd
+\end_inset
+
+ש משמרת רציפות(
+\end_layout
+
+\end_deeper
+\begin_layout Description
+התכנסות
+\begin_inset space ~
+\end_inset
+
+נקודתית
+\begin_inset space ~
+\end_inset
+
+של
+\begin_inset space ~
+\end_inset
+
+טור באותו אופן, התכנסות נקודתית של טור פונקציות 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}f_{n}$
+\end_inset
+
+ ב
+\begin_inset Formula $A$
+\end_inset
+
+ היא ההתכנסות של הטור 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}f_{n}\left(x\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הערה גם כאן, הגבול תלוי ב
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+הבהרה אם 
+\begin_inset Formula $S:A\rightarrow\mathbb{R}$
+\end_inset
+
+ היא הגבול הנקודתי של הטור 
+\begin_inset Formula $\overset{\infty}{\underset{n=1}{\sum}}f_{n}$
+\end_inset
+
+, זה אומר שמתקיים 
+\begin_inset Formula 
+\begin{align*}
+\forall x\in A & S\left(x\right):=\underset{N\rightarrow\infty}{\lim}\sum_{n=1}^{N}f_{n}\left(x\right)\iff\\
+\iff & \forall x\in A\,\forall\varepsilon>0\,\exists N\in\mathbb{N}\,\forall n>N\quad\left|S\left(x\right)-\sum_{j=1}^{n}f_{j}\left(x\right)\right|<\varepsilon
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+התכנסות
+\begin_inset space ~
+\end_inset
+
+במידה
+\begin_inset space ~
+\end_inset
+
+שווה תהי 
+\begin_inset Formula $\left(f_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרת פונקציות ב
+\begin_inset Formula $D$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $f:D\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ נאמר ש
+\series bold
+
+\begin_inset Formula $\left(f_{n}\right)$
+\end_inset
+
+ מתכנסת ל-
+\begin_inset Formula $f$
+\end_inset
+
+ במידה שווה )במ
+\begin_inset Quotes erd
+\end_inset
+
+ש( 
+\begin_inset Formula $\left(\text{Uniformly}\right)$
+\end_inset
+
+ 
+\series default
+אםם 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\:\exists n\in\mathbb{N}\:\forall x\in D\,\forall n>N\quad\left|f\left(x\right)-f_{n}\left(x\right)\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+הערות 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+במקרה של התכנסות במ
+\begin_inset Quotes erd
+\end_inset
+
+ש, 
+\begin_inset Formula $N$
+\end_inset
+
+ לא תלוי ב
+\begin_inset Formula $x\in D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+התכנסות במ
+\begin_inset Quotes erd
+\end_inset
+
+ש תלויה בתחום
+\end_layout
+
+\begin_layout Itemize
+התכנסות במ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $D$
+\end_inset
+
+ גוררת התכנסות נקודתית ב
+\begin_inset Formula $D$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+שיתוף השם עם התכנסות במידה שווה נובע מכך שזהו תנאי שהוא חזק יותר מאשר התכנסות
+\backslash
+רציפות רגילה, ובעצם מגביל כמה כל מאורע בפונקציה יכול להתרחק מאחר עם כלל
+ חזק יותר מאשר ___ות שאינה במידה שווה - נוכל להבין יותר בקלות מה קורה עם
+ כל נקודה
+\backslash
+פונקציה ביחס לאחרת עד כדי 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ גם אם הן 
+\begin_inset Quotes eld
+\end_inset
+
+רחוקות
+\begin_inset Quotes erd
+\end_inset
+
+ זו מזו במיקום שלהן
+\backslash
+ב
+\begin_inset Formula $n$
+\end_inset
+
+ שבו הן תלויות 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection*
+משפטים
+\end_layout
+
+\begin_layout Subsubsection*
+התכנסות במ
+\begin_inset Quotes erd
+\end_inset
+
+ש ב
+\begin_inset Formula $D$
+\end_inset
+
+ גוררת התכנסות נקודתית ב
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+סקיצת
+\begin_inset space ~
+\end_inset
+
+הוכחה: ישירות מההצרנה - אם 
+\begin_inset Formula $N$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+גלובלי
+\begin_inset Quotes erd
+\end_inset
+
+ ביחס ל
+\begin_inset Formula $x$
+\end_inset
+
+ אז בפרט הזוג 
+\begin_inset Formula $\left(N,x\right)$
+\end_inset
+
+ מקיימים את תנאי ההתכנסות הנקודתית.
+\end_layout
+
+\begin_layout Standard
+)לא בטוח אם זה משפט או לא(
+\end_layout
+
+\begin_layout Description
+
+\end_layout
+
+\begin_layout Subsection*
+דוגמאות
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $e^{x}$
+\end_inset
+
+: היא הסדרה 
+\begin_inset Formula $\left(e_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $\forall n\in\mathbb{N}\quad e_{n}\left(x\right)=\left(1+\frac{x}{n}\right)^{n}$
+\end_inset
+
+.
+ ראינו באינפי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלכל 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ יש 
+\begin_inset Formula $y\in\mathbb{R}$
+\end_inset
+
+ שעבורו 
+\begin_inset Formula $y=e^{x}$
+\end_inset
+
+ ועל כן 
+\begin_inset Formula $\exp:\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+ היא הגבול הנקודתי של 
+\begin_inset Formula $e_{n}$
+\end_inset
+
+ ב-
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,764 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+אינטגרביליות 
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+אינטגרביליות
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ פונקציה 
+\series bold
+חסומה
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+נאמר ש-
+\series bold
+
+\begin_inset Formula $\mathbf{f}$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\mathbf{\left[a,b\right]}$
+\end_inset
+
+
+\series default
+אם
+\begin_inset Quotes erd
+\end_inset
+
+ם מתקיים 
+\begin_inset Formula $\overset{\overline{b}}{\underset{a}{\int}}f\left(x\right)dx=\overset{b}{\underset{\underline{a}}{\int}}f\left(x\right)d\left(x\right)$
+\end_inset
+
+.
+ במקרה זה נסמן את הערך הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $\overset{b}{\underset{a}{\int}}f\left(x\right)dx$
+\end_inset
+
+ והוא יקרא 
+\series bold
+האינטגרל של 
+\begin_inset Formula $\mathbf{f}$
+\end_inset
+
+ ב
+\begin_inset Formula $\mathbf{\left[a,b\right]}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+שטח
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ פונקציה 
+\series bold
+חסומה.
+ 
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\forall x\in\left[a,b\right]\,f\left(x\right)\geq0$
+\end_inset
+
+ ו-
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, אז המספר האי שלילי 
+\begin_inset Formula $\overset{b}{\underset{a}{\int}}f\left(x\right)dx\in\mathbb{R}^{+}$
+\end_inset
+
+ יקרא השטח של הקבוצה 
+\begin_inset Formula 
+\[
+\left\{ \left(x,y\right)\in\mathbb{R}^{2}\mid x\in\left[a,b\right],y\in\left[0,f\left(x\right)\right]\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ פונקציה 
+\series bold
+אינטגרבילית ב
+\series default
+
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula 
+\[
+\overset{a}{\underset{a}{\int}}f\left(x\right)dx=0,\overset{b}{\underset{a}{\int}}f\left(x\right)dx=-\overset{a}{\underset{b}{\int}}f\left(x\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפטים
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+\color blue
+תנאי דרבו לאינטגרביליות
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ חסומה.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+אם
+\begin_inset Quotes erd
+\end_inset
+
+ם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיימת חלוקה 
+\begin_inset Formula $P$
+\end_inset
+
+ שעבורה 
+\begin_inset Formula $U\left(f,P\right)-L\left(f,P\right)<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+מסקנה 
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ חסומה.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+אם
+\begin_inset Quotes erd
+\end_inset
+
+ם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיימת חלוקה 
+\begin_inset Formula $P$
+\end_inset
+
+ שעבורה 
+\begin_inset Formula $\underset{i=1}{\overset{n}{\sum}}\omega_{i}\left(x_{i}-x_{i-1}\right)<\varepsilon$
+\end_inset
+
+.
+ משום ש- 
+\begin_inset Formula 
+\begin{align*}
+\forall P\quad & U\left(f,P\right)-L\left(f,P\right)=\underset{i=1}{\overset{n}{\sum}}M_{i}\left(x_{i}-x_{i-1}\right)-\underset{i=1}{\overset{n}{\sum}}m_{i}\left(x_{i}-x_{i-1}\right)=\\
+= & \underset{i=1}{\overset{n}{\sum}}\left(M_{i}-m_{i}\right)\left(x_{i}-x_{i-1}\right)\stackrel[def]{by}{=}\underset{i=1}{\overset{n}{\sum}}\omega_{i}\left(x_{i}-x_{i-1}\right)\stackrel[def]{by}{=}\omega\left(f,P\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+תוספת ללמת החתכים
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\mathcal{L},\mathcal{U}\subseteq\mathbb{R}$
+\end_inset
+
+ לא ריקות ומקיימות 
+\begin_inset Formula $\mathcal{L}\leq\mathcal{U}$
+\end_inset
+
+.
+ הבאות שקולות:
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\iff$
+\end_inset
+
+ 
+\begin_inset Formula $\sup\mathcal{L}=\inf\mathcal{U}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\iff$
+\end_inset
+
+ קיימות שתי סדרות 
+\begin_inset Formula $\left(u_{n}\right)_{n=1}^{\infty},\left(\ell_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\forall n\in\mathbb{N}\,l_{n}\in\mathcal{L},u_{n}\in\mathcal{U}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+מסקנה
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ חסומה.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ 
+\begin_inset Formula $\iff$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $\left(P_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרת חלוקות של 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ המקיימת 
+\begin_inset Formula 
+\[
+\underset{n\rightarrow\infty}{\lim}\left(U\left(f,P_{n}\right)-L\left(f,P_{n}\right)\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+משפט דרבו
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ חסומה.
+ אזי לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיימים 
+\begin_inset Formula $\delta_{1},\delta_{2}>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $P$
+\end_inset
+
+ חלוקה של 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+\begin{cases}
+U\left(f,P\right)-\overset{\overline{b}}{\underset{a}{\int}}f\left(x\right)dx<\varepsilon & \Delta\left(P\right)<\delta_{1}\\
+\overset{b}{\underset{\underline{a}}{\int}}f\left(x\right)d\left(x\right)-L\left(f,P\right)<\varepsilon & \Delta\left(P\right)<\delta_{2}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+מסקנה! 
+\end_layout
+
+\begin_layout Standard
+לכל סדרת חלוקות 
+\begin_inset Formula $\left(P_{j}\right)_{j=1}^{\infty}$
+\end_inset
+
+המקיימת 
+\begin_inset Formula $\underset{j\rightarrow\infty}{\lim}\Delta P_{j}=0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\underset{j\rightarrow\infty}{\lim}U\left(f,P_{j}\right)=\overset{\overline{b}}{\underset{a}{\int}}f\left(x\right)dx$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\underset{j\rightarrow\infty}{\lim}L\left(f,P_{j}\right)=\overset{b}{\underset{\underline{a}}{\int}}f\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+אינטגרביליות בכל וריציאציה של קטע סגור
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a,b,c\in\mathbb{R}$
+\end_inset
+
+, ותהי 
+\begin_inset Formula $f:\left[\min\left\{ a,b,c\right\} ,\max\left\{ a,b,c\right\} \right]$
+\end_inset
+
+.
+ אינטגרבילית בקטע.
+ אז מתקיים 
+\begin_inset Formula 
+\[
+\overset{b}{\underset{a}{\int}}f\left(x\right)dx=\overset{c}{\underset{a}{\int}}f\left(x\right)dx+\overset{b}{\underset{c}{\int}}f\left(x\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+אינטגרביליות של פונקציה מונוטונית בקטע סגור
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ מונוטונית.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית בהגדרתה.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הערה 
+\series default
+נשים לב ש-
+\begin_inset Formula $f$
+\end_inset
+
+ אינה חייבת להיות רציפה! 
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+אינטגרביליות של פונקציה רציפה
+\series default
+ 
+\series bold
+בקטע סגור
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ רציפה.
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+שיקוף דרך ציר ה
+\begin_inset Formula $Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ אינטגרבילית ב-
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $g:\left[-b,-a\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\forall x\in\left[-b,-a\right]\,g\left(x\right)=f\left(-x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $g$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[-b,-a\right]$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $\overset{-a}{\underset{-b}{\int}}g\left(x\right)dx=\overset{b}{\underset{a}{\int}}f\left(x\right)dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+האינטגרל של פונקציה אי שלילית עם מקטע חיובי הוא חיובי
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f$
+\end_inset
+
+ אינטגרבילית ואי שלילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+, ותהא 
+\begin_inset Formula $x_{0}\in\left[a,b\right]$
+\end_inset
+
+ שבה 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה וחיובית.
+ אזי 
+\begin_inset Formula $\overset{b}{\underset{a}{\int}}f\left(x\right)dx\geq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+אי שוויון קושי שוורץ
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $f,g:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ פונקציות איטנגרביליות ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ אזי מתקיים 
+\begin_inset Formula 
+\[
+\overset{b}{\underset{a}{\int}}f\left(x\right)g\left(x\right)dx\leq\sqrt{\overset{b}{\underset{a}{\int}}f^{2}\left(x\right)dx}\sqrt{\overset{b}{\underset{a}{\int}}g^{2}\left(x\right)dx}
+\]
+
+\end_inset
+
+ואם 
+\begin_inset Formula $f,g\in C\left(\left[a,b\right]\right)$
+\end_inset
+
+ רציפות, אזי 
+\begin_inset Formula 
+\begin{align*}
+\overset{b}{\underset{a}{\int}}\left|f\left(x\right)g\left(x\right)\right|dx & =\sqrt{\overset{b}{\underset{a}{\int}}f^{2}\left(x\right)dx}\sqrt{\overset{b}{\underset{a}{\int}}g^{2}\left(x\right)dx}\iff\\
+\iff & \exists\lambda\in\mathbb{R}\;f=\lambda g
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הלמה של רימן-לבג
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ גזירה כך ש
+\begin_inset Formula $f'$
+\end_inset
+
+ אינטגרבילית.
+ אזי מתקיים 
+\begin_inset Formula 
+\[
+\underset{n\rightarrow\infty}{\lim}\overset{b}{\underset{a}{\int}}f\left(x\right)\cos\left(nx\right)dx=0=\underset{n\rightarrow\infty}{\lim}\overset{b}{\underset{a}{\int}}f\left(x\right)\sin\left(nx\right)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מציאת ערך של נקודה פנימית בפונקציה לפי מכפלת אינטגרלים
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $f,g:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ אינטגרביליות רציפות ב
+\begin_inset Formula $x_{0}\in\left(a,b\right)$
+\end_inset
+
+, ומקיימות 
+\begin_inset Formula $g\left(x\right)>0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+.
+ אזי מתקיים 
+\begin_inset Formula 
+\[
+\underset{\delta\rightarrow0}{\lim}\frac{\overset{x_{0}+\delta}{\underset{x_{0}-\delta}{\int}}f\left(t\right)g\left(t\right)dt}{\overset{x_{0}+\delta}{\underset{x_{0}-\delta}{\int}}g\left(t\right)dt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

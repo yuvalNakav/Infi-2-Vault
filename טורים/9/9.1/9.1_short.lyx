@@ -1,0 +1,816 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Style Standard
+	Category              MainText
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Left
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+	# FIXME This ought to be set dynamically.
+	HTMLStyle
+		div.standard {
+			margin-bottom: 2ex;
+		}
+	EndHTMLStyle
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\numeric on
+9.1
+\numeric off
+ טורים, כללי
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ סדרת הסכומים החלקיים
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה ממשית.
+ נגדיר סדרה חדשה 
+\begin_inset Formula $\left(S_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+ שהיא 
+\series bold
+סדרת הסכומים החלקיים של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+, 
+\series default
+המוגדרת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\forall k\in\mathbb{N}\,S_{k}=a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם לסדרה יש גבול במובן הרחב, נסמן 
+\begin_inset Formula 
+\[
+\underset{k\rightarrow\infty}{\lim}S_{k}=\underset{k\rightarrow\infty}{\lim}\underset{n=1}{\overset{k}{\sum}}a_{n}=\underset{n=1}{\overset{\infty}{\sum}}a_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בכל מקרה, נסמן את הסדרה 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(S_{k}\right)_{k=1}^{\infty}=\left(\underset{n=1}{\overset{k}{\sum}}a_{n}\right)_{k=1}^{\infty}=\underset{n}{\sum}a_{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1.1
+\numeric off
+ טור חסום
+\end_layout
+
+\begin_layout Standard
+נאמר שה
+\series bold
+טור 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ חסום
+\series default
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם הסס
+\begin_inset Quotes erd
+\end_inset
+
+ח 
+\begin_inset Formula $\left(S_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+ היא סדרה חסומה.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+2
+\numeric off
+.
+ טור
+\end_layout
+
+\begin_layout Standard
+למילה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משמעויות: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ סדרת הסכומים החלקיים של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ היא 
+\series bold
+טור הסדרה 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם קיים הגבול 
+\begin_inset Formula $\underset{n=1}{\overset{\infty}{\sum}}a_{n}=L$
+\end_inset
+
+, נאמר ש-
+\begin_inset Formula $L$
+\end_inset
+
+ הוא 
+\series bold
+טור הסדרה 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L\in\mathbb{R}$
+\end_inset
+
+, נאמר ש
+\series bold
+הטור מתכנס
+\series default
+ וש
+\series bold
+סכום הטור הוא 
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $L\in\left\{ -\infty,\infty\right\} $
+\end_inset
+
+, נאמר ש
+\series bold
+הטור 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתבדר לאינסוף )מינוס אינסוף(
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\numeric on
+2
+\numeric off
+.
+ טור זנב וטור הזנב
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה ממשית, 
+\begin_inset Formula $\left(S_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+ שהיא סדרת הסכומים החלקיים של
+\series bold
+ 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ 
+\series default
+ו
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+טור ה
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+-זנב של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ 
+\series default
+הוא הטור 
+\begin_inset Formula $\underset{n}{\sum}a_{n+N}=a_{N+1},a_{N+2},\dots,a_{N+n},\dots$
+\end_inset
+
+
+\series bold
+ואינו קשור לסדרת הסכומים החלקיים 
+\begin_inset Formula $\left(S_{k}\right)$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+אם טור ה
+\begin_inset Formula $N$
+\end_inset
+
+-זנב של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ מתכנס, נסמן את גבול הטור 
+\begin_inset Formula $\underset{n=N+1}{\overset{\infty}{\sum}}a_{n}=\underset{n=1}{\overset{\infty}{\sum}}a_{n+N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לעומת זאת, 
+\series bold
+ה
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+-זנב של הטור 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ 
+\series default
+הוא 
+\begin_inset Formula $\left(S_{k+N}\right)_{k=1}^{\infty}$
+\end_inset
+
+ המוגדר 
+\begin_inset Formula $\forall k>N\,S_{K}=a_{N+1}+a_{N+2}+a_{k}\dots=\underset{n=1}{\overset{k}{\sum}}a_{k}-\underset{n=1}{\overset{N}{\sum}}a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+סימון: 
+\begin_inset Formula $x^{+},x^{-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ נסמן 
+\begin_inset Formula 
+\[
+\begin{cases}
+x^{-}= & \frac{\left|x\right|-x}{2}=\max\left\{ -x,0\right\} \geq0\\
+x^{+}= & \frac{\left|x\right|+x}{2}=\max\left\{ x,0\right\} 
+\end{cases}
+\]
+
+\end_inset
+
+אזי מתקיים 
+\begin_inset Formula $x=x^{+}-x^{-}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left|x\right|=x^{+}+x^{-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפטים
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ התכנסות טורים הנדסיים
+\end_layout
+
+\begin_layout Standard
+נשאל: האם הטור 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס? אם 
+\begin_inset Formula $a_{1}\ne0$
+\end_inset
+
+, תלוי ב
+\begin_inset Formula $q$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $q=1$
+\end_inset
+
+ אזי 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+קבועה, ולכן לא תתכנס לכל 
+\begin_inset Formula $a_{1}\ne0$
+\end_inset
+
+, שכן 
+\begin_inset Formula $\forall k\in\mathbb{N}\,\underset{n=1}{\overset{k}{\sum}}a_{n}=k\cdot a_{1}\underset{n\rightarrow\infty}{\rightarrow}\infty$
+\end_inset
+
+, 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $\left|q\right|>1$
+\end_inset
+
+ משום ש
+\begin_inset Formula $a_{1}\ne0$
+\end_inset
+
+, לפי הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ לא תתכנס וכן 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ לא אפסה.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\left|q\right|<1$
+\end_inset
+
+ אזי מתקיים 
+\begin_inset Formula $\underset{k\rightarrow\infty}{\lim}S_{k}=\underset{k\rightarrow\infty}{\lim}\underset{n=1}{\overset{k}{\sum}}a_{n}\overset{\left(*\right)}{=}\underset{k\rightarrow\infty}{\lim}a_{1}\frac{1-q^{k}}{1-q}=\frac{a_{1}}{1-q}$
+\end_inset
+
+ והטור מתכנס )בפרט הסדרה אפסה( 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+
+\numeric on
+2
+\numeric off
+.
+ טור מתכנס רק אם הסדרה אפסה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס, אזי 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}a_{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+3
+\numeric off
+.
+ התבדרות הטור ההרמוני
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה על 
+\begin_inset Formula $m$
+\end_inset
+
+ שמתקיים 
+\begin_inset Formula $\forall m\in\mathbb{N}\quad\overset{2^{m-1}}{\underset{n=1}{\sum}}=S_{2^{m-1}}\geq\frac{m+1}{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+בסיס
+\series default
+ 
+\begin_inset Formula $m=1$
+\end_inset
+
+: מתקיים 
+\begin_inset Formula $S_{2^{1-1}}=S_{1}=1\geq\frac{1+1}{2}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+צעד
+\series default
+ נניח שמתקיים 
+\begin_inset Formula $S_{2^{m-1}}\geq\frac{m+1}{2}$
+\end_inset
+
+, נוכיח שמתקיים 
+\begin_inset Formula $S_{2^{m}}\geq\frac{m+2}{2}$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+S_{2^{m}} & =S_{2^{m-1}}+h_{2^{m-1}+1}+h_{2^{m-1}+2}+\cdots h_{2^{m}-1}+h_{2^{m}}=\\
+= & S_{2^{m-1}}+\frac{1}{2^{m-1}}+\frac{1}{2^{m-1}+1}+\cdots+\frac{1}{2^{m}-1}+\frac{1}{2^{m}}\geq S_{2^{m-1}}+2^{m-1}\left(\frac{1}{2^{m}}\right)\overset{step}{\geq}\\
+\overset{step}{\geq} & \frac{m+1}{2}+\frac{2^{m-1}}{2^{m}}=\frac{m+1}{2}+\frac{1}{2}=\frac{\left(m+1\right)+1}{2}
+\end{align*}
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+4
+\numeric off
+.
+ אריתמטיקה של טורים מתכנסים
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty},\left(b_{n}\right)_{n=1}^{\infty}\subseteq\mathbb{R}$
+\end_inset
+
+ סדרות ממשיות ויהא 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+ נתון.
+ אזי מתקיים:
+\end_layout
+
+\begin_layout Enumerate
+אם הטור 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס, אזי הטור 
+\begin_inset Formula $\underset{n}{\sum}\left(ca_{n}\right)$
+\end_inset
+
+ מתכנס ומתקיים 
+\begin_inset Formula $\underset{n=1}{\overset{\infty}{\sum}}\left(ca_{n}\right)=c\cdot\underset{n=1}{\overset{\infty}{\sum}}a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $c\ne0$
+\end_inset
+
+, והטור 
+\begin_inset Formula $\underset{n}{\sum}\left(ca_{n}\right)$
+\end_inset
+
+ מתכנס, אזי הטור 
+\begin_inset Formula $\underset{n}{\sum}\left(a_{n}\right)$
+\end_inset
+
+ מתכנס ומקיים 
+\begin_inset Formula $\underset{n=1}{\overset{\infty}{\sum}}a_{n}=\frac{1}{c}\underset{n=1}{\overset{\infty}{\sum}}\left(ca_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+תוספת
+\series default
+ אם הטורים 
+\begin_inset Formula $\underset{n}{\sum}a_{n},\underset{n}{\sum}b_{n}$
+\end_inset
+
+ מתכנסים, אזי הטור 
+\begin_inset Formula $\underset{n}{\sum}\left(a_{n}+b_{n}\right)$
+\end_inset
+
+ מתכנס ומקיים 
+\begin_inset Formula $\underset{n=1}{\overset{\infty}{\sum}}\left(a_{n}+b_{n}\right)=\underset{n=1}{\overset{\infty}{\sum}}a_{n}+\underset{n=1}{\overset{\infty}{\sum}}b_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+5
+\numeric off
+.
+ קריטריון קושי לטורים מתכנסים
+\end_layout
+
+\begin_layout Standard
+הטור 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם 
+\begin_inset Formula 
+\[
+\forall\varepsilon>0\,\exists N\in\mathbb{N}\,\forall k,p\in\mathbb{N}\quad N<k\Rightarrow\left|\sum_{n=k+1}^{k+p}a_{n}\right|<\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+6
+\numeric off
+.
+ טור מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם טור ה
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+-זנב מתכנס
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+.
+ הטור 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם טור ה
+\begin_inset Formula $N$
+\end_inset
+
+-זנב שלו 
+\begin_inset Formula $\underset{n}{\sum}a_{n+N}$
+\end_inset
+
+ מתכנס, ואז מתקיים 
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}a_{n+N}=\sum_{n=N+1}^{\infty}a_{n}-\sum_{n=1}^{N}a_{n}
+\]
+
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

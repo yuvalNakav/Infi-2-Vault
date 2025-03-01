@@ -1,11 +1,11 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": true,
   "showAttachments": false,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": false,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "tag:#h0  ",
@@ -15,10 +15,38 @@
       }
     },
     {
+      "query": "path:נגזרות  ",
+      "color": {
+        "a": 1,
+        "rgb": 12790967
+      }
+    },
+    {
+      "query": "path:אינטגרלים  ",
+      "color": {
+        "a": 1,
+        "rgb": 244407
+      }
+    },
+    {
+      "query": "path:טורים  ",
+      "color": {
+        "a": 1,
+        "rgb": 27381
+      }
+    },
+    {
+      "query": "path:כללי  ",
+      "color": {
+        "a": 1,
+        "rgb": 15504384
+      }
+    },
+    {
       "query": "",
       "color": {
         "a": 1,
-        "rgb": 14069084
+        "rgb": 5419488
       }
     }
   ],
@@ -27,11 +55,11 @@
   "textFadeMultiplier": -3,
   "nodeSizeMultiplier": 5,
   "lineSizeMultiplier": 1.1419677734375,
-  "collapse-forces": true,
-  "centerStrength": 0.393461486395018,
-  "repelStrength": 20,
-  "linkStrength": 0.711520238256396,
-  "linkDistance": 184,
-  "scale": 0.19887118619543231,
+  "collapse-forces": false,
+  "centerStrength": 0.341818181818182,
+  "repelStrength": 14.8141001855288,
+  "linkStrength": 0.457291280148423,
+  "linkDistance": 334,
+  "scale": 0.17938854970332035,
   "close": true
 }

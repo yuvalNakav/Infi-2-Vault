@@ -1,0 +1,567 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+פולינומי טיילור
+\end_layout
+
+\begin_layout Standard
+בהתחשב ב
+\numeric on
+
+\begin_inset Formula $5.1$
+\end_inset
+
+
+\numeric off
+, נחפש להמשך ולדייק את הקירוב לפונקציה בנקודה..
+ מכאן נסתכל על 
+\begin_inset Formula $a=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+יהיו 
+\begin_inset Formula $n\in\mathbb{N}\cup\left\{ 0\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה גזירה 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים ב
+\begin_inset Formula $a=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Subsection*
+פולינום טיילור 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+פולינום טיילור מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ סביב 
+\series default
+
+\begin_inset Formula $a$
+\end_inset
+
+ הוא 
+\begin_inset Formula 
+\[
+P_{n}\left(x\right)=P_{n,f,a}\left(x\right)=f\left(a\right)+\frac{f'\left(a\right)}{1!}x+\frac{f''\left(a\right)}{2!}x^{2},\dots,\frac{f^{\left(n\right)}\left(a\right)}{n!}x^{n}=\overset{n}{\underset{k=0}{\sum}}\frac{f^{\left(k\right)}\left(a\right)}{k!}x^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+שארית טיילור
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+השארית של פיתוח טיילור מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ סביב 
+\numeric on
+
+\begin_inset Formula $a$
+\end_inset
+
+
+\family roman
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא: 
+\begin_inset Formula 
+\begin{align*}
+R_{n}\left(x\right) & =R_{n,f,a}\left(x\right)=f\left(x\right)-P_{n}\left(x\right)=\\
+= & f\left(x\right)-\left(f\left(a\right)+\frac{f'\left(a\right)}{1!}x+\frac{f''\left(a\right)}{2!}x^{2},\dots,\frac{f^{\left(n\right)}\left(a\right)}{n!}x^{n}\right)=\\
+= & f\left(x\right)-\overset{n}{\underset{k=0}{\sum}}\frac{f^{\left(k\right)}\left(a\right)}{k!}x^{k}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+פולינום מקלורן של 
+\begin_inset Formula $f$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוא מקרה פרטי של פולינום טיילור של 
+\begin_inset Formula $f$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפטים
+\end_layout
+
+\begin_layout Subsection*
+משפט טיילור)!( 
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<x\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה הגזירה לפחות 
+\begin_inset Formula $n+1$
+\end_inset
+
+ פעמים, כך ש
+\begin_inset Formula $f^{\left(n\right)}$
+\end_inset
+
+ רציפה בקטע 
+\begin_inset Formula $\left[a,x\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $f^{\left(n+1\right)}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left(a,x\right)$
+\end_inset
+
+.
+ אזי:
+\end_layout
+
+\begin_layout Enumerate
+קיימת נקודה 
+\begin_inset Formula $c\in\left(a,x\right)$
+\end_inset
+
+, אחת לפחות, שעבורה מתקיים )
+\series bold
+השארית בצורת לגראנז'
+\series default
+(
+\begin_inset Formula 
+\[
+R_{n,f,a}\left(x\right)=f\left(x\right)-P_{n,f,a}\left(x\right)=\frac{f^{\left(n+1\right)}\left(c\right)}{\left(n+1\right)!}\left(x-a\right)^{n+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+קיימת נקודה 
+\begin_inset Formula $\hat{c}\in\left(a,x\right)$
+\end_inset
+
+, אחת לפחות, שעבורה מתקיים )
+\series bold
+השארית בצורת קושי
+\series default
+(
+\begin_inset Formula 
+\[
+R_{n,f,a}\left(x\right)=f\left(x\right)-P_{n,f,a}\left(x\right)=\frac{f^{\left(n+1\right)}\left(\hat{c}\right)}{n!}\left(x-\hat{c}\right)^{n}\left(x-a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+צורה אינטגרלית לשארית
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:\left[a,b\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ הגזירה לפחות 
+\begin_inset Formula $n+1$
+\end_inset
+
+ פעמים כך ש
+\begin_inset Formula $f^{\left(n+1\right)}$
+\end_inset
+
+ אינטגרבילית ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+אזי לכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+R_{n,f,a}\left(x\right)=\frac{1}{n!}\overset{x}{\underset{a}{\int}}f^{\left(n+1\right)}\left(t\right)\left(x-t\right)^{n}dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+פולינום הוא פולינום טיילור של עצמו
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $p\in\mathbb{R}\left[x\right]$
+\end_inset
+
+ שמקיים 
+\begin_inset Formula $\deg p\leq n$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $p\left(x\right)=\overset{n}{\underset{k=0}{\sum}}\frac{p^{\left(k\right)}\left(0\right)}{k!}x^{k}$
+\end_inset
+
+ )הוכחה-נגזור את 
+\begin_inset Formula $p$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים.(
+\end_layout
+
+\begin_layout Subsection*
+הנגזרת של 
+\begin_inset Formula $P_{n,f,a}\left(a\right)$
+\end_inset
+
+ היא הנגזרת הזהה של 
+\begin_inset Formula $f\left(a\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ פולינום טיילור מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ סביב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ אזי 
+\begin_inset Formula $\forall k\in\left[n\right]\cup\left\{ 0\right\} \quad P_{n}^{\left(k\right)}\left(0\right)=f^{\left(k\right)}\left(0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+קיום השארית
+\end_layout
+
+\begin_layout Standard
+בהינתן התנאים, מתקיים לנ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $\underset{x\rightarrow a}{\lim}\frac{f\left(x\right)-P_{n,f,a}\left(x\right)}{\left(x-a\right)^{n}}=\underset{x\rightarrow a}{\lim}\frac{R_{n,f,a}\left(x\right)}{\left(x-a\right)^{n}}=0$
+\end_inset
+
+ הוכחה באינדוציה על 
+\begin_inset Formula $n$
+\end_inset
+
+, כאשר הג'וקר זה לופיטל.
+\end_layout
+
+\begin_layout Subsection*
+יחידות השארית
+\end_layout
+
+\begin_layout Standard
+בהינתן התנאים, אם קיים 
+\begin_inset Formula $Q\in\mathbb{R}\left[x\right]$
+\end_inset
+
+, 
+\begin_inset Formula $\deg Q\leq n$
+\end_inset
+
+, המקיים 
+\begin_inset Formula $\underset{x\rightarrow a}{\lim}\frac{f\left(x\right)-Q\left(x\right)}{\left(x-a\right)^{n}}=0$
+\end_inset
+
+, אזי 
+\begin_inset Formula $Q=P_{n,f,a}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+נירמול השארית
+\end_layout
+
+\begin_layout Standard
+נובעת הטענה הבאה:
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה הגזירה לפחות 
+\begin_inset Formula $n+1$
+\end_inset
+
+ פעמים, כך ש
+\begin_inset Formula $f^{\left(n\right)}$
+\end_inset
+
+ רציפה בקטע 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $f^{\left(n+1\right)}$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ אזי קיימת 
+\begin_inset Formula $\theta\in\left(0,1\right)$
+\end_inset
+
+ אחת לפחות שעבורה 
+\begin_inset Formula 
+\[
+R_{n,f,a}\left(b\right)=f\left(b\right)-P_{n,f,a}\left(b\right)=\frac{f^{\left(n+1\right)}\left(a+\theta\left(b-a\right)\right)}{n!}\left(1-\theta\right)^{n}\left(b-a\right)^{n+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

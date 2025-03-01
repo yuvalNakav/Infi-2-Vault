@@ -1,0 +1,444 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Formula $4.2$
+\end_inset
+
+ משפטים חשובים על הנגזרת
+\end_layout
+
+\begin_layout Subsection*
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\series bold
+הערה
+\series default
+ רציפות בנקודה לא גוררת גזירות בנקודה.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+ד
+\begin_inset Quotes erd
+\end_inset
+
+נ: 
+\begin_inset Formula $f\left(x\right)=\left|x\right|$
+\end_inset
+
+ אינה גזירה בנק' 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+(
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+אריתמטיקה של נגזרות: 
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\lambda\in\mathbb{R}$
+\end_inset
+
+, ו- 
+\begin_inset Formula $f,g$
+\end_inset
+
+ פונקציות גזירות בנק' 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+.
+ אזי הפונקציות הבאות גם הן גזירות ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f+g$
+\end_inset
+
+ ונגזרת הסכום היא 
+\begin_inset Formula $\left(f+g\right)'\left(x_{0}\right)=f'\left(x_{0}\right)+g'\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\cdot g$
+\end_inset
+
+ ונגזרת המכפלה היא 
+\begin_inset Formula $\left(f\cdot g\right)'\left(x_{0}\right)=f'\left(x_{0}\right)\cdot g\left(x_{0}\right)+f\left(x_{0}\right)\cdot g'\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lambda f$
+\end_inset
+
+ ונגזרתה 
+\begin_inset Formula $\left(\lambda f\right)'\left(x_{0}\right)=\lambda f'\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f-g$
+\end_inset
+
+ ונגזרת ההפרש 
+\begin_inset Formula $\left(f-g\right)'\left(x_{0}\right)=f'\left(x_{0}\right)-g'\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{1}{g}$
+\end_inset
+
+, אם 
+\begin_inset Formula $g\left(x_{0}\right)\ne0$
+\end_inset
+
+, ונגזרתה 
+\begin_inset Formula $-\frac{g'\left(x_{0}\right)}{\left(g\left(x_{0}\right)\right)^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{f}{g}$
+\end_inset
+
+, אם 
+\begin_inset Formula $g\left(x_{0}\right)\ne0$
+\end_inset
+
+, ונגזרתה 
+\begin_inset Formula $\frac{f'\left(x_{0}\right)g\left(x_{0}\right)-f\left(x_{0}\right)g'\left(x_{0}\right)}{\left(g\left(x_{0}\right)\right)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+כלל השרשרת
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה גזירה בנק' 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+ פונקציה גזירה בנק
+\begin_inset Formula $y_{0}=f\left(x_{0}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+אזי 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ ומקיימת 
+\begin_inset Formula $\left(g\circ f\right)'\left(x_{0}\right)=g'\left(f\left(x_{0}\right)\right)\cdot f'\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+הערה הכלל תקף כאשר 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה חד צדדית ו
+\begin_inset Formula $g$
+\end_inset
+
+ גזירה, אך לא כאשר שתיהן גזירות חד צדדית
+\end_layout
+
+\begin_layout Subsection*
+נגזרת של הפונקציה ההופכית
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $D,E\subseteq\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f:D\rightarrow E$
+\end_inset
+
+ פונקציה חח
+\begin_inset Quotes erd
+\end_inset
+
+ע ועל, 
+\begin_inset Formula $f^{-1}:E\rightarrow D$
+\end_inset
+
+ ההופכית של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אם מתקיים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $x_{0}\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ רציפה בנקודה 
+\begin_inset Formula $y_{0}=f\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f'\left(x_{0}\right)\ne0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+גזירה בנקודה 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ ומקיימת 
+\begin_inset Formula $\left(f^{-1}\right)'\left(y_{0}\right)=\frac{1}{f'\left(x_{0}\right)}=\frac{`}{f'\left(f^{-1}\left(x_{0}\right)\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+מסקנה
+\end_layout
+
+\begin_layout Standard
+מכאן נובע שאם 
+\begin_inset Formula $f:D\rightarrow E$
+\end_inset
+
+ וגזירה ב
+\begin_inset Formula $x_{0}\in D$
+\end_inset
+
+, שעבורו 
+\begin_inset Formula $f'\left(x_{0}\right)=0$
+\end_inset
+
+, אזי 
+\begin_inset Formula $f^{-1}:D\rightarrow E$
+\end_inset
+
+ איננה גזירה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+טרנזיטיביות בגזירות לפונקציות זהות
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $f,g$
+\end_inset
+
+ המוגדרות בסביבה מלאה 
+\begin_inset Formula $U$
+\end_inset
+
+ של 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+, כך ש
+\begin_inset Formula $\forall x\in U\,f\left(x\right)=g\left(x\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $g$
+\end_inset
+
+ גזירה גם היא ומתקיים 
+\begin_inset Formula $f'\left(x_{0}\right)=g'\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

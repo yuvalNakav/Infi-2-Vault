@@ -1,0 +1,335 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Style Standard
+	Category              MainText
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Left
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+	# FIXME This ought to be set dynamically.
+	HTMLStyle
+		div.standard {
+			margin-bottom: 2ex;
+		}
+	EndHTMLStyle
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "Arial Hebrew Scholar"
+\font_typewriter "default" "Arial Black"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\numeric on
+\begin_inset Formula $10.2$
+\end_inset
+
+
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ שינוי סדר
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ תמורה על הטבעיים
+\end_layout
+
+\begin_layout Standard
+היא פונקציה חח
+\begin_inset Quotes erd
+\end_inset
+
+ע ועל 
+\begin_inset Formula $\sigma:\mathbb{N}\rightarrow\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+2
+\numeric off
+.
+ שינוי סדר
+\end_layout
+
+\begin_layout Standard
+נאמר כי 
+\begin_inset Formula $\underset{n}{\sum}b_{n}$
+\end_inset
+
+ הוא 
+\series bold
+שינוי סדר של 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ 
+\series default
+אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיימת תמורה על הטבעיים 
+\begin_inset Formula $\sigma:\mathbb{N}\rightarrow\mathbb{N}$
+\end_inset
+
+ כך שמתקיים 
+\begin_inset Formula $\forall n\in\mathbb{N}\,b_{n}=a_{\sigma\left(n\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+משפטים
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ תמורה על איברי טור א
+\begin_inset Quotes erd
+\end_inset
+
+ש מתכנס לא פוגעת בהתכנסותו 
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+טור אי שלילי מתכנס
+\end_layout
+
+\begin_layout Standard
+אם הטור 
+\begin_inset Formula $\underset{n}{\sum}b_{n}$
+\end_inset
+
+ הוא שינוי סדר של 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\underset{n}{\sum}b_{n}$
+\end_inset
+
+מתכנס ובפרט לאותו הסכום 
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+2
+\numeric off
+.
+ תמורה על איברי טור מתכנס בהחלט לא פוגעת בהתכנסותו 
+\end_layout
+
+\begin_layout Standard
+אם הטור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+מתכנס בהחלט, אז כל שינוי סדר שלו מתכנס לאותו גבול ובפרט ולמעשה מתכנס בהחלט.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+3
+\numeric off
+.
+ משפט רימן
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ טור המתכנס בתנאי.
+ אזי מתקיים:
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\lambda\in\mathbb{R}$
+\end_inset
+
+ קיים שינוי סדר של הטור 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ המתכנס ל
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+קיים שינוי סדר המתבדר ל
+\begin_inset Formula $\infty$
+\end_inset
+
+ )וכן ל
+\begin_inset Formula $-\infty$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+קיים שינוי סדר המתבדר במובן הרחב )כלומר לא ל-
+\begin_inset Formula $\infty$
+\end_inset
+
+ או ל-
+\begin_inset Formula $-\infty$
+\end_inset
+
+(
+\end_layout
+
+\end_body
+\end_document

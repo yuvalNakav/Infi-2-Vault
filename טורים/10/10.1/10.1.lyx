@@ -1,0 +1,1116 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Style Standard
+	Category              MainText
+	Margin                Static
+	LatexType             Paragraph
+	LatexName             dummy
+	ParIndent             MM
+	ParSkip               0.4
+	Align                 Left
+	AlignPossible         Block, Left, Right, Center
+	LabelType             No_Label
+	# FIXME This ought to be set dynamically.
+	HTMLStyle
+		div.standard {
+			margin-bottom: 2ex;
+		}
+	EndHTMLStyle
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "Arial Hebrew Scholar"
+\font_typewriter "default" "Arial Black"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\numeric on
+\begin_inset Formula $10.1$
+\end_inset
+
+
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ אסוציאטיביות בטורים )הוספה ופתיחת סוגריים לטור(
+\end_layout
+
+\begin_layout Section*
+הגדרות
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ הכנסת סוגריים לטור
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\end_layout
+
+\begin_layout Standard
+נאמר שהטור 
+\begin_inset Formula $\underset{k}{\sum b_{k}}$
+\end_inset
+
+ 
+\series bold
+מתקבל מהטור 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ על ידי הכנסת סוגריים
+\series default
+ כאשר קיימת סדרת אינדקסים 
+\begin_inset Formula $\left(n_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+מונוטונית עולה ממש של מספרים טבעיים כך שלכל 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $b_{k}=\stackrel[n=n_{k-1}+1]{n_{k}}{\sum}a_{n}=a_{n_{k-1}+1}+a_{n_{k-1}+2}+\cdots+a_{n_{k}}$
+\end_inset
+
+, עם המוסכמה 
+\begin_inset Formula $n_{0}=0$
+\end_inset
+
+ להגדרת 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+משפטים
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ הסס
+\begin_inset Quotes erd
+\end_inset
+
+ח של 
+\series medium
+
+\begin_inset Formula $b_{k}$
+\end_inset
+
+ 
+\series default
+הוא תת סדרה של הסס
+\begin_inset Quotes erd
+\end_inset
+
+ח של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\underset{k}{\sum}b_{k}$
+\end_inset
+
+ טור המתקבל מ-
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ע
+\begin_inset Quotes erd
+\end_inset
+
+י הכנסת סוגריים במקומות ה
+\begin_inset Formula $\left(n_{k}\right)_{k=0}^{\infty}$
+\end_inset
+
+, ויהיו 
+\begin_inset Formula $S_{n}=\stackrel[j=1]{n}{\sum}a_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $T_{k}=\stackrel[j=1]{k}{\sum}b_{j}$
+\end_inset
+
+ סס
+\begin_inset Quotes erd
+\end_inset
+
+חים של 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\underset{k}{\sum}b_{k}$
+\end_inset
+
+בהתאמה.
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $T_{n}=S_{n_{k}}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $T_{k}$
+\end_inset
+
+ תת סדרה של 
+\begin_inset Formula $S_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נשים לב שמתקיים לכל 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T_{k}= & \stackrel[j=1]{k}{\sum}b_{j}=\stackrel[j=1]{k}{\sum}\left(\stackrel[n=n_{j-1}+1]{n_{j}}{\sum}a_{n}\right)=\left(a_{1}+a_{2}+\cdots+a_{n_{1}}\right)+\left(a_{n_{1}+1}+a_{n_{1}+2}+\cdots+a_{n_{2}}\right)+\cdots+\left(a_{n_{j-1}+1}+\cdots+a_{n_{j}}\right)=\\
+= & a_{1}+a_{2}+\cdots+a_{n_{1}}+a_{n_{1}+1}+a_{n_{1}+2}+\cdots+a_{n_{2}}+\cdots+a_{n_{j-1}+1}+\cdots+a_{n_{j}}=S_{n_{k}}
+\end{align*}
+
+\end_inset
+
+כאשר המעבר בין השורות הוא פתיחת סוגריים בחיבור, מאסוציאטיביות סכומים סופיים
+ מעל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, כנדרש.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+2
+\numeric off
+.
+ משפטי הירושה לטורים המתקבלים על ידי הכנסת סוגריים
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\underset{k}{\sum}b_{k}$
+\end_inset
+
+ טור המתקבל מ-
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ע
+\begin_inset Quotes erd
+\end_inset
+
+י הכנסת סוגריים.
+ אזי מתקיים:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס ל-
+\begin_inset Formula $S\in\mathbb{R}$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\underset{k}{\sum}b_{k}$
+\end_inset
+
+ מתכנס וסכומו 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתבדר ל
+\begin_inset Formula $\infty$
+\end_inset
+
+ )ל
+\begin_inset Formula $-\infty$
+\end_inset
+
+(, אזי 
+\series bold
+
+\begin_inset Formula $\underset{k}{\sum}b_{k}$
+\end_inset
+
+
+\series default
+ מתבדר ל
+\begin_inset Formula $\infty$
+\end_inset
+
+ )ל
+\begin_inset Formula $-\infty$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי המשפט הקודם על 
+\begin_inset Formula $S_{n},T_{k}$
+\end_inset
+
+ הסס
+\begin_inset Quotes erd
+\end_inset
+
+חים של הסדרות הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל, 
+\begin_inset Formula $\underset{k}{\sum}b_{k}$
+\end_inset
+
+ תת סדרה של 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ המתכנסת ל
+\begin_inset Formula $S\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי ממשפט הירושה בסדרות, כל תת סדרה של סדרה מתכנסת תתכנס לאותו הגבול.
+ ולכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתקיים, ונציין ש-
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נובע מאותו משפט על גבולות במובן הרחב, כנדרש.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+3
+\numeric off
+.
+ טור חסום מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם כל טור מתכנס המתקבל על ידי הכנסת סוגריים מתכנס לאותו 
+\begin_inset Formula $S\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הטור החסום 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קיים 
+\begin_inset Formula $S\in\mathbb{R}$
+\end_inset
+
+ כך שכל טור 
+\series bold
+מתכנס 
+\series default
+המתקבל מהכנסת סוגריים לטור, מתכנס ל-
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, טענה זו שקולה לטענה על גבולות חלקיים בסדרות - הסדרה 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ מתכנסת ל
+\begin_inset Formula $S\in\mathbb{R}$
+\end_inset
+
+ אם
+\begin_inset Quotes erd
+\end_inset
+
+ם קבוצת כל הגבולות החלקיים שלה מקיימת 
+\begin_inset Formula $S_{a}=\left\{ S\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+4
+\numeric off
+.
+ אם טור המתקבל מהכנסת סוגריים לטור אי שלילי מתכנס, הטור המקורי מתכנס גם
+ הוא לאותו הגבול
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\underset{k}{\sum}b_{k}$
+\end_inset
+
+ טור 
+\series bold
+מתכנס 
+\series default
+המתקבל ע
+\begin_inset Quotes erd
+\end_inset
+
+י הכנסת סוגריים בטור האי שלילי 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס גם הוא ולאותו הגבול )אינפי 
+\numeric on
+1
+\numeric off
+(
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ אי שלילי, לכן 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ מונוטונית עולה ואי שלילית.
+ 
+\end_layout
+
+\begin_layout Standard
+לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+, טענה זו שקולה לטענה הנ
+\begin_inset Quotes erd
+\end_inset
+
+ח: סדרה מונוטונית עולה עם תת סדרה מתכנסת, מתכנסת גם היא ולאותו הגבול )אינפי
+ 
+\numeric on
+1
+\numeric off
+(
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+5
+\numeric off
+.
+ הכנסת סוגריים כך שכל המחוברים בתוכן שווי סימן
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\underset{k}{\sum}b_{k}$
+\end_inset
+
+ טור 
+\series bold
+מתכנס 
+\series default
+המתקבל מ-
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ע
+\begin_inset Quotes erd
+\end_inset
+
+י הכנסת סוגריים במקומות ה
+\begin_inset Formula $\left(n_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם עבור כל 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, כל מחובריי 
+\begin_inset Formula $b_{k}$
+\end_inset
+
+ בעלי אותו סימן, אזי 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס ולאותו הגבול
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נגדיר סס
+\begin_inset Quotes erd
+\end_inset
+
+חים 
+\begin_inset Formula $S_{n}=\stackrel[j=1]{n}{\sum}a_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $T_{k}=\stackrel[j=1]{k}{\sum}b_{j}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\forall k\in\mathbb{N}\,T_{k}=S_{n_{k}}$
+\end_inset
+
+.
+ נתון שקיים 
+\begin_inset Formula $\underset{k\rightarrow\infty}{\lim}T_{k}=\underset{k\rightarrow\infty}{\lim}S_{n_{k}}=\stackrel[k=1]{\infty}{\sum}b_{k}=\stackrel[k=1]{\infty}{\sum}a_{n_{k}}=L\in\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ יחיד המקיים 
+\begin_inset Formula $n_{k-1}<n\leq n_{k}$
+\end_inset
+
+, ולכן מתקיים 
+\begin_inset Formula $\begin{cases}
+S_{n_{k-1}}\leq S_{n}\leq S_{n_{k}} & b_{k}\geq0\\
+S_{n_{k}}\leq S_{n}\leq S_{n_{k-1}} & b_{k}\leq0
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+והרי 
+\begin_inset Formula $\underset{k\rightarrow\infty}{\lim}S_{n_{k}}=\underset{k\rightarrow\infty}{\lim}S_{n_{k-1}}=L$
+\end_inset
+
+, אזי ממשפט הכריך 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}S_{n}=L=\stackrel[n=1]{\infty}{\sum}a_{n}$
+\end_inset
+
+, כנדרש.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+6
+\numeric off
+.
+ הכנסת אפסים )מסקנה מהכנסת סוגריים שווי סימן(
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\underset{k}{\sum}c_{k}$
+\end_inset
+
+ טור כלשהו ו
+\begin_inset Formula $\left(m_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+ סדרת אינדקסים מונוטונית עולה ממש.
+ נגדיר 
+\begin_inset Formula $\left(d_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\forall n\in\mathbb{N}\,d_{n}=\begin{cases}
+c_{k} & n\in\left\{ m_{k}\mid k\in\mathbb{N}\right\} \\
+0 & n\notin\left\{ m_{k}\mid k\in\mathbb{N}\right\} 
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי הטור 
+\begin_inset Formula $\underset{n}{\sum}d_{n}$
+\end_inset
+
+ מתכנס אם
+\begin_inset Quotes erd
+\end_inset
+
+ם הטור 
+\begin_inset Formula $\underset{k}{\sum}c_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה זה שניהם מתכנסים לאותו הסכום.
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה
+\end_layout
+
+\begin_layout Standard
+נראה ש
+\begin_inset Formula $\underset{k}{\sum}c_{k}$
+\end_inset
+
+מתקבל מהטור 
+\begin_inset Formula $\underset{n}{\sum}d_{n}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י הכנסת סוגריים:
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $m_{0}=0$
+\end_inset
+
+ ונקבל שמתקיים 
+\begin_inset Formula $\forall k\in\mathbb{N}\,c_{k}=d_{m_{k}}=\stackrel[n=m_{k-1}+1]{m_{k}}{\sum}d_{n}=0+\cdots0+d_{m_{k}}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\underset{k}{\sum}c_{k}$
+\end_inset
+
+מתקבל מהטור 
+\begin_inset Formula $\underset{n}{\sum}d_{n}$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י הכנסת סוגריים במקומות ה
+\begin_inset Formula $\left(m_{k}\right)_{k=0}^{\infty}$
+\end_inset
+
+, ולכן המשפט הקודם על הכנסת סוגריים כך שכל המחוברים שווי סימן תקף גם פה,
+ כנדרש.
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+7
+\numeric off
+.
+ הוספת סוגריים באורך חסום
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\underset{k}{\sum}b_{k}$
+\end_inset
+
+ טור 
+\series bold
+מתכנס 
+\series default
+המתקבל מ-
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ע
+\begin_inset Quotes erd
+\end_inset
+
+י הכנסת סוגריים במקומות ה
+\begin_inset Formula $\left(n_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח שקיים 
+\begin_inset Formula $M\in\mathbb{N}$
+\end_inset
+
+ כל שלכל 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $n_{k}-n_{k-1}\leq M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\underset{n\rightarrow\infty}{\lim}a_{n}=0$
+\end_inset
+
+, אזי 
+\begin_inset Formula $\underset{k}{\sum}b_{k}$
+\end_inset
+
+ מתכנס אם ורק אם 
+\begin_inset Formula $\underset{n}{\sum}a_{n}$
+\end_inset
+
+ מתכנס, והם מתכנסים לאותו הגבול.
+\end_layout
+
+\begin_layout Description
+הוכחה 
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ נובע ישירות ממשפטי הירושה.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ נגדיר סס
+\begin_inset Quotes erd
+\end_inset
+
+חים 
+\begin_inset Formula $S_{n}=\stackrel[j=1]{n}{\sum}a_{j}$
+\end_inset
+
+, 
+\begin_inset Formula $T_{k}=\stackrel[j=1]{k}{\sum}b_{j}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+אזי 
+\begin_inset Formula $\underset{k\rightarrow\infty}{\lim}T_{k}=\underset{k\rightarrow\infty}{\lim}S_{n_{k}}=\stackrel[k=1]{\infty}{\sum}b_{k}=\stackrel[k=1]{\infty}{\sum}a_{n_{k}}=L\in\mathbb{R}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $L$
+\end_inset
+
+ כלשהו.
+\begin_inset Newline newline
+\end_inset
+
+יהא 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ נתון
+\begin_inset Newline newline
+\end_inset
+
+אזי קיים 
+\begin_inset Formula $K\in\mathbb{N}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $k>K$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(\spadesuit\right)\left|S_{n_{k}}-L\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+, וקיים 
+\begin_inset Formula $J\in\mathbb{N}$
+\end_inset
+
+ שעבורו לכל 
+\begin_inset Formula $j>J$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(\clubsuit\right)\left|a_{j}\right|\leq\frac{\varepsilon}{2M}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נגדיר 
+\begin_inset Formula $N=\max\left\{ J,n_{K}\right\} $
+\end_inset
+
+.
+ לכן לכל 
+\begin_inset Formula $n>N$
+\end_inset
+
+ קיים 
+\begin_inset Formula $k_{0}\in\mathbb{N}$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $n_{k_{0}-1}<n\leq n_{k_{0}}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+ולכן מתקיים 
+\begin_inset Formula $S_{n}=S_{n_{k_{0}}}-\stackrel[j=n+1]{n_{k_{0}}}{\sum}\leq S_{n_{k_{0}}}$
+\end_inset
+
+, ובנוסף 
+\begin_inset Formula $\left(*\right)\,n_{k_{0}}-n<n_{k_{0}}-n_{k_{0}-1}\leq M$
+\end_inset
+
+ מחסימות אורך הסוגריים.
+\begin_inset Newline newline
+\end_inset
+
+לכן נקבל שמתקיים 
+\begin_inset Formula 
+\begin{align*}
+\left|S_{n}-L\right| & =\left|\left(S_{n_{k_{0}}}-\stackrel[j=n+1]{n_{k_{0}}}{\sum}a_{j}\right)-L\right|\overset{\left(\triangle\right)}{\leq}\left|S_{n_{k_{0}}}-L\right|+\stackrel[j=n+1]{n_{k_{0}}}{\sum}\left|a_{j}\right|\overset{\left(\spadesuit\right)\left(\clubsuit\right)}{<}\frac{\varepsilon}{2}+\stackrel[j=n+1]{n_{k_{0}}}{\sum}\frac{\varepsilon}{2M}=\\
+= & \frac{\varepsilon}{2}+\frac{\varepsilon}{2M}\cdot\stackrel[j=n+1]{n_{k_{0}}}{\sum}1=\frac{\varepsilon}{2}+\frac{\varepsilon}{2M}\cdot\left(n_{k_{0}}-n\right)\overset{\left(*\right)}{<}\frac{\varepsilon}{2}+\frac{\varepsilon}{2M}<\frac{\varepsilon}{2}+M=\varepsilon
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

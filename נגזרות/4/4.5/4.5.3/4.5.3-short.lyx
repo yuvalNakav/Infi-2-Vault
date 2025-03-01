@@ -1,0 +1,505 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{enumitem}
+
+% Customize the enumerated list levels
+\setlist[enumerate,1]{label=\arabic*.,ref=\arabic*}
+\setlist[enumerate,2]{label=\alef*.,ref=\alef*.}
+\setlist[enumerate,3]{label=\Alph*.,ref=\Alph*}
+\setlist[enumerate,4]{label=\textbullet,ref=\textbullet}
+
+% Hebrew numbering (alef-bet)
+\newcommand{\alef}[1]{\ifcase#1\or\aleph\or\bet\or\gimel\or\dalet\or\he\or\vav\or\zayin\or\het\or\tet\or\yod\or\kaf\or\lamed\or\mem\or\nun\or\samekh\or\ayin\or\pe\or\tsadi\or\qof\or\resh\or\shin\or\tav\fi}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Arial"
+\font_typewriter "default" "Arial Hebrew"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Formula $4.5.3$
+\end_inset
+
+ לופיטל
+\end_layout
+
+\begin_layout Section*
+טענות
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+משפט לופיטל )
+\begin_inset Formula $\text{L'Hospital, L'H}$
+\end_inset
+
+( בגרסת 
+\begin_inset Formula $'\frac{0}{0}'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f,g$
+\end_inset
+
+ פונקציות גזירות ב
+\begin_inset Formula $\left(a,b\right]$
+\end_inset
+
+, המקיימות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\underset{x\rightarrow a^{+}}{\lim}f\left(x\right)=\underset{x\rightarrow a^{+}}{\lim}g\left(x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in\left(a,b\right]\,g'\left(x\right)\ne0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הגבול 
+\begin_inset Formula $\underset{x\rightarrow a^{+}}{\lim}\frac{f'\left(x\right)}{g'\left(x\right)}$
+\end_inset
+
+ קיים במובן הרחב
+\end_layout
+
+\begin_layout Standard
+אזי הגבול 
+\begin_inset Formula $\underset{x\rightarrow a^{+}}{\lim}\frac{f\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+ קיים במובן הרחב גם הוא ומתקיים 
+\begin_inset Formula $\underset{x\rightarrow a^{+}}{\lim}\frac{f\left(x\right)}{g\left(x\right)}=\underset{x\rightarrow a^{+}}{\lim}\frac{f'\left(x\right)}{g'\left(x\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הערה 
+\series default
+באותה מידה נוכל לעשות את זה על גבול לא חד צדדית בשילוב שתי הגבולות הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל
+\end_layout
+
+\begin_layout Section*
+
+\series bold
+משפט לופיטל )
+\begin_inset Formula $\text{L'Hospital,\,L'H}$
+\end_inset
+
+( בגרסת 
+\begin_inset Formula $'\frac{*}{\infty}'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f,g$
+\end_inset
+
+ פונקציות גזירות ב
+\begin_inset Formula $\left(a,b\right]$
+\end_inset
+
+, המקיימות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\underset{x\rightarrow a^{+}}{\lim}g\left(x\right)=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in\left(a,b\right]\,g'\left(x\right)\ne0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הגבול 
+\begin_inset Formula $\underset{x\rightarrow a^{+}}{\lim}\frac{f'\left(x\right)}{g'\left(x\right)}$
+\end_inset
+
+ קיים במובן הרחב
+\end_layout
+
+\begin_layout Standard
+אזי הגבול 
+\begin_inset Formula $\underset{x\rightarrow a^{+}}{\lim}\frac{f\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+ קיים במובן הרחב גם הוא ומתקיים 
+\begin_inset Formula $\underset{x\rightarrow a^{+}}{\lim}\frac{f\left(x\right)}{g\left(x\right)}=\underset{x\rightarrow a^{+}}{\lim}\frac{f'\left(x\right)}{g'\left(x\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הערה 
+\series default
+באותה מידה נוכל לעשות את זה על גבול לא חד צדדית בשילוב שתי הגבולות הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל, 
+\series bold
+וגם על שאיפה לאינסוף
+\series default
+)!(
+\end_layout
+
+\begin_layout Section*
+משפט לופיטל )
+\begin_inset Formula $\text{L'Hospital, L'H}$
+\end_inset
+
+( בגרסת
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $'\left(x\rightarrow\infty\right)\,,\frac{\infty}{\infty}'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\,,a,b,c\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f,g$
+\end_inset
+
+ פונקציות גזירות בקרן 
+\begin_inset Formula $\left[c,\infty\right)$
+\end_inset
+
+, המקיימות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\underset{x\rightarrow\infty}{\lim}g\left(x\right)=\infty,\underset{x\rightarrow\infty}{\lim}f\left(x\right)=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in\left[c,\infty\right)\,g'\left(x\right)\ne0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הגבול 
+\begin_inset Formula $\underset{x\rightarrow\infty}{\lim}\frac{f'\left(x\right)}{g'\left(x\right)}$
+\end_inset
+
+ קיים במובן הרחב
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אזי הגבול 
+\begin_inset Formula $\underset{x\rightarrow\infty}{\lim}\frac{f\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+ קיים במובן הרחב גם הוא ומתקיים 
+\begin_inset Formula $\underset{x\rightarrow\infty}{\lim}\frac{f\left(x\right)}{g\left(x\right)}=\underset{x\rightarrow\infty}{\lim}\frac{f'\left(x\right)}{g'\left(x\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הערה 
+\series default
+באותה מידה נוכל לעשות את זה על גבול לא חד צדדית בשילוב שתי הגבולות הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+משפט
+\begin_inset space ~
+\end_inset
+
+לופיטל
+\begin_inset space ~
+\end_inset
+
+)
+\begin_inset Formula $\text{L'Hospital,\,L'H}$
+\end_inset
+
+(
+\begin_inset space ~
+\end_inset
+
+בגרסת
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $'\left(x\rightarrow\infty\right)\,,\frac{0}{0}'$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $a<b\,,a,b,c\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f,g$
+\end_inset
+
+ פונקציות גזירות בקרן 
+\begin_inset Formula $\left[c,\infty\right)$
+\end_inset
+
+, המקיימות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\underset{x\rightarrow\infty}{\lim}g\left(x\right)=0,\underset{x\rightarrow\infty}{\lim}f\left(x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\in\left[c,\infty\right)\,g'\left(x\right)\ne0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הגבול 
+\begin_inset Formula $\underset{x\rightarrow\infty}{\lim}\frac{f'\left(x\right)}{g'\left(x\right)}$
+\end_inset
+
+ קיים במובן הרחב
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אזי הגבול 
+\begin_inset Formula $\underset{x\rightarrow\infty}{\lim}\frac{f\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+ קיים במובן הרחב גם הוא ומתקיים 
+\begin_inset Formula $\underset{x\rightarrow\infty}{\lim}\frac{f\left(x\right)}{g\left(x\right)}=\underset{x\rightarrow\infty}{\lim}\frac{f'\left(x\right)}{g'\left(x\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה באותה מידה נוכל לעשות את זה על גבול לא חד צדדית בשילוב שתי הגבולות
+ הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הוכחות של גרסאות 
+\begin_inset Formula $x\rightarrow\infty$
+\end_inset
+
+ זהות, רק שנציב 
+\begin_inset Formula $\bar{f}\left(u\right)=f\left(\frac{1}{u}\right),\,x=\frac{1}{u}\Leftrightarrow\underset{x\rightarrow\infty}{\lim}f\left(x\right)=\underset{u\rightarrow0^{+}}{\lim}\bar{f}\left(u\right)=\underset{u\rightarrow0^{+}}{\lim}f\left(\frac{1}{u}\right)$
+\end_inset
+
+ על הקטע 
+\begin_inset Formula $\left(0,\frac{1}{b}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+הקדמה ללופיטל:
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $f,g$
+\end_inset
+
+ פונקציות גזירות ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ )
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ בפרט לכן 
+\begin_inset Formula $f,g$
+\end_inset
+
+ מוגדרות בסביבה מלאה של 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f\left(x_{0}\right)=0=g\left(x_{0}\right)$
+\end_inset
+
+, ו-
+\begin_inset Formula $g'\left(x_{0}\right)\ne0$
+\end_inset
+
+, אזי קיים הגבול 
+\begin_inset Formula $\underset{x\rightarrow x_{0}}{\lim}\frac{f\left(x\right)}{g\left(x\right)}$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $\underset{x\rightarrow x_{0}}{\lim}\frac{f\left(x\right)}{g\left(x\right)}=\underset{x\rightarrow x_{0}}{\lim}\frac{f'\left(x\right)}{g'\left(x\right)}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
